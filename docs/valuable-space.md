@@ -1,5 +1,7 @@
 # Valuable space overlay
 
+Valuable space considers off-ball teammates only, excluding the identified ball handler. Frames without an identified handler are suppressed. Its soft blue surface can appear together with the ball handler's stronger orange drive-space surface.
+
 Enable **Valuable space** in the court toolbar (views 1–4 and 6). Blue cells show arrival advantage multiplied by empirical field-goal value, at a threshold of 0.5. The readout counts their area in square feet. This is exploratory geometry, not an EPV input or calibrated scoring probability.
 
 - One-foot cells within the offensive half court, with a two-second offensive arrival horizon, shortened by the shot clock.

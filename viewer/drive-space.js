@@ -59,7 +59,7 @@ export function driveSpace(frame) {
       if (margin > 0)
         result.push({
           corners,
-          alpha: 0.1 + 0.22 * Math.min(1, margin / 3),
+          alpha: 0.30 + 0.25 * Math.min(1, margin / 3),
           margin,
           arrival,
         });

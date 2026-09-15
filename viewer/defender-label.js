@@ -122,7 +122,7 @@ export function drawDefenderLabel(ctx, x, y, radius, profile, frame, player, pos
       cursor += advance;
     }
   }
-  rimText(surname, radius * 1.34, radius * .4, false, lightCourt ? '#243a50' : '#e0e9f3');
+  if (threat.showNames) rimText(surname, radius * 1.34, radius * .4, false, lightCourt ? '#243a50' : '#e0e9f3');
   // Exact action probabilities are available in the player hover tooltip.
   ctx.restore();
 }

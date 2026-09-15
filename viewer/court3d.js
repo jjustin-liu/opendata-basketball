@@ -6,7 +6,7 @@ import { shootingMotion } from "./shooting-motion.js";
 import { flightLabel } from "./pass-flight.js?v=flight-risk-1";
 import { heightFeet, profileTab, defenderNumbers, defenderChipScale } from "./player-profile.js?v=position-size-1";
 import { bestPass, shotPps, actionCard } from "./action-display.js";
-import { closestDefender } from "./defender-distance.js?v=angle-1";
+import { closestDefender, drawDefenderDistance } from "./defender-distance.js?v=distance-2";
 let followPose = null;
 let lastCameraTime = 0;
 // Perspective camera above the backcourt, looking toward the attacking basket.
@@ -320,7 +320,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       cell.corners.map(([x, y]) => [x, y, 0.02]),
       "transparent",
       0,
-      cell.space ? `rgba(31,137,178,${cell.alpha})` : `rgba(44,190,100,${cell.alpha})`,
+      cell.space ? `rgba(65,145,210,${cell.alpha})` : `rgba(255,139,36,${cell.alpha})`,
       true,
     );
   }
@@ -403,7 +403,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
     ctx.fillStyle = darkText ? "#f7faf8" : typeof value === "number" ? opts.epvColor(value) : "#fff";
     ctx.font = `${label || typeof value === "number" ? 600 : 700} ${r * (typeof value === "string" && /^[1-5]$/.test(value) ? 1.25 : 0.66)}px monospace`;
     ctx.fillText(
-      typeof value === "number" ? value.toFixed(2) : (value ?? "—"),
+      typeof value === "number" ? value.toFixed(2) : (value ?? ""),
       x,
       y - (label ? r * 0.24 : 0),
     );
@@ -467,8 +467,8 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       value = flightLabel(opts.flight, p[0]);
       label = "";
       if (opts.flight.receiver === p[0]) {
-        value = Number.isFinite(opts.flight.turnoverProbability) ? (opts.flight.turnoverProbability * 100).toFixed(1) + '%' : '—';
-        label = 'TOV';
+        value = Number.isFinite(opts.flight.turnoverProbability) ? (opts.flight.turnoverProbability * 100).toFixed(1) + '%' : '';
+        label = Number.isFinite(opts.flight.turnoverProbability) ? 'TOV' : '';
       }
     } else if (isShooter) {
       value =
@@ -504,11 +504,14 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       passTint,
     );
     ctx.setLineDash([]);
-    if (off) profileTab(ctx, x, y - r * 1.23, r / 1.75, opts.profile(p[0]), true);
+    if (off) {
+      profileTab(ctx, x, y - r * 1.23, r / 1.75, opts.profile(p[0]), true);
+    }
     else {
       const ballScreen = project(f.ball[0], f.ball[1]);
       drawDefenderLabel(ctx, x, y, r, opts.profile(p[0]), f, p[0], defenderLabels.get(p[0]), !!opts.tactical, {
         enabled: opts.defenseDetail,
+        showNames: opts.defenderNames,
         receiver: opts.selectedPass,
         unit: Math.max(13, Math.min(27, s * 1.5)),
         wingAngle: rimWingAngle(project, p[1], p[2]),
@@ -516,6 +519,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
         angle: Math.atan2(ballScreen[1] - ground, ballScreen[0] - x),
       });
     }
+    if (!off) drawDefenderDistance(ctx, x, y + r * 1.4, r / 1.5, p, f);
     hits.push({ player: p, x, y, r });
     hits.push({
       player: p,
@@ -556,7 +560,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
   if (camera(ball[0], ball[1], ball[2] || 0)[2] > 0.8) {
     ctx.beginPath();
     ctx.arc(bx, by, Math.max(4.5, bs * 0.53), 0, Math.PI * 2);
-    ctx.fillStyle = "#f2b440";
+    ctx.fillStyle = opts.ballColor || "#f2b440";
     ctx.fill();
     ctx.strokeStyle = "#805219";
     ctx.stroke();

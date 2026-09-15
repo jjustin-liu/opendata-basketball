@@ -1,4 +1,36 @@
 // Recompute from the displayed/interpolated positions, not a stale frame's ID.
+export function nearestDefenderDistance(player, defenders) {
+  const distances = defenders.map(d => Math.hypot(d[1] - player[1], d[2] - player[2])).filter(Number.isFinite);
+  return distances.length ? Math.min(...distances) : null;
+}
+
+export function closestDefenderToBall(frame) {
+  if (!frame.ball || !Number.isFinite(frame.ball[0]) || !Number.isFinite(frame.ball[1])) return null;
+  let nearest = null;
+  for (const defender of frame.defense) {
+    const distance = Math.hypot(defender[1] - frame.ball[0], defender[2] - frame.ball[1]);
+    if (Number.isFinite(distance) && (!nearest || distance < nearest.distance)) nearest = { defender, distance };
+  }
+  return nearest;
+}
+
+export function drawDefenderDistance(ctx, x, y, unit, player, frame) {
+  const nearest = closestDefenderToBall(frame);
+  if (!nearest || nearest.defender[0] !== player[0]) return;
+  const { distance } = nearest;
+  const text = `${distance.toFixed(1)} ft`;
+  ctx.save();
+  ctx.font = `600 ${unit * .65}px monospace`;
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  const width = ctx.measureText(text).width + unit * .5;
+  ctx.fillStyle = '#202a2e';
+  ctx.fillRect(x - width / 2, y - unit * .47, width, unit * .94);
+  ctx.fillStyle = '#e0e7eb';
+  ctx.fillText(text, x, y);
+  ctx.restore();
+}
+
 export function closestDefender(frame) {
   const holder = frame.offense.find((p) => p[0] === frame.geometry?.handler);
   if (!holder || !frame.defense.length) return null;

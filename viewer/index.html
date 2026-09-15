@@ -123,13 +123,16 @@
                       >━ Best pass · PPS incl. 2nd · ▰ 3P tendency</span
                     >
                     <label
-                      title="Green = inside-arc destinations with a clear straight drive toward the rim. Assumes 14 ft/s attacker, 12 ft/s defender after 0.2s reaction, 2 ft defensive reach, max 1.5s. Checks route and endpoint; teammates treated as stationary obstacles. Geometric margin, not scoring probability; no green does not rule out a dribble move."
-                      ><input id="driveSpace" type="checkbox" /> Drive
+                      title="Orange = ball handler's inside-arc destinations with a clear straight drive toward the rim. Assumes 14 ft/s attacker, 12 ft/s defender after 0.2s reaction, 2 ft defensive reach, max 1.5s. Checks route and endpoint; teammates treated as stationary obstacles. Geometric margin, not scoring probability; no orange does not rule out a dribble move."
+                      style="color:#ff9b48"
+                      ><input id="driveSpace" type="checkbox" /> Orange · Drive
                       space</label
                     >
-                    <label title="Experimental: arrival advantage × other-game shot value. Position error softens boundaries. Two-second arrival horizon; cells ≥0.5. Excludes ball delivery, player shooting skill, rebounds and fouls. Not EPV or a calibrated probability."><input id="spaceControl" type="checkbox" /> Valuable space</label>
+                    <label style="color:#71b1e4" title="Blue = off-ball teammates only. Experimental: arrival advantage × other-game shot value. Position error softens boundaries. Two-second arrival horizon; cells ≥0.5. Excludes ball delivery, player shooting skill, rebounds and fouls. Not EPV or a calibrated probability."><input id="spaceControl" type="checkbox" /> Blue · Valuable space</label>
                     <label title="Click an off-ball teammate to explore relocation. Blue: clear modeled improvement. Amber: worth exploring, response-dependent. Experimental, not validated EPV."><input id="movementIdeas" type="checkbox" /> Movement ideas</label>
                     <span id="movementContext" hidden style="width:340px;overflow:hidden;text-overflow:ellipsis;font-size:10px;color:#80c8dd"></span>
+                    <label><input id="defenderNames" type="checkbox" /> Defender names</label>
+                    <span title="Ball turns red at 30% turnover risk or higher" style="font-size:10px;color:#e66b65">Red ball · TOV ≥30%</span>
                     <span id="spaceArea" hidden style="font-size:10px;color:var(--muted)"></span>
                     <span
                       id="guardAngle"

@@ -14,7 +14,7 @@ import { activePass, flightLabel, passWithRisk } from "./pass-flight.js?v=flight
 import { playerProfile, profileTab, defenderNumbers, defenderChipScale } from "./player-profile.js?v=position-size-1";
 import { bestPass, shotPps, actionCard } from "./action-display.js";
 import { driveSpace } from "./drive-space.js";
-import { closestDefender } from "./defender-distance.js?v=angle-1";
+import { closestDefender, drawDefenderDistance } from "./defender-distance.js?v=distance-2";
 import { drawCourt3D } from "./court3d.js?v=movement-2";
 import { interpolateFrame } from "./playback.js";
 let surrogateReport = null;
@@ -283,8 +283,10 @@ function drawCourt(blend = 0) {
   }
   $("spaceArea").hidden = !$("spaceControl").checked;
   $("spaceArea").textContent = realisticView ? 'Space overlay: views 1–4 / 6' : space.cells.length ? `${space.area} ft² · value-weighted space` : 'No supported space above threshold';
-  const driveCells = $("spaceControl").checked ? space.cells.map(c=>({...c,space:true})) :
-    $("driveSpace").checked && !recentShot(f) ? driveCache : [];
+  const driveCells = [
+    ...space.cells.map(c=>({...c,space:true})),
+    ...($("driveSpace").checked && !recentShot(f) ? driveCache : []),
+  ];
   let movement = null;
   if ($("movementIdeas").checked && !realisticView && !flight && !recentShot(f)) {
     const evaluate = i => {
@@ -360,6 +362,8 @@ function drawCourt(blend = 0) {
       lanes: $("lanes").checked || cameraPlayer !== null,
       pressure: $("pressure").checked,
       defenseDetail: $("defenseDetail").checked,
+      defenderNames: $("defenderNames").checked,
+      ballColor: !recentShot(f) && Number.isFinite(flight ? flight.turnoverProbability : f.reason ? null : f.turnover2) && (flight ? flight.turnoverProbability : f.turnover2) >= .3 ? '#ef3939' : colors.ball,
       selectedPass,
     });
     return;
@@ -441,7 +445,7 @@ function drawCourt(blend = 0) {
       else ctx.moveTo(x, -y);
     });
     ctx.closePath();
-    ctx.fillStyle = cell.space ? `rgba(31,137,178,${cell.alpha})` : `rgba(44,190,100,${cell.alpha})`;
+    ctx.fillStyle = cell.space ? `rgba(65,145,210,${cell.alpha})` : `rgba(255,139,36,${cell.alpha})`;
     ctx.fill();
   }
   drawMovementIdea(ctx, movement, p=>[p[0],-p[1]], 1);
@@ -643,23 +647,23 @@ function drawCourt(blend = 0) {
       if (offensive && flight?.receiver === p[0]) {
         ctx.fillStyle = '#f7faf8';
         ctx.font = '700 1.05px "IBM Plex Mono", monospace';
-        ctx.fillText(Number.isFinite(flight.turnoverProbability) ? pct(flight.turnoverProbability) + '%' : '—', p[1], -p[2]-.35);
+        ctx.fillText(Number.isFinite(flight.turnoverProbability) ? pct(flight.turnoverProbability) + '%' : '', p[1], -p[2]-.35);
         ctx.font = '500 .65px "IBM Plex Mono", monospace';
-        ctx.fillText('TOV', p[1], -p[2]+.65);
+        ctx.fillText(Number.isFinite(flight.turnoverProbability) ? 'TOV' : '', p[1], -p[2]+.65);
       } else if (offensive && positionView) {
         ctx.fillStyle = passTint ? '#f7faf8' : '#e2e6e8';
         ctx.font = `700 ${2.44 * chipScale}px "DM Sans", sans-serif`;
         ctx.fillText(offenseLabels.get(p[0]), p[1], -p[2]);
         const isHolder = p[0] === holder?.[0];
         const value = isShooter ? shotPps(shotEvent) : isHolder ? f[epvKey()] : option?.value;
-        const text = Number.isFinite(value) ? value.toFixed(2) : '—';
+        const text = Number.isFinite(value) ? value.toFixed(2) : '';
         const labelY = -p[2] - 1.95 * chipScale - .95;
         const turnover = isShooter || flight ? null : isHolder ? f.turnover2 : option?.turnoverProbability;
-        const turnoverText = isShooter ? 'SHOT' : `${Number.isFinite(turnover) ? pct(turnover) + '%' : '—'} TOV${isHolder ? ' · 2s' : ''}`;
+        const turnoverText = isShooter ? 'SHOT' : Number.isFinite(turnover) ? `${pct(turnover)}% TOV${isHolder ? ' · 2s' : ''}` : '';
         ctx.font = '600 .75px "IBM Plex Mono", monospace';
         const turnoverWidth = ctx.measureText(turnoverText).width;
         ctx.font = '700 1.3px "IBM Plex Mono", monospace';
-        const width = Math.max(ctx.measureText(text).width, turnoverWidth) + .65;
+        const width = Math.max(ctx.measureText(text).width, turnoverWidth, 2.8) + .65;
         ctx.fillStyle = '#202a2e';
         ctx.fillRect(p[1]-width/2, labelY-.85, width, 1.7);
         ctx.fillRect(p[1]-width/2, labelY-2.1, width, 1.1);
@@ -719,7 +723,8 @@ function drawCourt(blend = 0) {
         }
       }
       if (!offensive) {
-        drawDefenderLabel(ctx, p[1], -p[2], 1.95 * chipScale, playerProfile(game, p[0]), f, p[0], defenderLabels.get(p[0]), true, { enabled: $("defenseDetail").checked && !threatView, receiver: selectedPass, unit: 1.95, reference: defenderThreatReference(play.frames), wingAngle: rimWingAngle((x, y) => [x, -y], p[1], p[2]) });
+        drawDefenderLabel(ctx, p[1], -p[2], 1.95 * chipScale, playerProfile(game, p[0]), f, p[0], defenderLabels.get(p[0]), true, { showNames: $("defenderNames").checked, enabled: $("defenseDetail").checked && !threatView, receiver: selectedPass, unit: 1.95, reference: defenderThreatReference(play.frames), wingAngle: rimWingAngle((x, y) => [x, -y], p[1], p[2]) });
+        if (!threatView) drawDefenderDistance(ctx, p[1], -p[2] + 1.95 * chipScale + .65, 1.2, p, f);
       }
       if (offensive && !positionView) profileTab(
         ctx,
@@ -756,7 +761,7 @@ function drawCourt(blend = 0) {
   ctx.beginPath();
   ctx.ellipse(f.ball[0] + 0.3, -f.ball[1] + 0.4, 0.82, 0.43, 0, 0, Math.PI * 2);
   ctx.fill();
-  ctx.fillStyle = colors.ball;
+  ctx.fillStyle = !shotEvent && Number.isFinite(flight ? flight.turnoverProbability : f.reason ? null : f.turnover2) && (flight ? flight.turnoverProbability : f.turnover2) >= .3 ? '#ef3939' : colors.ball;
   ctx.strokeStyle = "#704915";
   ctx.lineWidth = 0.12;
   ctx.beginPath();
@@ -1154,7 +1159,7 @@ $("scrubber").oninput = (e) => {
   setPlaying(false);
   render();
 };
-for (const id of ["lanes", "pressure", "driveSpace", "defenseDetail", "spaceControl", "movementIdeas"])
+for (const id of ["lanes", "pressure", "driveSpace", "defenseDetail", "defenderNames", "spaceControl", "movementIdeas"])
   $(id).onchange = () => drawCourt(animationPhase);
 $("overhead").onclick = () => {
   resetZoom("wide");

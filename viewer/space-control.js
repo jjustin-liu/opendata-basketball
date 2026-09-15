@@ -13,10 +13,12 @@ function arrival(p,old,dt,x,y){
 }
 export function spaceControl(frame,previous,grid){
   if(frame.reason||frame.offense.length!==5||frame.defense.length!==5||!grid)return {cells:[],area:0};
+  const offBall=frame.offense.filter(p=>p[0]!==frame.geometry?.handler);
+  if(!frame.offense.some(p=>p[0]===frame.geometry?.handler)||!offBall.length)return {cells:[],area:0};
   const dt=(frame.frame-(previous?.frame??frame.frame))/25;
   let area=0;const cells=[];
   for(const [x,y,value] of grid.cells){
-    const fastest=side=>frame[side].map(p=>arrival(p,previous?.[side]?.find(q=>q[0]===p[0]),dt,x+.5,y+.5)).reduce((a,b)=>a.t<b.t?a:b);
+    const fastest=side=>(side==='offense'?offBall:frame[side]).map(p=>arrival(p,previous?.[side]?.find(q=>q[0]===p[0]),dt,x+.5,y+.5)).reduce((a,b)=>a.t<b.t?a:b);
     const off=fastest('offense'),def=fastest('defense');
     if(off.t>Math.min(2,frame.shotClock??2))continue;
     const sigma=Math.hypot(off.sigma,def.sigma,.12);
@@ -24,7 +26,7 @@ export function spaceControl(frame,previous,grid){
     const score=control*value;
     if(score<.5)continue;
     area+=1;
-    cells.push({corners:[[x,y],[x+1,y],[x+1,y+1],[x,y+1]],alpha:.12+.32*clamp((score-.5)/.9,0,1),score});
+    cells.push({corners:[[x,y],[x+1,y],[x+1,y+1],[x,y+1]],alpha:.10+.18*clamp((score-.5)/.9,0,1),score});
   }
   return {cells,area};
 }
