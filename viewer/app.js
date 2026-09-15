@@ -1,23 +1,56 @@
-import { movementIdea, drawMovementIdea } from "./movement-ideas.js?v=2";
+import { movementIdea, drawMovementIdea, smoothMovement } from "./movement-ideas.js?v=3";
+let movementVisual = null;
 const movementCache = new WeakMap();
 import { ballTrail, drawBallTrail } from "./ball-trail.js";
 import { spaceControl } from "./space-control.js?v=1";
 let spaceGrids = {};
 const spaceCache = new WeakMap();
 import { drawRealistic } from "./realistic.js?v=realistic-2";
-import { drawDefenderLabel, defenderProbability, defenderForecast, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=names-toggle-2";
+import { drawDefenderLabel, defenderProbability, defenderForecast, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=compact-meters-3";
 import { drawThreatOverlay } from "./threat-overlay.js?v=1";
 import { auditShot } from "./decision-audit.js?v=foul-4";
 import { shotReview } from "./shot-review.js";
 import { followPass } from "./follow-pass.js";
-import { activePass, flightLabel, passWithRisk } from "./pass-flight.js?v=flight-risk-1";
+import { activePass, flightLabel, passWithRisk } from "./pass-flight.js?v=recap-2";
+import { actionRecap, drawActionRecap } from "./action-recap.js?v=shot-5";
+import { passAnnotation, shotBall, drawPassAnnotation } from './release-annotations.js?v=ball-theme-3';
+import { playRecap, playOutcome } from './play-recap.js?v=total-2';
+let reboundAnnotations = {};
+import { touchHistory } from './touch-history.js';
+let touchAnnotations = {};
+let touchSheetKey = '';
+
+function renderTouchSheet(time) {
+  const sheet = $('touchSheet');
+  sheet.hidden = !positionView;
+  sheet.parentElement.classList.toggle('has-touch-sheet',positionView);
+  if (!positionView) return;
+  const key = `${play.id}:${Math.floor(time/5)}:${epvKey()}`;
+  if (key === touchSheetKey) return;
+  touchSheetKey = key;
+  const rows = touchHistory(play,touchAnnotations[play.id],game.recordedPasses,time,epvKey());
+  const num = v=>Number.isFinite(v)?v.toFixed(2):'—';
+  const risk = v=>Number.isFinite(v)?`${pct(v)}%`:'—';
+  const follow = sheet.scrollTop+sheet.clientHeight>=sheet.scrollHeight-30;
+  const openRows = new Set([...sheet.querySelectorAll('details[open]')].map(d=>d.dataset.touch));
+  const oldScroll = sheet.scrollTop;
+  sheet.innerHTML = `<header><h3>Possession flow</h3><span>${rows.length} touches</span></header><div class="touch-history">${rows.map((r,i)=>{
+    const action = r.action==='PASS' ? `Pass → ${r.receiver == null ? '?' : escape(shortName(r.receiver))}` : r.action==='SHOT' ? 'Shot' : r.ended ? 'Released' : 'On the ball';
+    const value = r.action==='PASS' ? r.passEpv : r.action==='SHOT' ? r.pps : r.endEpv;
+    const unit = r.action==='SHOT' ? 'PPS' : 'EPV';
+    const delta = Number.isFinite(r.change) ? `<span class="flow-delta ${r.change>=0?'positive':'negative'}" title="EPV change while holding">${r.change>=0?'+':''}${r.change.toFixed(2)}</span>` : '';
+    return `<details class="flow-row ${r.ended?'':'is-current'}" data-touch="${escape(r.id)}" ${openRows.has(r.id)?'open':''}><summary><span class="flow-step">${i+1}</span><span class="flow-main"><span class="flow-player" title="${escape(name(r.player))}">${escape(shortName(r.player))}<small>${r.seconds.toFixed(1)}s</small></span><span class="flow-action">${action}</span></span><span class="flow-value">${num(value)}<small>${unit}</small>${delta}</span></summary><div class="flow-detail"><dl><div><dt>Received · shot clock</dt><dd>${Number.isFinite(r.shotClock)?r.shotClock.toFixed(1)+'s':'—'}</dd></div><div><dt>Catch EPV</dt><dd>${num(r.catchEpv)}</dd></div><div><dt>${r.ended?'Pre-release':'Current'} EPV</dt><dd>${num(r.endEpv)}</dd></div><div><dt>Holding TOV · latest / peak</dt><dd>${risk(r.risk)} / ${risk(r.peakRisk)}</dd></div>${r.action==='PASS'?`<div><dt>Pass TOV</dt><dd>${risk(r.passRisk)}</dd></div><div><dt>Projected catch EPV</dt><dd>${num(r.projectedCatch)}</dd></div>`:''}</dl></div></details>`;
+  }).join('') || '<p class="touch-empty">Waiting for the first touch.</p>'}</div><details class="flow-help" data-touch="help" ${openRows.has('help')?'open':''}><summary>About these numbers</summary><p>Tap a player for receipt clock and risk. Signed change is EPV gained or lost while holding, not individual credit. Holding risk covers the next two seconds. Catch EPV uses the first supported sample within 0.4s. Pass EPV includes interception risk and clock cost; projected catch EPV excludes the pass-risk discount. Missing estimates remain blank.</p></details>`;
+  if (!follow) sheet.scrollTop = oldScroll;
+  if (follow) sheet.scrollTop=sheet.scrollHeight;
+}
 import { playerProfile, profileTab, defenderNumbers, defenderChipScale } from "./player-profile.js?v=position-size-1";
-import { bestPass, shotPps, actionCard } from "./action-display.js";
+import { bestPass, shotPps, actionCard, releaseCard } from "./action-display.js?v=release-3";
 import { driveSpace } from "./drive-space.js";
 import { ballRiskColor } from "./ball-risk-color.js";
 import { curvedValue } from "./curved-value.js?v=avoid-ball-5";
 import { closestDefender, drawDefenderDistance } from "./defender-distance.js?v=distance-2";
-import { drawCourt3D } from "./court3d.js?v=closer-card-4";
+import { drawCourt3D } from "./court3d.js?v=movement-11";
 import { interpolateFrame } from "./playback.js";
 let surrogateReport = null;
 let tacticalView = false;
@@ -259,6 +292,7 @@ function recentShot(f) {
 }
 function drawCourt(blend = 0) {
   if (!play) return;
+  renderTouchSheet(play.frames[index].frame);
   $("defenseContext").hidden = !$("defenseDetail").checked;
   const f = interpolateFrame(play.frames[index], play.frames[index + 1], blend),
     [ctx, w, h] = canvasSetup("court"),
@@ -273,6 +307,9 @@ function drawCourt(blend = 0) {
     nextFrame.frame - f.frame <= 10
       ? f.frame + (nextFrame.frame - f.frame) * blend
       : f.frame;
+  const released = releaseCard(play, game.recordedPasses, visualFrame);
+  const passNote = passAnnotation(play, game.recordedPasses, visualFrame);
+  const shotBallState = shotBall(play, visualFrame);
   const flight = passWithRisk(activePass(game.recordedPasses, play.id, visualFrame), play.frames);
   if (driveCacheFrame !== sourceFrame) {
     driveCacheFrame = sourceFrame;
@@ -305,6 +342,8 @@ function drawCourt(blend = 0) {
       movement={...candidate,from:[player[1],player[2]]};
     }
   }
+  movementVisual=smoothMovement(movementVisual,movement,visualFrame,`${play.id}:${selectedPass??'auto'}`);
+  movement=movementVisual?.idea??null;
   $("movementContext").hidden=!$("movementIdeas").checked;
   $("movementContext").textContent=realisticView?'Movement ideas: views 1–4 / 6':movement?`${shortName(movement.player)} · ${movement.confidence} · ${movement.reason}`:selectedPass?`${shortName(selectedPass)} · no supported improvement; try another teammate`:'Click a teammate to explore movement';
   $("movementContext").title=movement?`${name(movement.player)}: ${Math.hypot(movement.to[0]-movement.from[0],movement.to[1]-movement.from[1]).toFixed(1)} ft, about ${movement.seconds.toFixed(1)}s. ${movement.reason}. ${movement.tradeoff}. Compares staying with moving, including space for teammates under hold, momentum and closeout responses. Experimental heuristic, not validated EPV gain.`:'Select an off-ball teammate. No arrow means no supported positive alternative under this limited search, not that staying is optimal.';
@@ -357,7 +396,8 @@ function drawCourt(blend = 0) {
       cameraKey: play.id,
       flight,
       profile: (id) => playerProfile(game, id, f.frame),
-      driveCells, movement,
+      driveCells, movement, released, passNote, shotBallState,
+      rebounds: reboundAnnotations[play.id] || [],
       epvKey: epvKey(),
       epvColor, passFill,
       shotEvent: flight ? null : recentShot(f),
@@ -365,6 +405,7 @@ function drawCourt(blend = 0) {
       pressure: $("pressure").checked,
       defenseDetail: $("defenseDetail").checked,
       defenderNames: $("defenderNames").checked,
+      hoverPlayer,
       ballRisk: flight ? flight.turnoverProbability : recentShot(f) || f.reason ? null : f.turnover2,
       ballColor: ballRiskColor(flight ? flight.turnoverProbability : recentShot(f) || f.reason ? null : f.turnover2),
       selectedPass,
@@ -454,52 +495,6 @@ function drawCourt(blend = 0) {
   drawMovementIdea(ctx, movement, p=>[p[0],-p[1]], 1);
   const shotEvent = flight ? null : recentShot(f);
   const holder = f.offense.find((p) => p[0] === f.geometry?.handler);
-  const matchup = closestDefender(f);
-  if (matchup) {
-    const { holder: a, defender: b, distance } = matchup;
-    ctx.save();
-    ctx.strokeStyle = "#b6c5c088";
-    ctx.lineWidth = 0.1;
-    ctx.setLineDash([0.45, 0.3]);
-    ctx.beginPath();
-    ctx.moveTo(a[1], -a[2]);
-    ctx.lineTo(b[1], -b[2]);
-    ctx.stroke();
-    ctx.setLineDash([]);
-    if (matchup.signedAngle != null) {
-      const start = matchup.rimBearing,
-        delta = matchup.signedAngle;
-      ctx.strokeStyle = "#7fa99a66";
-      ctx.lineWidth = 0.1;
-      ctx.beginPath();
-      ctx.moveTo(a[1], -a[2]);
-      ctx.lineTo(a[1] + 5 * Math.cos(start), -a[2] - 5 * Math.sin(start));
-      ctx.stroke();
-      ctx.beginPath();
-      for (let i = 0; i <= 24; i++) {
-        const t = start + (delta * i) / 24,
-          x = a[1] + 2.5 * Math.cos(t),
-          y = -a[2] - 2.5 * Math.sin(t);
-        if (i) ctx.lineTo(x, y);
-        else ctx.moveTo(x, y);
-      }
-      ctx.stroke();
-    }
-    const norm = distance || 1;
-    const x = (a[1] + b[1]) / 2 + ((b[2] - a[2]) / norm) * 2.5;
-    const y = -(a[2] + b[2]) / 2 + ((b[1] - a[1]) / norm) * 2.5;
-    const label = distance.toFixed(1) + " ft";
-    ctx.font = "400 .7px monospace";
-    const width = ctx.measureText(label).width + 0.65;
-    ctx.fillStyle = "#11171c66";
-    ctx.fillRect(x - width / 2, y - 0.65, width, 1.3);
-    ctx.fillStyle = "#aebbb7";
-    ctx.textAlign = "center";
-    ctx.textBaseline = "middle";
-    ctx.fillText(label, x, y);
-    ctx.restore();
-  }
-
   if (holder && $("lanes").checked) {
     for (const lane of f.geometry.lanes) {
       const target = f.offense.find((p) => p[0] === lane.player);
@@ -519,15 +514,7 @@ function drawCourt(blend = 0) {
     ctx.beginPath();
     ctx.arc(holder[1], -holder[2], 6, 0, Math.PI * 2);
     ctx.fill();
-    const d = f.defense.find((p) => p[0] === f.geometry.nearestDefender);
-    if (d) {
-      ctx.strokeStyle = "#b74d4088";
-      ctx.lineWidth = 0.22;
-      ctx.beginPath();
-      ctx.moveTo(holder[1], -holder[2]);
-      ctx.lineTo(d[1], -d[2]);
-      ctx.stroke();
-    }
+
   }
   const scenario = f.passOptions?.find((o) => o.player === selectedPass);
   if (scenario) {
@@ -647,7 +634,7 @@ function drawCourt(blend = 0) {
       ctx.font = "500 1.2px monospace";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      if (offensive && flight?.receiver === p[0]) {
+      if (offensive && !positionView && flight?.receiver === p[0]) {
         ctx.fillStyle = '#f7faf8';
         ctx.font = '700 1.05px "IBM Plex Mono", monospace';
         ctx.fillText(Number.isFinite(flight.turnoverProbability) ? pct(flight.turnoverProbability) + '%' : '', p[1], -p[2]-.35);
@@ -660,9 +647,11 @@ function drawCourt(blend = 0) {
         const isHolder = p[0] === holder?.[0];
         const value = isShooter ? shotPps(shotEvent) : isHolder ? f[epvKey()] : option?.value;
         const text = Number.isFinite(value) ? value.toFixed(2) : '';
-        const turnover = isShooter || flight ? null : isHolder ? f.turnover2 : option?.turnoverProbability;
+        const turnover = isShooter || flight || isHolder ? null : option?.turnoverProbability;
         const turnoverText = isShooter ? 'SHOT' : Number.isFinite(turnover) ? `${pct(turnover)}% TOV${isHolder ? ' · 2s' : ''}` : '';
-        curvedValue(ctx, p[1], -p[2], 1.95 * chipScale, text,
+        const recap = actionRecap(play, game.recordedPasses, p[0], visualFrame);
+        if (recap) drawActionRecap(ctx, p[1], -p[2], 1.95 * chipScale, recap);
+        else curvedValue(ctx, p[1], -p[2], 1.95 * chipScale, text,
           Number.isFinite(value) ? epvColor(value) : '#c4cbcf', turnoverText,
           { x: f.ball[0], y: -f.ball[1], radius: 1.0 });
       } else if (offensive && flight) {
@@ -715,7 +704,7 @@ function drawCourt(blend = 0) {
         }
       }
       if (!offensive) {
-        drawDefenderLabel(ctx, p[1], -p[2], 1.95 * chipScale, playerProfile(game, p[0]), f, p[0], defenderLabels.get(p[0]), true, { showNames: $("defenderNames").checked, enabled: $("defenseDetail").checked && !threatView, receiver: selectedPass, unit: 1.95, reference: defenderThreatReference(play.frames), wingAngle: rimWingAngle((x, y) => [x, -y], p[1], p[2]) });
+        drawDefenderLabel(ctx, p[1], -p[2], 1.95 * chipScale, playerProfile(game, p[0]), f, p[0], defenderLabels.get(p[0]), true, { hover: hoverPlayer, showNames: $("defenderNames").checked, enabled: $("defenseDetail").checked && !threatView, receiver: selectedPass, unit: 1.95, reference: defenderThreatReference(play.frames), wingAngle: rimWingAngle((x, y) => [x, -y], p[1], p[2]) });
         if (!threatView) drawDefenderDistance(ctx, p[1], -p[2] + 1.95 * chipScale + .65, 1.2, p, f);
       }
       if (offensive && !positionView) profileTab(
@@ -728,14 +717,26 @@ function drawCourt(blend = 0) {
       );
     }
   if (threatOpts) drawThreatOverlay(ctx, f, { ...threatOpts, layer: "over" });
-  if (holder && !flight && !shotEvent && !f.reason) {
+  for (const rebound of reboundAnnotations[play.id] || []) {
+    if (visualFrame < rebound.frame || visualFrame - rebound.frame >= 10) continue;
+    const player = f.offense.find(p=>p[0]===rebound.player);
+    if (!player) continue;
+    ctx.save();
+    ctx.font = '700 1px monospace';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#10291f';
+    ctx.fillText('ORB', player[1], -player[2]-2.7);
+    ctx.restore();
+  }
+  const cardPlayer = released ? f.offense.find(p => p[0] === released.player) : holder;
+  if (cardPlayer && (released || (!flight && !shotEvent && !f.reason))) {
     const best = bestPass(f);
-    const x = Math.max(-44, Math.min(44, holder[1]));
-    const y = -holder[2] + (holder[2] > 19 ? 3.5 : positionView ? -4.3 : -4.5);
+    const x = Math.max(-44, Math.min(44, cardPlayer[1]));
+    const y = -cardPlayer[2] + (cardPlayer[2] > 19 ? 3.5 : positionView ? -4.3 : -4.5);
     ctx.strokeStyle = "#83948c66";
     ctx.lineWidth = 0.09;
     ctx.beginPath();
-    ctx.moveTo(holder[1], -holder[2]);
+    ctx.moveTo(cardPlayer[1], -cardPlayer[2]);
     ctx.lineTo(x, y);
     ctx.stroke();
     actionCard(
@@ -743,12 +744,14 @@ function drawCourt(blend = 0) {
       x,
       y,
       1,
-      f.shot?.shotPlusSecondChance,
-      best?.value,
-      epvColor, passFill,
+      released ? released.shot : f.shot?.shotPlusSecondChance,
+      released ? released.pass : best?.value,
+      epvColor, released?.selected,
     );
   }
   drawBallTrail(ctx, ballTrail(play.frames, f, visualFrame), b=>[b[0],-b[1]], 1.0);
+  if (passNote) drawPassAnnotation(ctx,passNote.x,-passNote.y,Math.max(1,10/scale),passNote);
+  const ballRadius = shotBallState ? 1.5 : 1;
   ctx.fillStyle = "#9d753733";
   ctx.beginPath();
   ctx.ellipse(f.ball[0] + 0.3, -f.ball[1] + 0.4, 1.0, 0.5, 0, 0, Math.PI * 2);
@@ -757,16 +760,16 @@ function drawCourt(blend = 0) {
   ctx.strokeStyle = "#704915";
   ctx.lineWidth = 0.12;
   ctx.beginPath();
-  ctx.arc(f.ball[0], -f.ball[1], 1.0, 0, Math.PI * 2);
+  ctx.arc(f.ball[0], -f.ball[1], ballRadius, 0, Math.PI * 2);
   ctx.fill();
   ctx.stroke();
   const ballRisk = flight ? flight.turnoverProbability : shotEvent || f.reason ? null : f.turnover2;
-  if (Number.isFinite(ballRisk)) {
+  if (Number.isFinite(shotBallState?.pps) || (!shotBallState && Number.isFinite(ballRisk))) {
     ctx.fillStyle = '#191919';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.font = '700 .72px "IBM Plex Mono", monospace';
-    ctx.fillText(`${Math.round(ballRisk * 100)}%`, f.ball[0], -f.ball[1], 1.8);
+    ctx.font = `700 ${shotBallState ? .95 : .72}px "IBM Plex Mono", monospace`;
+    ctx.fillText(shotBallState ? shotBallState.pps.toFixed(2) : `${Math.round(ballRisk * 100)}%`, f.ball[0], -f.ball[1], ballRadius*1.8);
   }
   ctx.restore();
 }
@@ -1033,6 +1036,13 @@ $("clearPass").onclick = () => {
 function render() {
   if (!play || $("content").hidden) return;
   const f = play.frames[index];
+  const completed = index === play.frames.length-1;
+  const recap = playRecap(play, completed ? Math.max(f.frame,...play.events.map(e=>e.frame)) : f.frame);
+  $('recapStack').hidden = !completed;
+  const number = v => Number.isFinite(v) ? v.toFixed(2) : '—';
+  $('playEnd').hidden = !completed;
+  $('playEnd').textContent = completed ? playOutcome(play) : '';
+  $('playRecap').innerHTML = `<h3>Play recap</h3><div class="recap-metrics"><span>Cumulative TOV · approx.<b>${recap.risk == null ? '—' : pct(recap.risk)+'%'}</b></span><span>Total PPS<b>${number(recap.total)}</b></span></div><details><summary>How these estimates work</summary><p>Risk accumulated over supported time only (${Math.round(recap.coverage*100)}% coverage), assuming constant hazard within each two-second forecast. Exploratory, not a calibrated play probability. Total PPS is the first shot's quality (${number(recap.first)}) plus expected second-chance points (${number(recap.second)}), including the chance of a miss and offensive rebound. It is expected value, not the observed result.</p></details>`;
   $("epvValue").textContent =
     f[epvKey()] == null ? "—" : f[epvKey()].toFixed(2);
   renderShot(f);
@@ -1220,6 +1230,13 @@ for (const [id, dir] of [
         visiblePlays[(n + dir + visiblePlays.length) % visiblePlays.length].id,
       );
   };
+$("recapNext").onclick = () => $("nextPlay").click();
+$("recapRewind").onclick = () => {
+  if (!play) return;
+  setPlaying(false);
+  index = 0;
+  render();
+};
 for (const id of ["epvChart", "riskChart"])
   $(id).onclick = (e) => {
     const rect = $(id).getBoundingClientRect(),
@@ -1347,7 +1364,7 @@ $("court").onmousemove = (e) => {
         .find((p) => Math.hypot(p[1] - x, p[2] - y) < 2);
   $("tooltip").hidden = !p;
   const nextHover = p ? p[0] : null;
-  if (threatView && nextHover !== hoverPlayer) { hoverPlayer = nextHover; if (!playing) drawCourt(); }
+  if (nextHover !== hoverPlayer) { hoverPlayer = nextHover; if (!playing) drawCourt(); }
   else hoverPlayer = nextHover;
   if (p) {
     $("tooltip").textContent = (() => {
@@ -1366,7 +1383,7 @@ $("court").onmousemove = (e) => {
     $("tooltip").style.top = Math.max(0, e.clientY - r.top - 30) + "px";
   }
 };
-$("court").onmouseleave = () => { $("tooltip").hidden = true; if (hoverPlayer != null) { hoverPlayer = null; if (threatView && !playing) drawCourt(); } };
+$("court").onmouseleave = () => { $("tooltip").hidden = true; if (hoverPlayer != null) { hoverPlayer = null; if (!playing) drawCourt(); } };
 window.addEventListener("resize", render);
 document.addEventListener("keydown", (e) => {
   const editing = e.target.isContentEditable ||
@@ -1474,6 +1491,8 @@ function tick(time) {
 requestAnimationFrame(tick);
 try {
   spaceGrids = await getJSON("data/space-value.json");
+  reboundAnnotations = await getJSON('data/rebound-annotations.json').catch(()=>({}));
+  touchAnnotations = await getJSON('data/touch-history.json').catch(()=>({}));
   manifest = await getJSON("data/manifest.json");
   surrogateReport = await getJSON("data/vendor-surrogate.json").catch(() => null);
   if (manifest.metrics.summary.points.shooting) {

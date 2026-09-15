@@ -80,7 +80,21 @@ export function drawMovementIdea(ctx,idea,project,unit){
   const dx=b[0]-a[0],dy=b[1]-a[1],d=Math.hypot(dx,dy);if(d<unit*2)return;
   const ux=dx/d,uy=dy/d,start=[a[0]+ux*unit*1.7,a[1]+uy*unit*1.7];
   ctx.save();ctx.strokeStyle=idea.confidence==='Clear improvement'?'#248ba9':'#99713c';ctx.fillStyle=ctx.strokeStyle;ctx.lineWidth=unit*.12;ctx.setLineDash([unit*.35,unit*.25]);
-  ctx.beginPath();ctx.moveTo(...start);ctx.lineTo(...b);ctx.stroke();ctx.setLineDash([]);
-  ctx.beginPath();ctx.arc(...b,unit*.52,0,Math.PI*2);ctx.stroke();
-  ctx.beginPath();ctx.moveTo(...b);ctx.lineTo(b[0]-ux*unit*.65+uy*unit*.3,b[1]-uy*unit*.65-ux*unit*.3);ctx.lineTo(b[0]-ux*unit*.65-uy*unit*.3,b[1]-uy*unit*.65+ux*unit*.3);ctx.closePath();ctx.fill();ctx.restore();
+  const radius=unit*1.05;
+  ctx.lineCap='round';
+  ctx.beginPath();ctx.moveTo(...start);ctx.lineTo(b[0]-ux*radius,b[1]-uy*radius);ctx.stroke();ctx.setLineDash([]);
+  ctx.beginPath();ctx.arc(...b,radius,0,Math.PI*2);
+  ctx.fillStyle=idea.confidence==='Clear improvement'?'rgba(194,230,240,.88)':'rgba(240,223,187,.88)';
+  ctx.fill();ctx.stroke();
+  ctx.fillStyle=ctx.strokeStyle;ctx.font=`700 ${unit*1.4}px sans-serif`;
+  ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('?',b[0],b[1]);ctx.restore();
+}
+
+export function smoothMovement(previous, candidate, time, key) {
+  if (!candidate) return null;
+  if (!previous || previous.key!==key || previous.idea.player!==candidate.player || time<previous.time || time-previous.time>10) {
+    return {key,time,idea:candidate};
+  }
+  const weight=1-Math.exp(-(time-previous.time)/4);
+  return {key,time,idea:{...candidate,to:candidate.to.map((v,i)=>previous.idea.to[i]+(v-previous.idea.to[i])*weight)}};
 }

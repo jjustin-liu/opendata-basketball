@@ -60,37 +60,22 @@ export function drawDefenderLabel(ctx, x, y, radius, profile, frame, player, pos
   const tail = defenderThreatStrength(block, threat.reference?.block, 'block');
   const unit = threat.unit ?? radius; // Camera scale only, before position sizing.
   // Probability glyphs, not physical reach: drawn behind the identity chip.
-  if (threat.enabled !== false && wingStrength > 0) {
-    ctx.save();
-    ctx.rotate(threat.wingAngle || 0);
-    ctx.globalAlpha = .3 + .7 * wingStrength;
-    ctx.strokeStyle = lightCourt ? '#087a69' : '#20ae98';
-    ctx.lineWidth = unit * (.1 + .16 * wingStrength);
-    ctx.lineCap = 'round';
-    const span = unit * (1.25 + 2.7 * wingStrength);
-    for (const side of [-1, 1]) {
-      ctx.beginPath(); ctx.moveTo(side * unit * .82, 0);
-      ctx.lineTo(side * span, 0); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(side * span, -unit * .22);
-      ctx.lineTo(side * span, unit * .22); ctx.stroke();
-    }
-    ctx.restore();
-  }
-  if (threat.enabled !== false && tail > 0) {
-    ctx.save();
-    const rise = unit * (1.1 + 2.4 * tail);
-    const reach = unit * (1.25 + .65 * tail);
-    ctx.globalAlpha = .3 + .7 * tail;
-    ctx.strokeStyle = lightCourt ? '#a96009' : '#ffc25b';
-    ctx.fillStyle = ctx.strokeStyle;
-    ctx.lineWidth = unit * (.07 + .13 * tail);
-    ctx.lineCap = 'round';
-    ctx.beginPath(); ctx.moveTo(unit*.7,-unit*.6);
-    ctx.bezierCurveTo(reach*1.35, -unit*.5, reach*1.3, -rise*1.2, reach*.5, -rise);
-    ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(reach*.5-unit*.22,-rise+unit*.25);
-    ctx.lineTo(reach*.5-unit*.12,-rise-unit*.12); ctx.lineTo(reach*.5+unit*.22,-rise+unit*.03); ctx.closePath(); ctx.fill();
-    ctx.restore();
+  if (threat.enabled !== false && threat.hover === player) {
+    const meter = (probability, strength, vertical, color) => {
+      if (!Number.isFinite(probability)) return;
+      const length = radius * 1.15, thickness = unit * .14;
+      const mx = vertical ? radius * 1.16 : -length / 2;
+      const my = vertical ? -length / 2 : -radius * 1.2;
+      ctx.fillStyle = lightCourt ? '#243a5026' : '#ffffff26';
+      ctx.fillRect(mx, my, vertical ? thickness : length, vertical ? length : thickness);
+      ctx.save();
+      ctx.globalAlpha = .2 + .8 * strength;
+      ctx.fillStyle = color;
+      ctx.fillRect(mx, my, vertical ? thickness : length, vertical ? length : thickness);
+      ctx.restore();
+    };
+    meter(steal, wingStrength, false, '#087a69');
+    meter(block, tail, true, '#bc780e');
   }
   ctx.beginPath();
   ctx.arc(0, 0, radius * .94, 0, Math.PI * 2);

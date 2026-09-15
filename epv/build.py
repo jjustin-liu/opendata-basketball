@@ -725,6 +725,8 @@ def main():
     import subprocess
 
     subprocess.run(["node", str(ROOT / "scripts/build_decision_audit.mjs")], check=True)
+    for script in ("build_touch_history.mjs", "build_rebound_annotations.mjs"):
+        subprocess.run(["node", str(ROOT / "scripts" / script)], cwd=ROOT, check=True)
 
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Possession Lab · EPV</title>
-    <link rel="stylesheet" href="style.css?v=stable-bar-1" />
+    <link rel="stylesheet" href="style.css?v=clean-flow-7" />
   </head>
   <body>
     <header class="masthead">
@@ -139,7 +139,7 @@
                       style="font-size: 10px; color: var(--muted)"
                       >Guard ∠ —</span
                     >
-                    <label title="Show relative interception wings and block tails; exact probabilities are available on hover"><input id="defenseDetail" type="checkbox" /> Defensive detail</label>
+                    <label title="Hover a defender for compact meters: horizontal teal = steal, vertical amber = block. Intensity shows relative risk; exact probabilities appear in the tooltip."><input id="defenseDetail" type="checkbox" /> Defensive detail</label>
                     <span id="defenseContext" hidden style="font-size:11px;color:var(--muted)"></span>
                     <button id="overhead" class="quiet" hidden>
                       ← Overhead
@@ -166,7 +166,16 @@
                   ></canvas>
                   <canvas id="realisticCanvas" hidden aria-label="Realistic basketball replay with inferred player animation" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
                   <section id="shotReview" class="shot-review" aria-label="Shot postmortem" hidden></section>
+                  <div id="recapStack" class="recap-stack" hidden>
+                    <section id="playRecap" class="play-recap" aria-label="Play recap" aria-live="polite"></section>
+                    <div id="playEnd" class="play-end" role="status" hidden></div>
+                    <div class="recap-navigation">
+                      <button id="recapRewind" type="button">← Rewind</button>
+                      <button id="recapNext" type="button">Next play →</button>
+                    </div>
+                  </div>
                   <div id="tooltip" hidden></div>
+                  <aside id="touchSheet" class="touch-sheet" aria-label="Ball possession history" hidden></aside>
                   <div class="attack-label">← OFFENSE ATTACKS</div>
                   <div id="frameStatus" class="frame-status"></div>
                 </div>
@@ -405,6 +414,6 @@
       </div>
       <div id="modelDetails"></div>
     </dialog>
-    <script src="app.js?v=gradual-risk-10" type="module"></script>
+    <script src="app.js?v=clean-flow-21" type="module"></script>
   </body>
 </html>

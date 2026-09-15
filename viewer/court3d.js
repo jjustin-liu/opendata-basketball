@@ -1,11 +1,12 @@
-import { drawMovementIdea } from "./movement-ideas.js?v=2";
+import { drawMovementIdea } from "./movement-ideas.js?v=3";
+import { drawPassAnnotation } from './release-annotations.js?v=ball-theme-3';
 import { ballTrail, drawBallTrail } from "./ball-trail.js";
-import { drawDefenderLabel, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=names-toggle-2";
+import { drawDefenderLabel, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=compact-meters-3";
 import { displayBall } from "./ball-display.js";
 import { shootingMotion } from "./shooting-motion.js";
 import { flightLabel } from "./pass-flight.js?v=flight-risk-1";
 import { heightFeet, profileTab, defenderNumbers, defenderChipScale } from "./player-profile.js?v=position-size-1";
-import { bestPass, shotPps, actionCard } from "./action-display.js";
+import { bestPass, shotPps, actionCard } from "./action-display.js?v=release-3";
 import { closestDefender, drawDefenderDistance } from "./defender-distance.js?v=distance-2";
 let followPose = null;
 let lastCameraTime = 0;
@@ -328,41 +329,6 @@ export function drawCourt3D(ctx, w, h, f, opts) {
   const holder = f.offense.find((p) => p[0] === f.geometry?.handler);
   const matchup = closestDefender(f);
   let distanceLabel = null;
-  if (matchup) {
-    const { holder: a, defender: b, distance } = matchup;
-    ctx.setLineDash([7, 5]);
-    path(
-      [
-        [a[1], a[2], 0.04],
-        [b[1], b[2], 0.04],
-      ],
-      "#b6c5c088",
-      1,
-    );
-    ctx.setLineDash([]);
-    if (matchup.signedAngle != null) {
-      const start = matchup.rimBearing;
-      path(
-        [
-          [a[1], a[2], 0.04],
-          [a[1] + 5 * Math.cos(start), a[2] + 5 * Math.sin(start), 0.04],
-        ],
-        "#7fa99a66",
-        1,
-      );
-      path(
-        arc(a[1], a[2], 2.5, 0.04, start, start + matchup.signedAngle),
-        "#7fa99a88",
-        1,
-      );
-    }
-    const mid = [(a[1] + b[1]) / 2, (a[2] + b[2]) / 2, 0.04];
-    if (camera(...mid)[2] > 0.8)
-      distanceLabel = {
-        point: project(...mid),
-        text: distance.toFixed(1) + " ft",
-      };
-  }
 
   if (holder && opts.pressure)
     path(arc(holder[1], holder[2], 5), "#d4955222", 1, "#b06b3522");
@@ -512,6 +478,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       drawDefenderLabel(ctx, x, y, r, opts.profile(p[0]), f, p[0], defenderLabels.get(p[0]), !!opts.tactical, {
         enabled: opts.defenseDetail,
         showNames: opts.defenderNames,
+        hover: opts.hoverPlayer,
         receiver: opts.selectedPass,
         unit: Math.max(13, Math.min(27, s * 1.5)),
         wingAngle: rimWingAngle(project, p[1], p[2]),
@@ -520,6 +487,14 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       });
     }
     if (!off) drawDefenderDistance(ctx, x, y + r * 1.4, r / 1.5, p, f);
+    if (off && (opts.rebounds || []).some(e=>e.player===p[0] && opts.visualFrame>=e.frame && opts.visualFrame-e.frame<10)) {
+      ctx.save();
+      ctx.font = `700 ${Math.max(11,r*.65)}px monospace`;
+      ctx.textAlign = 'center';
+      ctx.fillStyle = opts.tactical ? '#10291f' : '#b8ffcf';
+      ctx.fillText('ORB', x, y-r*1.8);
+      ctx.restore();
+    }
     hits.push({ player: p, x, y, r });
     hits.push({
       player: p,
@@ -527,7 +502,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       y: (ground + y) / 2,
       r: Math.max(r, Math.abs(ground - y) / 2),
     });
-    if (isHolder && !opts.flight && !opts.shotEvent && !f.reason) {
+    if (opts.released ? p[0] === opts.released.player : isHolder && !opts.flight && !opts.shotEvent && !f.reason) {
       const best = bestPass(f);
       const ax = Math.max(r * 2.8, Math.min(w - r * 2.8, x)),
         ay = Math.max(r * 1.1, y - r * 2.5);
@@ -542,9 +517,9 @@ export function drawCourt3D(ctx, w, h, f, opts) {
         ax,
         ay,
         r * 0.8,
-        f.shot?.shotPlusSecondChance,
-        best?.value,
-        opts.epvColor,
+        opts.released ? opts.released.shot : f.shot?.shotPlusSecondChance,
+        opts.released ? opts.released.pass : best?.value,
+        opts.epvColor, opts.released?.selected,
       );
     }
   }
@@ -557,21 +532,25 @@ export function drawCourt3D(ctx, w, h, f, opts) {
   );
   drawBallTrail(ctx, ballTrail(opts.replayFrames || [], {...f,ball}, opts.visualFrame ?? f.frame), b=>camera(...b.slice(0,3))[2]>.8?project(b[0],b[1],Math.max(.39,b[2]||0)):null, Math.max(3,project(...ball)[2]*.7));
   const [bx, by, bs] = project(ball[0], ball[1], Math.max(0.39, ball[2] || 0));
+  if (opts.passNote && camera(opts.passNote.x,opts.passNote.y,0)[2]>.8) {
+    const [px,py,ps]=project(opts.passNote.x,opts.passNote.y,0);
+    drawPassAnnotation(ctx,px,py,Math.max(11,ps),opts.passNote);
+  }
   if (camera(ball[0], ball[1], ball[2] || 0)[2] > 0.8) {
-    const ballRadius = Math.max(10, bs * .72);
+    const ballRadius = Math.max(10, bs * .72) * (opts.shotBallState ? 1.5 : 1);
     ctx.beginPath();
     ctx.arc(bx, by, ballRadius, 0, Math.PI * 2);
     ctx.fillStyle = opts.ballColor || "#f2b440";
     ctx.fill();
     ctx.strokeStyle = "#805219";
     ctx.stroke();
-    if (Number.isFinite(opts.ballRisk)) {
+    if (Number.isFinite(opts.shotBallState?.pps) || (!opts.shotBallState && Number.isFinite(opts.ballRisk))) {
       ctx.save();
       ctx.fillStyle = '#191919';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.font = `700 ${ballRadius * .65}px monospace`;
-      ctx.fillText(`${Math.round(opts.ballRisk * 100)}%`, bx, by, ballRadius * 1.8);
+      ctx.fillText(opts.shotBallState ? opts.shotBallState.pps.toFixed(2) : `${Math.round(opts.ballRisk * 100)}%`, bx, by, ballRadius * 1.8);
       ctx.restore();
     }
   }

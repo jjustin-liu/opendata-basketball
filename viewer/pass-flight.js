@@ -18,6 +18,7 @@ export function passWithRisk(pass, frames) {
   if (!pass) return null;
   const prior = frames.filter(f => f.frame < pass.start && pass.start - f.frame <= 10
     && !f.reason && f.geometry?.handler === pass.passer).at(-1);
-  const value = prior?.passOptions?.find(o => o.player === pass.receiver)?.turnoverProbability;
-  return {...pass, turnoverProbability: Number.isFinite(value) ? value : null};
+  const option = prior?.passOptions?.find(o => o.player === pass.receiver);
+  const value = option?.turnoverProbability;
+  return {...pass, epv: Number.isFinite(option?.value) ? option.value : null, turnoverProbability: Number.isFinite(value) ? value : null};
 }

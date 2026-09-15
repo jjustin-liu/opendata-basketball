@@ -17,7 +17,20 @@ export function shotPps(event) {
     : null;
 }
 // One compact attached card: action labels on top, point values beneath.
-export function actionCard(ctx, x, y, unit, shot, pass, color) {
+export function releaseCard(play, passes, time) {
+  const actions = [
+    ...(passes || []).filter(p => p.possession === play.id).map(p => ({frame:p.start, player:p.passer, receiver:p.receiver, selected:'PASS'})),
+    ...(play.events || []).filter(e => e.type === 'shot').map(e => ({frame:e.frame, player:e.player, selected:'SHOT', releasePps:shotPps(e)})),
+  ].filter(a => a.frame <= time && time - a.frame < 25).sort((a,b) => b.frame-a.frame);
+  const action = actions[0];
+  if (!action) return null;
+  const prior = play.frames.filter(f => f.frame < action.frame && action.frame-f.frame <= 10 && !f.reason && f.geometry?.handler === action.player).at(-1);
+  if (!prior && action.selected !== 'SHOT') return null;
+  const pass = action.selected === 'PASS' ? prior?.passOptions?.find(p => p.player === action.receiver) : prior ? bestPass(prior) : null;
+  return {...action, shot:action.selected === 'SHOT' ? action.releasePps : prior?.shot?.shotPlusSecondChance, pass:pass?.value};
+}
+
+export function actionCard(ctx, x, y, unit, shot, pass, color, selected = null) {
   ctx.save();
   const width = unit * 5.6,
     height = unit * 2;
@@ -39,6 +52,12 @@ export function actionCard(ctx, x, y, unit, shot, pass, color) {
     [1, "PASS", pass],
   ]) {
     const px = x + (i * width) / 4;
+    if (selected === label) {
+      ctx.fillStyle = '#368363';
+      ctx.beginPath();
+      ctx.roundRect(px-width/4+.08*unit, y-height/2+.08*unit, width/2-.16*unit, height-.16*unit, .2*unit);
+      ctx.fill();
+    }
     ctx.fillStyle = i === 1 ? "#83cfa1" : "#b4bdb9";
     ctx.font = `500 ${unit * 0.48}px monospace`;
     ctx.fillText(label, px, y - unit * 0.45);

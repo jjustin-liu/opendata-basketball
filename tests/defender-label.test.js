@@ -41,22 +41,23 @@ test('wing orientation follows tilted court projection and stays finite at rim',
 });
 
 import {drawDefenderLabel} from '../viewer/defender-label.js';
-test('equal threat geometry is independent of position chip radius', () => {
+test('compact meters appear only on the hovered defender', () => {
   const frame={stealForecast:{enabled:true,defenders:[{player:1,probability:.002}]},blockForecast:{enabled:true,defenders:[{player:1,probability:.0005}]}};
-  function capture(radius,wings) {
-    const paths=[];let chipStarted=false;
+  function capture(hover) {
+    const rectangles=[];
     const ctx=new Proxy({}, {get(_,key) {
       if(key==='measureText')return text=>({width:text.length*5});
-      if(key==='getTransform')return ()=>({a:1,b:0});
-      return (...args)=>{if(key==='arc')chipStarted=true;if(!chipStarted&&['moveTo','lineTo','bezierCurveTo'].includes(key))paths.push([key,...args]);};
+      return (...args)=>{if(key==='fillRect')rectangles.push(args);};
     },set(){return true;}});
-    drawDefenderLabel(ctx,0,0,radius,{name:'Test'},frame,1,'1',true,{unit:20,wings,reference:{steal:.002,block:.0005}});
-    return paths;
+    drawDefenderLabel(ctx,0,0,16,{name:'Test'},frame,1,'1',true,{unit:20,hover,reference:{steal:.002,block:.0005}});
+    return rectangles;
   }
-  for(const wings of [true,false]) {
-    assert.ok(capture(16,wings).length>0);
-    assert.deepEqual(capture(16,wings),capture(24,wings));
-  }
+  assert.equal(capture(null).length,0);
+  assert.equal(capture(2).length,0);
+  const meters=capture(1);
+  assert.equal(meters.length,4);
+  assert.ok(meters[0][2]>meters[0][3]);
+  assert.ok(meters[2][2]<meters[2][3]);
 });
 
 import {defenderForecast} from '../viewer/defender-label.js';

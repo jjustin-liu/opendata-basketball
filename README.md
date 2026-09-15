@@ -15,6 +15,21 @@ After building the model, start the viewer with:
 
 Then open [http://127.0.0.1:8765](http://127.0.0.1:8765).
 
+View **6 · Positions** includes an “On the ball” sheet with recorded touch duration,
+shot clock on receipt, first supported catch EPV, pre-release EPV, holding risk,
+and outgoing pass/shot values. Signed EPV change describes the possession during
+the touch, not individual player credit. Catch samples must be within 0.4 seconds
+of receipt; missing estimates are not backfilled. Pass EPV includes turnover risk
+and projected catch timing; projected catch EPV excludes the pass-risk discount.
+
+The full build generates touch histories and offensive-rebound annotations.
+To refresh these alone after updating the viewer, run:
+
+```sh
+node scripts/build_touch_history.mjs
+node scripts/build_rebound_annotations.mjs
+```
+
 The prototype shows modest short-term turnover signal; EPV remains experimental
 and has not beaten a constant baseline overall on these ten games.
 
