@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Possession Lab · EPV</title>
+    <link rel="stylesheet" href="style.css?v=stable-bar-1" />
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="brand" href="/">◉ <span>POSSESSION LAB</span></a
+      ><span class="edition">SKILLCORNER / ACB 2025–26</span
+      ><button id="methodButton" class="quiet">Model & validation ↗</button>
+    </header>
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="eyebrow">THE GAME</div>
+        <label for="gameSelect" class="sr-only">Select game</label
+        ><select id="gameSelect"></select>
+        <div id="gameScore" class="gameScore"></div>
+        <div class="side-rule"></div>
+        <div class="eyebrow">EXPLORE POSSESSIONS</div>
+        <div class="filter-row">
+          <label for="filter" class="sr-only">Filter possessions</label
+          ><select id="filter">
+            <option value="all">All possessions</option>
+            <option value="audit">Questionable shots</option>
+            <option value="turnovers">Turnovers</option>
+            <option value="scored">Scoring possessions</option>
+            <option value="risk">Highest predicted risk</option>
+          </select>
+        </div>
+        <label for="search" class="sr-only">Search by team or period</label
+        ><input
+          id="search"
+          type="search"
+          placeholder="Search team or quarter…"
+        />
+        <div class="list-label">
+          <span id="playCount">Loading…</span><span id="listMetric">PTS / PEAK RISK¹</span>
+        </div>
+        <div id="playList" class="play-list"></div>
+        <div class="side-footer">
+          ¹ Peak next-2-second turnover probability.<br />Outcomes are shown for
+          replay navigation.
+        </div>
+      </aside>
+      <main>
+        <div id="loading" role="status">
+          Loading the model and play library…
+        </div>
+        <div id="content" hidden>
+          <div class="title-row">
+            <div>
+              <div class="eyebrow" id="playKicker"></div>
+              <h1 id="playTitle"></h1>
+              <p class="subtitle" id="playSubtitle"></p>
+            </div>
+            <div class="heldout"><span></span> HELD-OUT GAME</div>
+          </div>
+          <div class="metric-row">
+            <div class="metric epv">
+              <div class="eyebrow">EXPECTED POSSESSION VALUE</div>
+              <div>
+                <strong id="epvValue">—</strong><span class="unit">pts</span>
+              </div>
+              <p>Remaining offensive points</p>
+              <label for="epvMode" class="sr-only">EPV model</label
+              ><select id="epvMode">
+                <option value="epv">With pooled shot quality</option>
+                <option value="epvGeometry">Geometry baseline</option>
+              </select>
+            </div>
+            <div class="metric risk">
+              <div class="eyebrow">TURNOVER · NEXT 2 SECONDS</div>
+              <div>
+                <strong id="riskValue">—</strong><span class="unit">%</span>
+              </div>
+              <p>Before this possession ends</p>
+            </div>
+            <div class="metric rest">
+              <div class="eyebrow">TURNOVER · REST OF POSSESSION</div>
+              <div>
+                <strong id="restValue">—</strong><span class="unit">%</span>
+              </div>
+              <p>Includes offensive fouls</p>
+            </div>
+            <div class="clocks">
+              <div>
+                <span>GAME CLOCK</span><strong id="gameClock">—</strong>
+              </div>
+              <div>
+                <span>SHOT CLOCK</span><strong id="shotClock">—</strong>
+              </div>
+            </div>
+          </div>
+          <p class="model-status">
+            EXPERIMENTAL BASELINE
+            <span id="modelStatus"
+              >Experimental shooting and EPV models. See held-out
+              validation.</span
+            >
+          </p>
+          <div class="analysis-grid">
+            <div class="court-column">
+              <section class="court-panel">
+                <div class="court-toolbar">
+                  <div class="legend">
+                    <span class="dot offense"></span
+                    ><span id="offenseLabel">Offense</span
+                    ><span class="dot defense"></span><span>Defense</span
+                    ><span class="dot ball"></span><span>Ball</span
+                    ><span
+                      class="epv-scale"
+                      title="Fixed EPV scale: red at 0.70 or less, neutral at 1.10, green at 1.50 or more"
+                      >EPV 0.7 <i aria-hidden="true"></i> 1.5+</span
+                    >
+                  </div>
+                  <div class="toggles">
+                    <span
+                      style="font-size: 9px; color: #83cfa1"
+                      title="Shooting body animation is illustrative and timed to recorded shots; ball follows tracking with a brief visual hand-alignment blend around release. Player tab: green intensity and bar show full-sample 3PA/100 offensive possessions (bar full at 10); samples below 100 possessions are faded. Hover a player for 3P makes/attempts. This is shot selection, not measured gravity. Solid green line: highest available turnover-discounted pass EPV, not a guarantee of an open route. PPS: release field-goal points plus miss-weighted second-chance points, excluding free throws."
+                      >━ Best pass · PPS incl. 2nd · ▰ 3P tendency</span
+                    >
+                    <label
+                      title="Green = inside-arc destinations with a clear straight drive toward the rim. Assumes 14 ft/s attacker, 12 ft/s defender after 0.2s reaction, 2 ft defensive reach, max 1.5s. Checks route and endpoint; teammates treated as stationary obstacles. Geometric margin, not scoring probability; no green does not rule out a dribble move."
+                      ><input id="driveSpace" type="checkbox" /> Drive
+                      space</label
+                    >
+                    <label title="Experimental: arrival advantage × other-game shot value. Position error softens boundaries. Two-second arrival horizon; cells ≥0.5. Excludes ball delivery, player shooting skill, rebounds and fouls. Not EPV or a calibrated probability."><input id="spaceControl" type="checkbox" /> Valuable space</label>
+                    <label title="Click an off-ball teammate to explore relocation. Blue: clear modeled improvement. Amber: worth exploring, response-dependent. Experimental, not validated EPV."><input id="movementIdeas" type="checkbox" /> Movement ideas</label>
+                    <span id="movementContext" hidden style="width:340px;overflow:hidden;text-overflow:ellipsis;font-size:10px;color:#80c8dd"></span>
+                    <span id="spaceArea" hidden style="font-size:10px;color:var(--muted)"></span>
+                    <span
+                      id="guardAngle"
+                      style="font-size: 10px; color: var(--muted)"
+                      >Guard ∠ —</span
+                    >
+                    <label title="Show relative interception wings and block tails; exact probabilities are available on hover"><input id="defenseDetail" type="checkbox" /> Defensive detail</label>
+                    <span id="defenseContext" hidden style="font-size:11px;color:var(--muted)"></span>
+                    <button id="overhead" class="quiet" hidden>
+                      ← Overhead
+                    </button>
+                    <label
+                      ><input id="view3d" title="1: 2D · 2: 3D · 3: follow ballhandler · 4: tactical board" type="checkbox" checked /> 3D</label
+                    >
+                    <button id="positionView" class="quiet" aria-pressed="false" title="6: proportional position chips with values above">6 · Positions</button>
+                    <button id="threatView" class="quiet" aria-pressed="false" title="7: action threat — STL as one tick on the chosen pass, BLK as one arc on the shooter; hover the holder or a defender for all five">7 · Threat</button>
+                    <button id="realisticView" class="quiet" aria-pressed="false" title="5: realistic players with inferred animation">5 · Realistic</button>
+                    <button id="tacticalView" class="quiet" aria-pressed="false" title="4: tilted tactical board">4 · Tactical</button>
+                    <label
+                      ><input id="lanes" type="checkbox" /> Passing lanes</label
+                    ><label
+                      ><input id="pressure" type="checkbox" checked />
+                      Pressure</label
+                    >
+                  </div>
+                </div>
+                <div class="court-wrap">
+                  <canvas
+                    id="court"
+                    aria-label="Animated basketball court showing player and ball locations"
+                  ></canvas>
+                  <canvas id="realisticCanvas" hidden aria-label="Realistic basketball replay with inferred player animation" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none"></canvas>
+                  <section id="shotReview" class="shot-review" aria-label="Shot postmortem" hidden></section>
+                  <div id="tooltip" hidden></div>
+                  <div class="attack-label">← OFFENSE ATTACKS</div>
+                  <div id="frameStatus" class="frame-status"></div>
+                </div>
+                <div class="transport">
+                  <button
+                    id="prevPlay"
+                    title="Previous possession"
+                    aria-label="Previous possession"
+                  >
+                    ‹</button
+                  ><button
+                    id="playPause"
+                    class="primary"
+                    aria-label="Play possession"
+                  >
+                    ▶ Play</button
+                  ><button
+                    id="nextPlay"
+                    title="Next possession"
+                    aria-label="Next possession"
+                  >
+                    ›</button
+                  ><span id="elapsed">0.0s</span
+                  ><input
+                    id="scrubber"
+                    type="range"
+                    min="0"
+                    max="1"
+                    value="0"
+                    step="1"
+                    aria-label="Scrub through possession"
+                  /><label for="speed" class="sr-only">Playback speed</label
+                  ><select id="speed">
+                    <option value="0.5">0.5×</option>
+                    <option value="1" selected>1×</option>
+                    <option value="2">2×</option>
+                  </select>
+                </div>
+              </section>
+              <section class="timeline-panel">
+                <div class="section-title">
+                  <h2>How the possession changes</h2>
+                  <span>Click a chart to seek · gaps = no estimate</span>
+                </div>
+                <div class="chart-row">
+                  <div class="chart-label">
+                    <b class="teal">EPV</b><span>points</span>
+                  </div>
+                  <canvas
+                    id="epvChart"
+                    aria-label="Expected possession value over time"
+                  ></canvas>
+                </div>
+                <div class="chart-row">
+                  <div class="chart-label">
+                    <b class="coral">TO RISK</b><span>next 2 sec</span>
+                  </div>
+                  <canvas
+                    id="riskChart"
+                    aria-label="Turnover probability over time"
+                  ></canvas>
+                </div>
+                <div id="eventStrip" class="event-strip"></div>
+              </section>
+              <details class="geometry-details">
+                <summary>Geometry &amp; lineup</summary>
+                <section class="detail-grid">
+                  <div>
+                    <div class="section-title">
+                      <h2>At this moment</h2>
+                      <span>Observed geometry</span>
+                    </div>
+                    <div id="geometry"></div>
+                    <p class="microcopy">
+                      Lane clearance measures defender distance to a potential
+                      pass path. It is not a pass-success probability.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="section-title">
+                      <h2>On the floor</h2>
+                      <span>Dashed players are extrapolated</span>
+                    </div>
+                    <div id="lineup" class="lineup"></div>
+                  </div>
+                </section>
+              </details>
+            </div>
+            <aside
+              class="analysis-rail"
+              aria-label="Live shot pass and search analysis"
+            >
+              <section class="shot-panel" aria-label="Shooting scenario">
+                <div>
+                  <div class="eyebrow" id="shotHeading">
+                    CURRENT SHOOTING SCENARIO
+                  </div>
+                  <strong id="shotPlayer">—</strong>
+                  <p id="shotContext">Approximate release from this position</p>
+                </div>
+                <div>
+                  <div class="eyebrow">MAKE PROBABILITY</div>
+                  <strong id="shotProbability">—</strong>
+                  <p id="shotGeneric">Pooled estimate: —</p>
+                </div>
+                <div>
+                  <div class="eyebrow">EXPECTED FIELD-GOAL POINTS</div>
+                  <strong id="shotValue">—</strong>
+                  <p>Excludes free throws and rebounds</p>
+                </div>
+                <div>
+                  <div class="eyebrow">PLAYER EVIDENCE</div>
+                  <strong id="shotEvidence">—</strong>
+                  <p id="shotEvidenceNote">Other-game attempts in this zone</p>
+                </div>
+              </section>
+              <section
+                class="second-chance-panel"
+                aria-label="Second-chance forecast"
+              >
+                <div>
+                  <div class="eyebrow">SECOND-CHANCE POINTS · IF LIVE MISS</div>
+                  <strong id="secondChance">—</strong>
+                  <p id="reboundProbability">Available at shot release</p>
+                </div>
+                <div>
+                  <div class="eyebrow">
+                    SECOND-CHANCE CONTRIBUTION · PER SHOT
+                  </div>
+                  <strong id="secondChanceShot">—</strong>
+                  <p>
+                    Miss probability × points per live miss. Already included in
+                    full EPV.
+                  </p>
+                </div>
+              </section>
+              <section class="pass-panel" aria-label="Defender steal and block probabilities">
+                <div class="section-title"><h2>DEFENSE · action scenarios</h2><span id="stealTotal" class="pass-note">—</span></div>
+                <div id="stealPlayers"></div>
+                <details class="method-note"><summary>Experimental estimate</summary><p class="pass-note">STL estimates credited interception on the selected pass, or the highest-valued available pass when none is selected. BLK estimates a credited block if the holder shoots from current geometry. Each model has five defenders plus no event summing to 100%; do not add these different scenarios. Trained on observed actions, not validated forced actions. Sparse interception labels and inferred receivers limit reliability.</p><p id="stealNone" class="pass-note"></p></details>
+              </section>
+              <section class="pass-panel">
+                <div class="section-title">
+                  <h2>PASS · catch EPV / TO</h2>
+                  <button id="clearPass" class="quiet">
+                    Clear catch preview
+                  </button>
+                </div>
+                <details class="method-note">
+                  <summary>Definitions</summary>
+                  <p class="pass-note">
+                    Green rings: discounted pass EPV above the current EPV, with
+                    no defender able to reach the direct route under our timing
+                    assumptions. Ballhandler: current EPV from the selected
+                    model. Attached nodes: SHOT is expected field-goal points
+                    plus miss-weighted second-chance points (assuming a live
+                    miss, excluding free throws); PASS is the highest available
+                    turnover-discounted pass value. These are experimental
+                    estimates, not validated action rankings. Teammates:
+                    expected points after turnover discount / pass TO %. Select
+                    a teammate to preview the catch. Dashed gold outlines show
+                    projected positions. Amber teammate rings flag direct routes
+                    already within a defender’s reach.
+                  </p>
+                </details>
+                <div id="passOptions" class="pass-options"></div>
+                <details class="method-note">
+                  <summary>Catch preview details</summary>
+                  <p id="passDetail" class="pass-note" aria-live="polite"></p>
+                </details>
+                <details class="method-note">
+                  <summary>Definitions</summary>
+                  <p class="pass-note">
+                    Approximate scenarios, not a validated best-action ranking.
+                    TO% is fitted to selected passes of mixed types, not a
+                    forced straight-line pass. Ambiguous failed-pass
+                    destinations are excluded from training; — means this
+                    projection is unavailable. Pass values always use the
+                    shooting-aware EPV model.
+                  </p>
+                </details>
+              </section>
+              <section
+                class="pass-panel"
+                aria-label="Search and shot creation forecast"
+              >
+                <div class="section-title">
+                  <h2>SEARCH · start a dribble</h2>
+                  <span>Observed behavior · next 2 seconds</span>
+                </div>
+                <details class="method-note">
+                  <summary>Definitions</summary>
+                  <p class="pass-note">
+                    What followed similar dribble starts—not which moves this
+                    player could execute optimally. Each branch is the first
+                    event on the same touch. A pass includes subsequent pass
+                    turnovers; a shot includes its associated foul. Neither is
+                    counted again in the separate turnover/foul branches.
+                  </p>
+                </details>
+                <div id="searchForecast"></div>
+                <details class="method-note">
+                  <summary>Validation</summary>
+                  <p class="pass-note" id="searchValidation"></p>
+                </details>
+                <details class="method-note">
+                  <summary>Definitions</summary>
+                  <p class="pass-note">
+                    Trained on first dribbles of a touch; applying this forecast
+                    later in a dribble sequence is an extrapolation. Movement
+                    and defender closing speed are inputs. No defender reaction
+                    policy or named-move availability is established. SHOT above
+                    is immediate-release value; PASS projects a catch; this
+                    panel describes subsequent behavior and is not added to
+                    either value.
+                  </p>
+                </details>
+              </section>
+            </aside>
+          </div>
+          <footer>
+            Tracking & events by SkillCorner. Research prototype · 10 games ·
+            descriptive EPV, not an optimal-action recommendation.
+            <span id="coverage"></span>
+          </footer>
+        </div>
+      </main>
+    </div>
+    <dialog id="methodDialog">
+      <div class="dialog-head">
+        <div>
+          <div class="eyebrow">MODEL CARD</div>
+          <h2>Measured against unseen games.</h2>
+        </div>
+        <button id="closeMethod" aria-label="Close model details">✕</button>
+      </div>
+      <div id="modelDetails"></div>
+    </dialog>
+    <script src="app.js?v=movement-2" type="module"></script>
+  </body>
+</html>

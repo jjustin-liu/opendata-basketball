@@ -1,0 +1,2802 @@
+[
+  {
+    "acbId": 30003922,
+    "name": "Henri Drell",
+    "first": "Henri",
+    "last": "Drell",
+    "fullName": "Henri Drell",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000095,
+    "name": "Yannick Kraag",
+    "first": "Yannick",
+    "last": "Kraag",
+    "fullName": "Yannick Kraag",
+    "position": "Alero",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20201871,
+    "name": "Ricky Rubio",
+    "first": "Ricky",
+    "last": "Rubio",
+    "fullName": "Ricard Rubio",
+    "position": "Base",
+    "heightCm": 189,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002721,
+    "name": "Jabari Parker",
+    "first": "Jabari",
+    "last": "Parker",
+    "fullName": "Jabari Parker",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210498,
+    "name": "Ludde Hakanson",
+    "first": "Ludde",
+    "last": "Hakanson",
+    "fullName": "Ludvig Hakanson",
+    "position": "Base",
+    "heightCm": 189,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20204158,
+    "name": "Guillem Vives",
+    "first": "Guillem",
+    "last": "Vives",
+    "fullName": "Guillem Vives",
+    "position": "Base",
+    "heightCm": 192,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212073,
+    "name": "Miguel Allen",
+    "first": "Miguel",
+    "last": "Allen",
+    "fullName": "Miguel Allen",
+    "position": "Alero",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002869,
+    "name": "Michael Ruzic",
+    "first": "Michael",
+    "last": "Ruzic",
+    "fullName": "Michael Ruzic",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003415,
+    "name": "Cameron Hunt",
+    "first": "Cameron",
+    "last": "Hunt",
+    "fullName": "Cameron Hunt",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003347,
+    "name": "Yannis Morin",
+    "first": "Yannis",
+    "last": "Morin",
+    "fullName": "Yannis Morin",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212423,
+    "name": "Simon Birgander",
+    "first": "Simon",
+    "last": "Birgander",
+    "fullName": "Simon Birgander",
+    "position": "Pívot",
+    "heightCm": 209,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20202172,
+    "name": "Ante Tomic",
+    "first": "Ante",
+    "last": "Tomic",
+    "fullName": "Ante Tomic",
+    "position": "Pívot",
+    "heightCm": 217,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209836,
+    "name": "Adam Hanga",
+    "first": "Adam",
+    "last": "Hanga",
+    "fullName": "Adam Hanga",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003529,
+    "name": "Sam Dekker",
+    "first": "Sam",
+    "last": "Dekker",
+    "fullName": "Samuel Dekker",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/asisa-joventut-8/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003361,
+    "name": "Kevin Punter",
+    "first": "Kevin",
+    "last": "Punter",
+    "fullName": "Kevin Punter",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000108,
+    "name": "Juani Marcos",
+    "first": "Juani",
+    "last": "Marcos",
+    "fullName": "Juan Marcos",
+    "position": "Base",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003948,
+    "name": "Myles Cale",
+    "first": "Myles",
+    "last": "Cale",
+    "fullName": "Myles Cale",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004050,
+    "name": "Miles Norris",
+    "first": "Miles",
+    "last": "Norris",
+    "fullName": "Miles Norris",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001949,
+    "name": "Jan Vesely",
+    "first": "Jan",
+    "last": "Vesely",
+    "fullName": "Jan Vesely",
+    "position": "Pívot",
+    "heightCm": 210,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209919,
+    "name": "Darío Brizuela",
+    "first": "Darío",
+    "last": "Brizuela",
+    "fullName": "Darío Brizuela",
+    "position": "Escolta",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20202163,
+    "name": "Tomas Satoransky",
+    "first": "Tomas",
+    "last": "Satoransky",
+    "fullName": "Tomas Satoransky",
+    "position": "Base",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209187,
+    "name": "Willy Hernangómez",
+    "first": "Willy",
+    "last": "Hernangómez",
+    "fullName": "Guillermo Hernangómez",
+    "position": "Pívot",
+    "heightCm": 210,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000037,
+    "name": "Youssoupha Fall",
+    "first": "Youssoupha",
+    "last": "Fall",
+    "fullName": "Youssoupha Fall",
+    "position": "Pívot",
+    "heightCm": 221,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211947,
+    "name": "Nico Laprovittola",
+    "first": "Nico",
+    "last": "Laprovittola",
+    "fullName": "Nicolas Laprovittola",
+    "position": "Base",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003977,
+    "name": "Will Clyburn",
+    "first": "Will",
+    "last": "Clyburn",
+    "fullName": "William Clyburn",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20203955,
+    "name": "Tornike Shengelia",
+    "first": "Tornike",
+    "last": "Shengelia",
+    "fullName": "Tornike Shengelia",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212265,
+    "name": "Joel Parra",
+    "first": "Joel",
+    "last": "Parra",
+    "fullName": "Joel Parra",
+    "position": "Alero",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/barca-2/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001155,
+    "name": "Marco Spissu",
+    "first": "Marco",
+    "last": "Spissu",
+    "fullName": "Marco Spissu",
+    "position": "Base",
+    "heightCm": 184,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002444,
+    "name": "Devin Robinson",
+    "first": "Devin",
+    "last": "Robinson",
+    "fullName": "Devin Robinson",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001171,
+    "name": "Trae Bell-Haynes",
+    "first": "Trae",
+    "last": "Bell-Haynes",
+    "fullName": "Trae Bell-Haynes",
+    "position": "Base",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005316,
+    "name": "Justin Wright-Foreman",
+    "first": "Justin",
+    "last": "Wright-Foreman",
+    "fullName": "Justin Wright-Foreman",
+    "position": "Base",
+    "heightCm": 183,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210918,
+    "name": "Santi Yusta",
+    "first": "Santi",
+    "last": "Yusta",
+    "fullName": "Santiago Yusta",
+    "position": "Alero",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212476,
+    "name": "Miguel González",
+    "first": "Miguel",
+    "last": "González",
+    "fullName": "Miguel González",
+    "position": "Escolta",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212348,
+    "name": "Jaime Fernández",
+    "first": "Jaime",
+    "last": "Fernández",
+    "fullName": "Jaime Fernández",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212451,
+    "name": "Gabriel Olaseni",
+    "first": "Gabriel",
+    "last": "Olaseni",
+    "fullName": "Abodunrin Olaseni",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210254,
+    "name": "Bojan Dubljevic",
+    "first": "Bojan",
+    "last": "Dubljevic",
+    "fullName": "Bojan Dubljevic",
+    "position": "Pívot",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003403,
+    "name": "Joaquín Rodríguez",
+    "first": "Joaquín",
+    "last": "Rodríguez",
+    "fullName": "Joaquín Rodríguez",
+    "position": "Escolta",
+    "heightCm": 194,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003817,
+    "name": "DJ Stephens",
+    "first": "DJ",
+    "last": "Stephens",
+    "fullName": "Dalenta Stephens",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000550,
+    "name": "Christ Koumadje",
+    "first": "Christ",
+    "last": "Koumadje",
+    "fullName": "Jean Koumadje",
+    "position": "Pívot",
+    "heightCm": 224,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002813,
+    "name": "Youssouf Traoré",
+    "first": "Youssouf",
+    "last": "Traoré",
+    "fullName": "Youssouf Traore",
+    "position": "Pívot",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003995,
+    "name": "Erik Stevenson",
+    "first": "Erik",
+    "last": "Stevenson",
+    "fullName": "Erik Stevenson",
+    "position": "Escolta",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20213218,
+    "name": "Lucas Langarita",
+    "first": "Lucas",
+    "last": "Langarita",
+    "fullName": "Lucas Langarita",
+    "position": "Escolta",
+    "heightCm": 196,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005207,
+    "name": "Isaiah Washington",
+    "first": "Isaiah",
+    "last": "Washington",
+    "fullName": "Isaiah Washington",
+    "position": "Base",
+    "heightCm": 185,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003963,
+    "name": "Emir Kabaca",
+    "first": "Emir",
+    "last": "Kabaca",
+    "fullName": "Sadik Emir Kabaca",
+    "position": "Ala-pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005205,
+    "name": "Josh Richardson",
+    "first": "Josh",
+    "last": "Richardson",
+    "fullName": "Joshua Richardson",
+    "position": "Escolta",
+    "heightCm": 196,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003936,
+    "name": "Joel Soriano",
+    "first": "Joel",
+    "last": "Soriano",
+    "fullName": "Joel Soriano",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001997,
+    "name": "Maxi Fjellerup",
+    "first": "Maxi",
+    "last": "Fjellerup",
+    "fullName": "Máximo Fjellerup",
+    "position": "Escolta",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211754,
+    "name": "Pep Busquets",
+    "first": "Pep",
+    "last": "Busquets",
+    "fullName": "Josep Busquets",
+    "position": "Escolta",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003946,
+    "name": "Derek Needham",
+    "first": "Derek",
+    "last": "Needham",
+    "fullName": "Derek Needham",
+    "position": "Base",
+    "heightCm": 180,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005330,
+    "name": "Cameron Hildreth",
+    "first": "Cameron",
+    "last": "Hildreth",
+    "fullName": "Cameron Hildreth",
+    "position": "Alero",
+    "heightCm": 195,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004008,
+    "name": "Mark Hughes",
+    "first": "Mark",
+    "last": "Hughes",
+    "fullName": "Mark Hughes",
+    "position": "Escolta",
+    "heightCm": 199,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212102,
+    "name": "Guillem Ferrando",
+    "first": "Guillem",
+    "last": "Ferrando",
+    "fullName": "Guillem Ferrando",
+    "position": "Base",
+    "heightCm": 184,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003990,
+    "name": "Pepe Vildoza",
+    "first": "Pepe",
+    "last": "Vildoza",
+    "fullName": "Jose Vildoza",
+    "position": "Base",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003939,
+    "name": "Otis Livingston",
+    "first": "Otis",
+    "last": "Livingston",
+    "fullName": "Otis Antoine Livingston jr",
+    "position": "Base",
+    "heightCm": 181,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002443,
+    "name": "Martinas Geben",
+    "first": "Martinas",
+    "last": "Geben",
+    "fullName": "Martinas Geben",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005333,
+    "name": "James Karnik",
+    "first": "James",
+    "last": "Karnik",
+    "fullName": "James Karnik",
+    "position": "Pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000138,
+    "name": "Juan Fernández",
+    "first": "Juan",
+    "last": "Fernández",
+    "fullName": "Juan Fernandez",
+    "position": "Pívot",
+    "heightCm": 210,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210335,
+    "name": "Sergi Martínez",
+    "first": "Sergi",
+    "last": "Martínez",
+    "fullName": "Sergi Martínez",
+    "position": "Alero",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211466,
+    "name": "Nikola Maric",
+    "first": "Nikola",
+    "last": "Maric",
+    "fullName": "Nikola Maric",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002674,
+    "name": "Mindaugas Susinskas",
+    "first": "Mindaugas",
+    "last": "Susinskas",
+    "fullName": "Mindaugas Susinskas",
+    "position": "Alero",
+    "heightCm": 204,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004088,
+    "name": "Sander Hollanders",
+    "first": "Sander",
+    "last": "Hollanders",
+    "fullName": "Sander Hollanders",
+    "position": "Escolta",
+    "heightCm": 195,
+    "source": "https://www.acb.com/es/liga/equipos/fiatc-girona-591/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003914,
+    "name": "James Batemon",
+    "first": "James",
+    "last": "Batemon",
+    "fullName": "James Batemon",
+    "position": "Escolta",
+    "heightCm": 185,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003406,
+    "name": "Corey Walden",
+    "first": "Corey",
+    "last": "Walden",
+    "fullName": "Torijan Volden",
+    "position": "Escolta",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000049,
+    "name": "Melvin Ejim",
+    "first": "Melvin",
+    "last": "Ejim",
+    "fullName": "Melvin Ejim",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003988,
+    "name": "Caleb Agada",
+    "first": "Caleb",
+    "last": "Agada",
+    "fullName": "Caleb Apochi Agada",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209098,
+    "name": "Oriol Paulí",
+    "first": "Oriol",
+    "last": "Paulí",
+    "fullName": "Oriol Paulí",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000015,
+    "name": "Dani García",
+    "first": "Dani",
+    "last": "García",
+    "fullName": "Daniel García",
+    "position": "Base",
+    "heightCm": 185,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002719,
+    "name": "Gyorgy Goloman",
+    "first": "Gyorgy",
+    "last": "Goloman",
+    "fullName": "Gyorgy Golomán",
+    "position": "Pívot",
+    "heightCm": 210,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211460,
+    "name": "Atoumane Diagne",
+    "first": "Atoumane",
+    "last": "Diagne",
+    "fullName": "Atoumane Diagne",
+    "position": "Pívot",
+    "heightCm": 215,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005324,
+    "name": "Adria Rodriguez",
+    "first": "Adria",
+    "last": "Rodriguez",
+    "fullName": "Adrià Rodriguez i",
+    "position": "Base",
+    "heightCm": 194,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212478,
+    "name": "Mikel Sanz",
+    "first": "Mikel",
+    "last": "Sanz",
+    "fullName": "Mikel Sanz",
+    "position": "Alero",
+    "heightCm": 199,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212139,
+    "name": "Millán Jiménez",
+    "first": "Millán",
+    "last": "Jiménez",
+    "fullName": "Millán Jiménez",
+    "position": "Alero",
+    "heightCm": 199,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210670,
+    "name": "John Shurna",
+    "first": "John",
+    "last": "Shurna",
+    "fullName": "John Shurna",
+    "position": "Ala-pívot",
+    "heightCm": 204,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003965,
+    "name": "Cameron Krutwig",
+    "first": "Cameron",
+    "last": "Krutwig",
+    "fullName": "Cameron Krutwig",
+    "position": "Pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003976,
+    "name": "Kristers Zoriks",
+    "first": "Kristers",
+    "last": "Zoriks",
+    "fullName": "Kristers Zoriks",
+    "position": "Base",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003951,
+    "name": "Kaodirichi Akobundu",
+    "first": "Kaodirichi",
+    "last": "Akobundu",
+    "fullName": "Kaodirichi Akobundu",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003943,
+    "name": "Hugo Benitez",
+    "first": "Hugo",
+    "last": "Benitez",
+    "fullName": "Hugo Benitez",
+    "position": "Base",
+    "heightCm": 192,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005328,
+    "name": "David Duke Jr",
+    "first": "David",
+    "last": "Duke Jr",
+    "fullName": "David Duke Jr",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20200243,
+    "name": "Ferran Bassas",
+    "first": "Ferran",
+    "last": "Bassas",
+    "fullName": "Ferran Bassas",
+    "position": "Base",
+    "heightCm": 181,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20204133,
+    "name": "Álex Reyes",
+    "first": "Álex",
+    "last": "Reyes",
+    "fullName": "Alejandro Reyes",
+    "position": "Alero",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001332,
+    "name": "Agustín Ubal",
+    "first": "Agustín",
+    "last": "Ubal",
+    "fullName": "Agustín Ubal",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000133,
+    "name": "Marcis Steinbergs",
+    "first": "Marcis",
+    "last": "Steinbergs",
+    "fullName": "Marcis Steinbergs",
+    "position": "Ala-pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000207,
+    "name": "Gustav Knudsen",
+    "first": "Gustav",
+    "last": "Knudsen",
+    "fullName": "Gustav Knudsen",
+    "position": "Alero",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003994,
+    "name": "Louis Olinde",
+    "first": "Louis",
+    "last": "Olinde",
+    "fullName": "Louis Olinde",
+    "position": "Ala-pívot",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005203,
+    "name": "Pauly Paulicap",
+    "first": "Pauly",
+    "last": "Paulicap",
+    "fullName": "Pauly Paulicap",
+    "position": "Pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005189,
+    "name": "Eli Brooks",
+    "first": "Eli",
+    "last": "Brooks",
+    "fullName": "Eli Brooks",
+    "position": "Escolta",
+    "heightCm": 185,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20202164,
+    "name": "Pierre Oriola",
+    "first": "Pierre",
+    "last": "Oriola",
+    "fullName": "Pierre  Oriola",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003414,
+    "name": "Retin Obasohan",
+    "first": "Retin",
+    "last": "Obasohan",
+    "fullName": "Retin Obasohan",
+    "position": "Base",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20203826,
+    "name": "Dani Pérez",
+    "first": "Dani",
+    "last": "Pérez",
+    "fullName": "Daniel Pérez",
+    "position": "Base",
+    "heightCm": 184,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003945,
+    "name": "Grant Golden",
+    "first": "Grant",
+    "last": "Golden",
+    "fullName": "Grant Golden",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003942,
+    "name": "Archange Izaw-Bolavie",
+    "first": "Archange",
+    "last": "Izaw-Bolavie",
+    "fullName": "Archange Izaw",
+    "position": "Pívot",
+    "heightCm": 210,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003996,
+    "name": "Alfonso Plummer",
+    "first": "Alfonso",
+    "last": "Plummer",
+    "fullName": "Alfonso Plummer",
+    "position": "Escolta",
+    "heightCm": 185,
+    "source": "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001957,
+    "name": "Markus Howard",
+    "first": "Markus",
+    "last": "Howard",
+    "fullName": "Markus Howard",
+    "position": "Escolta",
+    "heightCm": 179,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004014,
+    "name": "Mamadi Diakite",
+    "first": "Mamadi",
+    "last": "Diakite",
+    "fullName": "Mamadi Diakite",
+    "position": "Pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004878,
+    "name": "Kobi Simmons",
+    "first": "Kobi",
+    "last": "Simmons",
+    "fullName": "Kobi Simmons",
+    "position": "Base",
+    "heightCm": 196,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004081,
+    "name": "Markquis Nowell",
+    "first": "Markquis",
+    "last": "Nowell",
+    "fullName": "Markquis Nowell",
+    "position": "Base",
+    "heightCm": 172,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001243,
+    "name": "Rafael Villar",
+    "first": "Rafael",
+    "last": "Villar",
+    "fullName": "Rafael Villar",
+    "position": "Base",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005186,
+    "name": "Eugene Omoruyi",
+    "first": "Eugene",
+    "last": "Omoruyi",
+    "fullName": "Eugene Omoruyi",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211797,
+    "name": "Rodions Kurucs",
+    "first": "Rodions",
+    "last": "Kurucs",
+    "fullName": "Rodions Kurucs",
+    "position": "Alero",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210830,
+    "name": "Tadas Sedekerskis",
+    "first": "Tadas",
+    "last": "Sedekerskis",
+    "fullName": "Tadas Sedekerskis",
+    "position": "Alero",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003351,
+    "name": "Timothé Luwawu-Cabarrot",
+    "first": "Timothé",
+    "last": "Luwawu-Cabarrot",
+    "fullName": "Timothe Luwawu",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000202,
+    "name": "Matteo Spagnolo",
+    "first": "Matteo",
+    "last": "Spagnolo",
+    "fullName": "Matteo Spagnolo",
+    "position": "Escolta",
+    "heightCm": 192,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003408,
+    "name": "Trent Forrest",
+    "first": "Trent",
+    "last": "Forrest",
+    "fullName": "Landon Forrest",
+    "position": "Base",
+    "heightCm": 194,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005323,
+    "name": "Jesse Edwards",
+    "first": "Jesse",
+    "last": "Edwards",
+    "fullName": "Jesse Edwards",
+    "position": "Pívot",
+    "heightCm": 213,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005184,
+    "name": "Gytis Radzevicius",
+    "first": "Gytis",
+    "last": "Radzevicius",
+    "fullName": "Gytis Radzevicius",
+    "position": "Escolta",
+    "heightCm": 197,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212905,
+    "name": "Khalifa Diop",
+    "first": "Khalifa",
+    "last": "Diop",
+    "fullName": "Khalifa Diop",
+    "position": "Pívot",
+    "heightCm": 215,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003941,
+    "name": "Clement Frisch",
+    "first": "Clement",
+    "last": "Frisch",
+    "fullName": "Clement Frisch",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003998,
+    "name": "Hamidou Diallo",
+    "first": "Hamidou",
+    "last": "Diallo",
+    "fullName": "Hamidou Diallo",
+    "position": "Escolta",
+    "heightCm": 199,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212330,
+    "name": "Luka Samanic",
+    "first": "Luka",
+    "last": "Samanic",
+    "fullName": "Luka Samanic",
+    "position": "Ala-pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20204124,
+    "name": "Jaime Fernández",
+    "first": "Jaime",
+    "last": "Fernández",
+    "fullName": "Jaime Fernández",
+    "position": "Escolta",
+    "heightCm": 186,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003999,
+    "name": "Wesley Van Beck",
+    "first": "Wesley",
+    "last": "Van Beck",
+    "fullName": "Wesley Van Beck",
+    "position": "Escolta",
+    "heightCm": 192,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212972,
+    "name": "Bruno Fitipaldo",
+    "first": "Bruno",
+    "last": "Fitipaldo",
+    "fullName": "Bruno Fitipaldo",
+    "position": "Base",
+    "heightCm": 183,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20201760,
+    "name": "Marcelinho Huertas",
+    "first": "Marcelinho",
+    "last": "Huertas",
+    "fullName": "Marcelo Tieppo",
+    "position": "Base",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005338,
+    "name": "Elvar Fridriksson",
+    "first": "Elvar",
+    "last": "Fridriksson",
+    "fullName": "Elvar Fridriksson",
+    "position": "Base",
+    "heightCm": 183,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001166,
+    "name": "Thomas Scrubb",
+    "first": "Thomas",
+    "last": "Scrubb",
+    "fullName": "Thomas Scrubb",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20203882,
+    "name": "Joan Sastre",
+    "first": "Joan",
+    "last": "Sastre",
+    "fullName": "Joan Sastre",
+    "position": "Escolta",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210659,
+    "name": "Giorgi Shermadini",
+    "first": "Giorgi",
+    "last": "Shermadini",
+    "fullName": "Giorgi Shermadini",
+    "position": "Pívot",
+    "heightCm": 217,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211625,
+    "name": "Tim Abromaitis",
+    "first": "Tim",
+    "last": "Abromaitis",
+    "fullName": "Timothy Abromaitis",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005339,
+    "name": "Kevin Yebo",
+    "first": "Kevin",
+    "last": "Yebo",
+    "fullName": "Kevin Yebo",
+    "position": "Pívot",
+    "heightCm": 207,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000306,
+    "name": "Rokas Giedraitis",
+    "first": "Rokas",
+    "last": "Giedraitis",
+    "fullName": "Rokas Giedraitis",
+    "position": "Alero",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212488,
+    "name": "Héctor Alderete",
+    "first": "Héctor",
+    "last": "Alderete",
+    "fullName": "Héctor Alderete",
+    "position": "Alero",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209934,
+    "name": "Fran Guerra",
+    "first": "Fran",
+    "last": "Guerra",
+    "fullName": "Francisco Guerra",
+    "position": "Pívot",
+    "heightCm": 214,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212189,
+    "name": "Aaron Doornekamp",
+    "first": "Aaron",
+    "last": "Doornekamp",
+    "fullName": "Aaron Doornekamp",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005322,
+    "name": "Patty Mills",
+    "first": "Patty",
+    "last": "Mills",
+    "fullName": "Patrick Mills",
+    "position": "Base",
+    "heightCm": 183,
+    "source": "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003367,
+    "name": "Kostas Kostadinov",
+    "first": "Kostas",
+    "last": "Kostadinov",
+    "fullName": "Konstantin Kostadinov",
+    "position": "Alero",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209470,
+    "name": "Lluís Costa",
+    "first": "Lluís",
+    "last": "Costa",
+    "fullName": "Lluís Costa",
+    "position": "Base",
+    "heightCm": 187,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001134,
+    "name": "Shannon Evans",
+    "first": "Shannon",
+    "last": "Evans",
+    "fullName": "Shannon Evans II",
+    "position": "Base",
+    "heightCm": 185,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003967,
+    "name": "Xavier Castañeda",
+    "first": "Xavier",
+    "last": "Castañeda",
+    "fullName": "Xavier Castañeda",
+    "position": "Escolta",
+    "heightCm": 184,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003968,
+    "name": "Aaron Best",
+    "first": "Aaron",
+    "last": "Best",
+    "fullName": "Aaron Best",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20200274,
+    "name": "Rafa Luz",
+    "first": "Rafa",
+    "last": "Luz",
+    "fullName": "Rafael Luz",
+    "position": "Base",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005318,
+    "name": "Sir'Jabari Rice",
+    "first": "Sir'Jabari",
+    "last": "Rice",
+    "fullName": "Sir Jabari Rice",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212966,
+    "name": "Stan Okoye",
+    "first": "Stan",
+    "last": "Okoye",
+    "fullName": "Stanley Okoye",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210959,
+    "name": "Chumi Ortega",
+    "first": "Chumi",
+    "last": "Ortega",
+    "fullName": "José Ortega",
+    "position": "Escolta",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003969,
+    "name": "Justin Mckoy",
+    "first": "Justin",
+    "last": "Mckoy",
+    "fullName": "Justin Mckoy",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210232,
+    "name": "Kyle Kuric",
+    "first": "Kyle",
+    "last": "Kuric",
+    "fullName": "Kyle Kuric",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210707,
+    "name": "Rubén Guerrero",
+    "first": "Rubén",
+    "last": "Guerrero",
+    "fullName": "Rubén Guerrero",
+    "position": "Pívot",
+    "heightCm": 213,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002671,
+    "name": "Yves Pons",
+    "first": "Yves",
+    "last": "Pons",
+    "fullName": "Yves Pons",
+    "position": "Ala-pívot",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211643,
+    "name": "Artem Pustovyi",
+    "first": "Artem",
+    "last": "Pustovyi",
+    "fullName": "Artem Pustovyi",
+    "position": "Pívot",
+    "heightCm": 219,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003970,
+    "name": "Morris Udeze",
+    "first": "Morris",
+    "last": "Udeze",
+    "fullName": "Morris Udeze",
+    "position": "Pívot",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004061,
+    "name": "Trey Lyles",
+    "first": "Trey",
+    "last": "Lyles",
+    "fullName": "Trey Lyles",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002716,
+    "name": "David Kramer",
+    "first": "David",
+    "last": "Kramer",
+    "fullName": "David Kramer",
+    "position": "Alero",
+    "heightCm": 196,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005340,
+    "name": "Mady Sissoko",
+    "first": "Mady",
+    "last": "Sissoko",
+    "fullName": "Mady Sissoko",
+    "position": "Pívot",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210088,
+    "name": "Alberto Abalde",
+    "first": "Alberto",
+    "last": "Abalde",
+    "fullName": "Alberto Abalde",
+    "position": "Alero",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211331,
+    "name": "Facu Campazzo",
+    "first": "Facu",
+    "last": "Campazzo",
+    "fullName": "Facundo Campazzo",
+    "position": "Base",
+    "heightCm": 181,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003981,
+    "name": "Chuma Okeke",
+    "first": "Chuma",
+    "last": "Okeke",
+    "fullName": "Chukwuma Okeke",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003980,
+    "name": "Gabriele Procida",
+    "first": "Gabriele",
+    "last": "Procida",
+    "fullName": "Gabriele Procida",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210501,
+    "name": "Mario Hezonja",
+    "first": "Mario",
+    "last": "Hezonja",
+    "fullName": "Mario Hezonja",
+    "position": "Alero",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003979,
+    "name": "Theo Maledon",
+    "first": "Theo",
+    "last": "Maledon",
+    "fullName": "Theo Maledon",
+    "position": "Base",
+    "heightCm": 195,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212952,
+    "name": "Gabriel Deck",
+    "first": "Gabriel",
+    "last": "Deck",
+    "fullName": "Gabriel Deck",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212174,
+    "name": "Usman Garuba",
+    "first": "Usman",
+    "last": "Garuba",
+    "fullName": "Usman Garuba",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209407,
+    "name": "Edy Tavares",
+    "first": "Edy",
+    "last": "Tavares",
+    "fullName": "Walter Tavares",
+    "position": "Pívot",
+    "heightCm": 220,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20201774,
+    "name": "Sergio Llull",
+    "first": "Sergio",
+    "last": "Llull",
+    "fullName": "Sergio Llull",
+    "position": "Escolta",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001114,
+    "name": "Andrés Feliz",
+    "first": "Andrés",
+    "last": "Feliz",
+    "fullName": "Andres Feliz",
+    "position": "Base",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004910,
+    "name": "Alex Len",
+    "first": "Alex",
+    "last": "Len",
+    "fullName": "Oleksii Len",
+    "position": "Pívot",
+    "heightCm": 213,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005337,
+    "name": "Ömer Yurtseven",
+    "first": "Ömer",
+    "last": "Yurtseven",
+    "fullName": "Omer Yurtseven",
+    "position": "Pívot",
+    "heightCm": 213,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003852,
+    "name": "Bruno Fernando",
+    "first": "Bruno",
+    "last": "Fernando",
+    "fullName": "Bruno Fernando",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/real-madrid-9/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003987,
+    "name": "Jermaine Samuels Jr",
+    "first": "Jermaine",
+    "last": "Samuels Jr",
+    "fullName": "Jermaine Samuels Jr",
+    "position": "Ala-pívot",
+    "heightCm": 197,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000479,
+    "name": "Yannick Nzosa",
+    "first": "Yannick",
+    "last": "Nzosa",
+    "fullName": "Yannick Nzosa",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005329,
+    "name": "Jaden Shackelford",
+    "first": "Jaden",
+    "last": "Shackelford",
+    "fullName": "Jaden Shackelford",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003978,
+    "name": "Jon Axel Gudmundsson",
+    "first": "Jon",
+    "last": "Axel Gudmundsson",
+    "fullName": "Jon Gudmundsson",
+    "position": "Base",
+    "heightCm": 195,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210544,
+    "name": "Juan Rubio",
+    "first": "Juan",
+    "last": "Rubio",
+    "fullName": "Juan Rubio",
+    "position": "Alero",
+    "heightCm": 197,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20204078,
+    "name": "Pablo Almazán",
+    "first": "Pablo",
+    "last": "Almazán",
+    "fullName": "Pablo Almazán",
+    "position": "Alero",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001331,
+    "name": "Gonzalo Corbalán",
+    "first": "Gonzalo",
+    "last": "Corbalán",
+    "fullName": "Gonzalo Corbalán",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20204156,
+    "name": "Dani Díez",
+    "first": "Dani",
+    "last": "Díez",
+    "fullName": "Daniel Díez",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209859,
+    "name": "Raul Neto",
+    "first": "Raul",
+    "last": "Neto",
+    "fullName": "Raul Neto",
+    "position": "Base",
+    "heightCm": 184,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001954,
+    "name": "Ethan Happ",
+    "first": "Ethan",
+    "last": "Happ",
+    "fullName": "Itan Hap",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000294,
+    "name": "Leo Meindl",
+    "first": "Leo",
+    "last": "Meindl",
+    "fullName": "Leonardo Simoes",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002514,
+    "name": "Max Heidegger",
+    "first": "Max",
+    "last": "Heidegger",
+    "fullName": "Maximillian Heidegger",
+    "position": "Base",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212411,
+    "name": "Luke Fischer",
+    "first": "Luke",
+    "last": "Fischer",
+    "fullName": "Lucas Fischer",
+    "position": "Pívot",
+    "heightCm": 211,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003983,
+    "name": "Jhivvan Jackson",
+    "first": "Jhivvan",
+    "last": "Jackson",
+    "fullName": "Jhivvan Jackson",
+    "position": "Escolta",
+    "heightCm": 182,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210685,
+    "name": "Sergi García",
+    "first": "Sergi",
+    "last": "García",
+    "fullName": "Sergi García",
+    "position": "Base",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003984,
+    "name": "Silvio de Sousa",
+    "first": "Silvio",
+    "last": "de Sousa",
+    "fullName": "Silvio de Sousa",
+    "position": "Pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20200277,
+    "name": "Augusto Lima",
+    "first": "Augusto",
+    "last": "Lima",
+    "fullName": "Augusto Lima",
+    "position": "Pívot",
+    "heightCm": 209,
+    "source": "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004002,
+    "name": "Bakary Dibba",
+    "first": "Bakary",
+    "last": "Dibba",
+    "fullName": "Bakary Dibba",
+    "position": "Pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005332,
+    "name": "Jordan Walker",
+    "first": "Jordan",
+    "last": "Walker",
+    "fullName": "Jordan Walker",
+    "position": "Base",
+    "heightCm": 186,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004003,
+    "name": "DeWayne Russell",
+    "first": "DeWayne",
+    "last": "Russell",
+    "fullName": "Dewayne Roberts-Russell",
+    "position": "Base",
+    "heightCm": 180,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000194,
+    "name": "Dragan Apic",
+    "first": "Dragan",
+    "last": "Apic",
+    "fullName": "Dragan Apic",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210585,
+    "name": "Francis Alonso",
+    "first": "Francis",
+    "last": "Alonso",
+    "fullName": "Francisco Alonso",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003394,
+    "name": "Aleksandar Aranitovic",
+    "first": "Aleksandar",
+    "last": "Aranitovic",
+    "fullName": "Aleksandar Aranitovic",
+    "position": "Alero",
+    "heightCm": 195,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212244,
+    "name": "Jordan Sakho",
+    "first": "Jordan",
+    "last": "Sakho",
+    "fullName": "Jordan Djounorou",
+    "position": "Pívot",
+    "heightCm": 207,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212431,
+    "name": "Dominik Mavra",
+    "first": "Dominik",
+    "last": "Mavra",
+    "fullName": "Dominik Mavra",
+    "position": "Base",
+    "heightCm": 195,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004004,
+    "name": "Danko Brankovic",
+    "first": "Danko",
+    "last": "Brankovic",
+    "fullName": "Danko Brankovic",
+    "position": "Pívot",
+    "heightCm": 217,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001182,
+    "name": "Erik Quintela",
+    "first": "Erik",
+    "last": "Quintela",
+    "fullName": "Erik Quintela",
+    "position": "Base",
+    "heightCm": 186,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20204153,
+    "name": "Iván Cruz",
+    "first": "Iván",
+    "last": "Cruz",
+    "fullName": "Iván Cruz",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002695,
+    "name": "Mihajlo Andric",
+    "first": "Mihajlo",
+    "last": "Andric",
+    "fullName": "Mihajlo Andrić",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211887,
+    "name": "Arturs Kurucs",
+    "first": "Arturs",
+    "last": "Kurucs",
+    "fullName": "Arturs Kurucs",
+    "position": "Base",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004007,
+    "name": "Keandre Cook",
+    "first": "Keandre",
+    "last": "Cook",
+    "fullName": "Keandre Cook",
+    "position": "Alero",
+    "heightCm": 196,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004005,
+    "name": "Dario Dreznjak",
+    "first": "Dario",
+    "last": "Dreznjak",
+    "fullName": "Dario Dreznjak",
+    "position": "Ala-pívot",
+    "heightCm": 204,
+    "source": "https://www.acb.com/es/liga/equipos/rio-breogan-25/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004013,
+    "name": "Margiris Normantas",
+    "first": "Margiris",
+    "last": "Normantas",
+    "fullName": "Margiris Normantas",
+    "position": "Escolta",
+    "heightCm": 194,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003398,
+    "name": "Harald Frey",
+    "first": "Harald",
+    "last": "Frey",
+    "fullName": "Harald Frey",
+    "position": "Base",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003944,
+    "name": "Justin Jaworski",
+    "first": "Justin",
+    "last": "Jaworski",
+    "fullName": "Justin Jaworski",
+    "position": "Escolta",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000192,
+    "name": "Martin Krampelj",
+    "first": "Martin",
+    "last": "Krampelj",
+    "fullName": "Martin Krampelj",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212984,
+    "name": "Darrun Hilliard",
+    "first": "Darrun",
+    "last": "Hilliard",
+    "fullName": "Darrun Hilliard II",
+    "position": "Escolta",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20213102,
+    "name": "Bassala Bagayoko",
+    "first": "Bassala",
+    "last": "Bagayoko",
+    "fullName": "Bassala Bagayoko",
+    "position": "Pívot",
+    "heightCm": 207,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003947,
+    "name": "Luke Petrasek",
+    "first": "Luke",
+    "last": "Petrasek",
+    "fullName": "Luke Petrasek",
+    "position": "Ala-pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212357,
+    "name": "Melwin Pantzar",
+    "first": "Melwin",
+    "last": "Pantzar",
+    "fullName": "Jan Pantzar",
+    "position": "Base",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002005,
+    "name": "Amar Sylla",
+    "first": "Amar",
+    "last": "Sylla",
+    "fullName": "Amar Sylla",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210147,
+    "name": "Aleix Font",
+    "first": "Aleix",
+    "last": "Font",
+    "fullName": "Aleix Font",
+    "position": "Escolta",
+    "heightCm": 194,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212461,
+    "name": "Tryggvi Hlinason",
+    "first": "Tryggvi",
+    "last": "Hlinason",
+    "fullName": "Tryggvi Hlinason",
+    "position": "Pívot",
+    "heightCm": 215,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004012,
+    "name": "Stefan Lazarevic",
+    "first": "Stefan",
+    "last": "Lazarevic",
+    "fullName": "Stefan Lazarevic",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/surne-bilbao-4/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004000,
+    "name": "Devontae Cacok",
+    "first": "Devontae",
+    "last": "Cacok",
+    "fullName": "Devontae Cacok",
+    "position": "Pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003919,
+    "name": "Michael Forrest",
+    "first": "Michael",
+    "last": "Forrest",
+    "fullName": "Michael Forrest",
+    "position": "Base",
+    "heightCm": 183,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212239,
+    "name": "Sander Raieste",
+    "first": "Sander",
+    "last": "Raieste",
+    "fullName": "Sander Raieste",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003940,
+    "name": "David DeJulius",
+    "first": "David",
+    "last": "DeJulius",
+    "fullName": "David De Julius",
+    "position": "Base",
+    "heightCm": 183,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002036,
+    "name": "Howard Sant-Roos",
+    "first": "Howard",
+    "last": "Sant-Roos",
+    "fullName": "Howard Sant-roos",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001917,
+    "name": "Jonah Radebaugh",
+    "first": "Jonah",
+    "last": "Radebaugh",
+    "fullName": "Jonah Radebaugh",
+    "position": "Base",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000649,
+    "name": "Wilhelm Falk",
+    "first": "Wilhelm",
+    "last": "Falk",
+    "fullName": "Wilhelm Falk",
+    "position": "Escolta",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210914,
+    "name": "Emanuel Cate",
+    "first": "Emanuel",
+    "last": "Cate",
+    "fullName": "Emanuel-Ion Cate",
+    "position": "Pívot",
+    "heightCm": 207,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000132,
+    "name": "Rubén López De La Torre",
+    "first": "Rubén",
+    "last": "López De La Torre",
+    "fullName": "Rubén López de la Torre",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210278,
+    "name": "Moussa Diagne",
+    "first": "Moussa",
+    "last": "Diagne",
+    "fullName": "Cheikh Diagné",
+    "position": "Pívot",
+    "heightCm": 211,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005200,
+    "name": "Kelan Martin",
+    "first": "Kelan",
+    "last": "Martin",
+    "fullName": "Kelan Martin",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212941,
+    "name": "Dylan Ennis",
+    "first": "Dylan",
+    "last": "Ennis",
+    "fullName": "Dylan Howell",
+    "position": "Escolta",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003332,
+    "name": "Jaylen Hands",
+    "first": "Jaylen",
+    "last": "Hands",
+    "fullName": "Jaylen Hands",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001899,
+    "name": "Toni Nakic",
+    "first": "Toni",
+    "last": "Nakic",
+    "fullName": "Toni Nakic",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004089,
+    "name": "Zach Hicks",
+    "first": "Zach",
+    "last": "Hicks",
+    "fullName": "Zachariah Hicks",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/ucam-murcia-12/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000053,
+    "name": "Tyson Pérez",
+    "first": "Tyson",
+    "last": "Pérez",
+    "fullName": "José Pérez",
+    "position": "Ala-pívot",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005183,
+    "name": "Chase Audige",
+    "first": "Chase",
+    "last": "Audige",
+    "fullName": "Chase Audige",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212243,
+    "name": "Olek Balcerowski",
+    "first": "Olek",
+    "last": "Balcerowski",
+    "fullName": "Aleksander Balcerowski",
+    "position": "Pívot",
+    "heightCm": 216,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000954,
+    "name": "James Webb III",
+    "first": "James",
+    "last": "Webb III",
+    "fullName": "James Webb III",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001169,
+    "name": "Tyler Kalinoski",
+    "first": "Tyler",
+    "last": "Kalinoski",
+    "fullName": "Tyler Kalinoski",
+    "position": "Escolta",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20200191,
+    "name": "Jonathan Barreiro",
+    "first": "Jonathan",
+    "last": "Barreiro",
+    "fullName": "Jhonatan Barreiro",
+    "position": "Alero",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20209226,
+    "name": "Alberto Díaz",
+    "first": "Alberto",
+    "last": "Díaz",
+    "fullName": "Alberto Díaz",
+    "position": "Base",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005249,
+    "name": "Justin Cobbs",
+    "first": "Justin",
+    "last": "Cobbs",
+    "fullName": "Justin Cobbs",
+    "position": "Base",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20202039,
+    "name": "Nihad Djedovic",
+    "first": "Nihad",
+    "last": "Djedovic",
+    "fullName": "Nihad Dedovic",
+    "position": "Escolta",
+    "heightCm": 197,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210828,
+    "name": "Emir Sulejmanovic",
+    "first": "Emir",
+    "last": "Sulejmanovic",
+    "fullName": "Emir Sulejmanovic",
+    "position": "Ala-pívot",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005177,
+    "name": "Augustine Rubit",
+    "first": "Augustine",
+    "last": "Rubit",
+    "fullName": "Augustin Rubit",
+    "position": "Pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003966,
+    "name": "Chris Duarte",
+    "first": "Chris",
+    "last": "Duarte",
+    "fullName": "Christopher Theoret",
+    "position": "Alero",
+    "heightCm": 196,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003424,
+    "name": "Killian Tillie",
+    "first": "Killian",
+    "last": "Tillie",
+    "fullName": "Killian Tillie",
+    "position": "Ala-pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000023,
+    "name": "David Kravish",
+    "first": "David",
+    "last": "Kravish",
+    "fullName": "David Kravish",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001977,
+    "name": "Kendrick Perry",
+    "first": "Kendrick",
+    "last": "Perry",
+    "fullName": "Kendrick Perry",
+    "position": "Base",
+    "heightCm": 183,
+    "source": "https://www.acb.com/es/liga/equipos/unicaja-14/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000107,
+    "name": "Brancou Badio",
+    "first": "Brancou",
+    "last": "Badio",
+    "fullName": "El Hadji Badio",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001981,
+    "name": "Kameron Taylor",
+    "first": "Kameron",
+    "last": "Taylor",
+    "fullName": "Kameron Taylor",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210392,
+    "name": "Josep Puerto",
+    "first": "Josep",
+    "last": "Puerto",
+    "fullName": "Josep Puerto",
+    "position": "Escolta",
+    "heightCm": 199,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002724,
+    "name": "Nate Reuvers",
+    "first": "Nate",
+    "last": "Reuvers",
+    "fullName": "Nathan Reuvers",
+    "position": "Ala-pívot",
+    "heightCm": 211,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211129,
+    "name": "Jaime Pradilla",
+    "first": "Jaime",
+    "last": "Pradilla",
+    "fullName": "Jaime Pradilla",
+    "position": "Ala-pívot",
+    "heightCm": 202,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211660,
+    "name": "Xabi López-Arostegui",
+    "first": "Xabi",
+    "last": "López-Arostegui",
+    "fullName": "Xabier López-Arostegui",
+    "position": "Alero",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004884,
+    "name": "Braxton Key",
+    "first": "Braxton",
+    "last": "Key",
+    "fullName": "Braxton Key",
+    "position": "Ala-pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000514,
+    "name": "Jean Montero",
+    "first": "Jean",
+    "last": "Montero",
+    "fullName": "Jean Montero",
+    "position": "Base",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003991,
+    "name": "Omari Moore",
+    "first": "Omari",
+    "last": "Moore",
+    "fullName": "Omari Moore",
+    "position": "Base",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003973,
+    "name": "Neal Sako",
+    "first": "Neal",
+    "last": "Sako",
+    "fullName": "Neal Sako",
+    "position": "Pívot",
+    "heightCm": 210,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001900,
+    "name": "Darius Thompson",
+    "first": "Darius",
+    "last": "Thompson",
+    "fullName": "Darius Thompson",
+    "position": "Base",
+    "heightCm": 193,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005335,
+    "name": "Álvaro Cárdenas",
+    "first": "Álvaro",
+    "last": "Cárdenas",
+    "fullName": "Álvaro Cárdenas",
+    "position": "Base",
+    "heightCm": 187,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000032,
+    "name": "Matt Costello",
+    "first": "Matt",
+    "last": "Costello",
+    "fullName": "Matthew Costello",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20213230,
+    "name": "Yankuba Sima",
+    "first": "Yankuba",
+    "last": "Sima",
+    "fullName": "Yankuba Sima",
+    "position": "Pívot",
+    "heightCm": 211,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002683,
+    "name": "Ike Iroegbu",
+    "first": "Ike",
+    "last": "Iroegbu",
+    "fullName": "Ikenna Iroegbu",
+    "position": "Base",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004087,
+    "name": "Vincent Valerio-Bodon",
+    "first": "Vincent",
+    "last": "Valerio-Bodon",
+    "fullName": "Vincent Valerio-Bodon",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/valencia-basket-13/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000063,
+    "name": "Jonathan Rousselle",
+    "first": "Jonathan",
+    "last": "Rousselle",
+    "fullName": "Jonathan Rousselle",
+    "position": "Base",
+    "heightCm": 192,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212462,
+    "name": "Jovan Kljajic",
+    "first": "Jovan",
+    "last": "Kljajic",
+    "fullName": "Jovan Kljajic",
+    "position": "Escolta",
+    "heightCm": 195,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000213,
+    "name": "Babatunde Olumuyiwa",
+    "first": "Babatunde",
+    "last": "Olumuyiwa",
+    "fullName": "Babatunde Olumuyiwa",
+    "position": "Pívot",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30001214,
+    "name": "Elias Valtonen",
+    "first": "Elias",
+    "last": "Valtonen",
+    "fullName": "Elias Valtonen",
+    "position": "Alero",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005193,
+    "name": "Amar Alibegovic",
+    "first": "Amar",
+    "last": "Alibegovic",
+    "fullName": "Amar Alibegovic",
+    "position": "Ala-pívot",
+    "heightCm": 206,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20213001,
+    "name": "Edu Durán",
+    "first": "Edu",
+    "last": "Durán",
+    "fullName": "Eduardo Durán",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20203675,
+    "name": "Pere Tomàs",
+    "first": "Pere",
+    "last": "Tomàs",
+    "fullName": "Pere Tomàs",
+    "position": "Alero",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005191,
+    "name": "Jassel Perez",
+    "first": "Jassel",
+    "last": "Perez",
+    "fullName": "Jassel Perez",
+    "position": "Escolta",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002043,
+    "name": "William Howard",
+    "first": "William",
+    "last": "Howard",
+    "fullName": "William Howard",
+    "position": "Alero",
+    "heightCm": 203,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003420,
+    "name": "Luka Bozic",
+    "first": "Luka",
+    "last": "Bozic",
+    "fullName": "Luka Bozic",
+    "position": "Ala-pívot",
+    "heightCm": 200,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003505,
+    "name": "Amida Brimah",
+    "first": "Amida",
+    "last": "Brimah",
+    "fullName": "Amida Brimah",
+    "position": "Pívot",
+    "heightCm": 213,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20204145,
+    "name": "Beqa Burjanadze",
+    "first": "Beqa",
+    "last": "Burjanadze",
+    "fullName": "Beka Burjanadze",
+    "position": "Ala-pívot",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002524,
+    "name": "Mehdy Ngouama",
+    "first": "Mehdy",
+    "last": "Ngouama",
+    "fullName": "Mehdy Ngouama",
+    "position": "Base",
+    "heightCm": 188,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004017,
+    "name": "Micah Speight",
+    "first": "Micah",
+    "last": "Speight",
+    "fullName": "Micah Speight",
+    "position": "Base",
+    "heightCm": 178,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212430,
+    "name": "Matt Thomas",
+    "first": "Matt",
+    "last": "Thomas",
+    "fullName": "Matthew Thomas",
+    "position": "Escolta",
+    "heightCm": 191,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005265,
+    "name": "Javan Johnson",
+    "first": "Javan",
+    "last": "Johnson",
+    "fullName": "Javan Johnson",
+    "position": "Alero",
+    "heightCm": 201,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210887,
+    "name": "Iván Aurrecoechea",
+    "first": "Iván",
+    "last": "Aurrecoechea",
+    "fullName": "Iván Aurrecoechea",
+    "position": "Ala-pívot",
+    "heightCm": 204,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003985,
+    "name": "Travis Munnings",
+    "first": "Travis",
+    "last": "Munnings",
+    "fullName": "Travis Munnings",
+    "position": "Alero",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30004016,
+    "name": "Zach Hankins",
+    "first": "Zach",
+    "last": "Hankins",
+    "fullName": "Zachary Hankins",
+    "position": "Pívot",
+    "heightCm": 211,
+    "source": "https://www.acb.com/es/liga/equipos/coviran-granada-592/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003992,
+    "name": "Isaiah Wong",
+    "first": "Isaiah",
+    "last": "Wong",
+    "fullName": "Isaiah Wong",
+    "position": "Escolta",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20211456,
+    "name": "Eric Vila",
+    "first": "Eric",
+    "last": "Vila",
+    "fullName": "Eric Vila",
+    "position": "Alero",
+    "heightCm": 209,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000291,
+    "name": "Ziga Samar",
+    "first": "Ziga",
+    "last": "Samar",
+    "fullName": "Ziga Samar",
+    "position": "Base",
+    "heightCm": 197,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212190,
+    "name": "Andrew Albicy",
+    "first": "Andrew",
+    "last": "Albicy",
+    "fullName": "Andrew Albicy",
+    "position": "Base",
+    "heightCm": 178,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212648,
+    "name": "Nico Brussino",
+    "first": "Nico",
+    "last": "Brussino",
+    "fullName": "Nicolás Brussino",
+    "position": "Alero",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212441,
+    "name": "Miquel Salvó",
+    "first": "Miquel",
+    "last": "Salvó",
+    "fullName": "Miquel Salvó",
+    "position": "Alero",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20210357,
+    "name": "Carlos Alocén",
+    "first": "Carlos",
+    "last": "Alocén",
+    "fullName": "Carlos Alocén",
+    "position": "Base",
+    "heightCm": 194,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30002718,
+    "name": "Pierre Pelos",
+    "first": "Pierre",
+    "last": "Pelos",
+    "fullName": "Pierre Pelos",
+    "position": "Ala-pívot",
+    "heightCm": 205,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20212399,
+    "name": "Mike Tobey",
+    "first": "Mike",
+    "last": "Tobey",
+    "fullName": "Michael Tobey",
+    "position": "Pívot",
+    "heightCm": 213,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30005334,
+    "name": "Brandon Jefferson",
+    "first": "Brandon",
+    "last": "Jefferson",
+    "fullName": "Brandon Jefferson",
+    "position": "Base",
+    "heightCm": 175,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003949,
+    "name": "Kur Kuath",
+    "first": "Kur",
+    "last": "Kuath",
+    "fullName": "Kur Kuath",
+    "position": "Pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003392,
+    "name": "Chimezie Metu",
+    "first": "Chimezie",
+    "last": "Metu",
+    "fullName": "Chimezie Metu",
+    "position": "Ala-pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30000287,
+    "name": "Kassius Robertson",
+    "first": "Kassius",
+    "last": "Robertson",
+    "fullName": "Kassius Robertson",
+    "position": "Escolta",
+    "heightCm": 190,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 20213002,
+    "name": "Louis Labeyrie",
+    "first": "Louis",
+    "last": "Labeyrie",
+    "fullName": "Louis Labeyrie",
+    "position": "Ala-pívot",
+    "heightCm": 208,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  },
+  {
+    "acbId": 30003950,
+    "name": "Braian Angola",
+    "first": "Braian",
+    "last": "Angola",
+    "fullName": "Braian Angola",
+    "position": "Escolta",
+    "heightCm": 198,
+    "source": "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/plantilla?editionId=90"
+  }
+]

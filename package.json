@@ -1,0 +1,8 @@
+{
+  "name": "skillcorner-possession-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/playback.test.js"
+  }
+}

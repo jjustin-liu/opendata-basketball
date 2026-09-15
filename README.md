@@ -1,5 +1,23 @@
 # SkillCorner Open Data — Basketball
 
+## Local EPV model and play viewer
+
+This checkout also includes **Possession Lab**, a local tracking replay viewer with
+expected remaining points, turnover risk over two horizons, defensive pressure,
+and passing-lane geometry. Its predictions are evaluated by holding out each game
+in turn. See [setup, model definitions, and validation](docs/epv-prototype.md).
+
+After building the model, start the viewer with:
+
+```sh
+.venv/bin/python -m http.server 8765 --bind 127.0.0.1 --directory viewer
+```
+
+Then open [http://127.0.0.1:8765](http://127.0.0.1:8765).
+
+The prototype shows modest short-term turnover signal; EPV remains experimental
+and has not beaten a constant baseline overall on these ten games.
+
 ## About this repo
 
 ### Description

@@ -23,3 +23,6 @@ notebooks/exploratory/
 # MkDocs
 site/
 .cache/
+.venv/
+artifacts/
+viewer/data/
