@@ -132,7 +132,7 @@
                     <label title="Click an off-ball teammate to explore relocation. Blue: clear modeled improvement. Amber: worth exploring, response-dependent. Experimental, not validated EPV."><input id="movementIdeas" type="checkbox" /> Movement ideas</label>
                     <span id="movementContext" hidden style="width:340px;overflow:hidden;text-overflow:ellipsis;font-size:10px;color:#80c8dd"></span>
                     <label><input id="defenderNames" type="checkbox" /> Defender names</label>
-                    <span title="Ball turns red at 30% turnover risk or higher" style="font-size:10px;color:#e66b65">Red ball · TOV ≥30%</span>
+                    <span title="Ball gradually shifts from gold at 6% turnover risk to full red at 15%" style="font-size:10px;color:#e66b65">Ball · gold → red · TOV 6–15%</span>
                     <span id="spaceArea" hidden style="font-size:10px;color:var(--muted)"></span>
                     <span
                       id="guardAngle"
@@ -405,6 +405,6 @@
       </div>
       <div id="modelDetails"></div>
     </dialog>
-    <script src="app.js?v=movement-2" type="module"></script>
+    <script src="app.js?v=gradual-risk-10" type="module"></script>
   </body>
 </html>

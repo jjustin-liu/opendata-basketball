@@ -1,6 +1,6 @@
 import { drawMovementIdea } from "./movement-ideas.js?v=2";
 import { ballTrail, drawBallTrail } from "./ball-trail.js";
-import { drawDefenderLabel, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=flight-risk-1";
+import { drawDefenderLabel, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=names-toggle-2";
 import { displayBall } from "./ball-display.js";
 import { shootingMotion } from "./shooting-motion.js";
 import { flightLabel } from "./pass-flight.js?v=flight-risk-1";
@@ -530,7 +530,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
     if (isHolder && !opts.flight && !opts.shotEvent && !f.reason) {
       const best = bestPass(f);
       const ax = Math.max(r * 2.8, Math.min(w - r * 2.8, x)),
-        ay = Math.max(r * 1.1, y - r * 2.9);
+        ay = Math.max(r * 1.1, y - r * 2.5);
       ctx.strokeStyle = "#83948c66";
       ctx.lineWidth = 1;
       ctx.beginPath();
@@ -558,12 +558,22 @@ export function drawCourt3D(ctx, w, h, f, opts) {
   drawBallTrail(ctx, ballTrail(opts.replayFrames || [], {...f,ball}, opts.visualFrame ?? f.frame), b=>camera(...b.slice(0,3))[2]>.8?project(b[0],b[1],Math.max(.39,b[2]||0)):null, Math.max(3,project(...ball)[2]*.7));
   const [bx, by, bs] = project(ball[0], ball[1], Math.max(0.39, ball[2] || 0));
   if (camera(ball[0], ball[1], ball[2] || 0)[2] > 0.8) {
+    const ballRadius = Math.max(10, bs * .72);
     ctx.beginPath();
-    ctx.arc(bx, by, Math.max(4.5, bs * 0.53), 0, Math.PI * 2);
+    ctx.arc(bx, by, ballRadius, 0, Math.PI * 2);
     ctx.fillStyle = opts.ballColor || "#f2b440";
     ctx.fill();
     ctx.strokeStyle = "#805219";
     ctx.stroke();
+    if (Number.isFinite(opts.ballRisk)) {
+      ctx.save();
+      ctx.fillStyle = '#191919';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = `700 ${ballRadius * .65}px monospace`;
+      ctx.fillText(`${Math.round(opts.ballRisk * 100)}%`, bx, by, ballRadius * 1.8);
+      ctx.restore();
+    }
   }
   if (distanceLabel) {
     const { point, text } = distanceLabel;

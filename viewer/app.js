@@ -5,7 +5,7 @@ import { spaceControl } from "./space-control.js?v=1";
 let spaceGrids = {};
 const spaceCache = new WeakMap();
 import { drawRealistic } from "./realistic.js?v=realistic-2";
-import { drawDefenderLabel, defenderProbability, defenderForecast, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=flight-risk-1";
+import { drawDefenderLabel, defenderProbability, defenderForecast, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=names-toggle-2";
 import { drawThreatOverlay } from "./threat-overlay.js?v=1";
 import { auditShot } from "./decision-audit.js?v=foul-4";
 import { shotReview } from "./shot-review.js";
@@ -14,8 +14,10 @@ import { activePass, flightLabel, passWithRisk } from "./pass-flight.js?v=flight
 import { playerProfile, profileTab, defenderNumbers, defenderChipScale } from "./player-profile.js?v=position-size-1";
 import { bestPass, shotPps, actionCard } from "./action-display.js";
 import { driveSpace } from "./drive-space.js";
+import { ballRiskColor } from "./ball-risk-color.js";
+import { curvedValue } from "./curved-value.js?v=avoid-ball-5";
 import { closestDefender, drawDefenderDistance } from "./defender-distance.js?v=distance-2";
-import { drawCourt3D } from "./court3d.js?v=movement-2";
+import { drawCourt3D } from "./court3d.js?v=closer-card-4";
 import { interpolateFrame } from "./playback.js";
 let surrogateReport = null;
 let tacticalView = false;
@@ -363,7 +365,8 @@ function drawCourt(blend = 0) {
       pressure: $("pressure").checked,
       defenseDetail: $("defenseDetail").checked,
       defenderNames: $("defenderNames").checked,
-      ballColor: !recentShot(f) && Number.isFinite(flight ? flight.turnoverProbability : f.reason ? null : f.turnover2) && (flight ? flight.turnoverProbability : f.turnover2) >= .3 ? '#ef3939' : colors.ball,
+      ballRisk: flight ? flight.turnoverProbability : recentShot(f) || f.reason ? null : f.turnover2,
+      ballColor: ballRiskColor(flight ? flight.turnoverProbability : recentShot(f) || f.reason ? null : f.turnover2),
       selectedPass,
     });
     return;
@@ -585,7 +588,7 @@ function drawCourt(blend = 0) {
     for (const p of players) {
       ctx.beginPath();
       const offensive = players === f.offense;
-      const chipScale = defenderChipScale((offensive ? offenseLabels : defenderLabels).get(p[0]));
+      const chipScale = defenderChipScale((offensive ? offenseLabels : defenderLabels).get(p[0])) * (positionView ? .88 : 1);
       const option = offensive && f.passOptions?.find((o) => o.player === p[0]);
       const passTint = offensive && p[0] !== holder?.[0] && !flight && p[0] !== shotEvent?.player && Number.isFinite(option?.value);
       if (!offensive && !$("defenseDetail").checked && !threatView) {
@@ -652,27 +655,16 @@ function drawCourt(blend = 0) {
         ctx.fillText(Number.isFinite(flight.turnoverProbability) ? 'TOV' : '', p[1], -p[2]+.65);
       } else if (offensive && positionView) {
         ctx.fillStyle = passTint ? '#f7faf8' : '#e2e6e8';
-        ctx.font = `700 ${2.44 * chipScale}px "DM Sans", sans-serif`;
+        ctx.font = `600 ${2.05 * chipScale}px "DM Sans", sans-serif`;
         ctx.fillText(offenseLabels.get(p[0]), p[1], -p[2]);
         const isHolder = p[0] === holder?.[0];
         const value = isShooter ? shotPps(shotEvent) : isHolder ? f[epvKey()] : option?.value;
         const text = Number.isFinite(value) ? value.toFixed(2) : '';
-        const labelY = -p[2] - 1.95 * chipScale - .95;
         const turnover = isShooter || flight ? null : isHolder ? f.turnover2 : option?.turnoverProbability;
         const turnoverText = isShooter ? 'SHOT' : Number.isFinite(turnover) ? `${pct(turnover)}% TOV${isHolder ? ' · 2s' : ''}` : '';
-        ctx.font = '600 .75px "IBM Plex Mono", monospace';
-        const turnoverWidth = ctx.measureText(turnoverText).width;
-        ctx.font = '700 1.3px "IBM Plex Mono", monospace';
-        const width = Math.max(ctx.measureText(text).width, turnoverWidth, 2.8) + .65;
-        ctx.fillStyle = '#202a2e';
-        ctx.fillRect(p[1]-width/2, labelY-.85, width, 1.7);
-        ctx.fillRect(p[1]-width/2, labelY-2.1, width, 1.1);
-        ctx.font = '600 .75px "IBM Plex Mono", monospace';
-        ctx.fillStyle = '#c4cbcf';
-        ctx.fillText(turnoverText, p[1], labelY-1.55);
-        ctx.font = '700 1.3px "IBM Plex Mono", monospace';
-        ctx.fillStyle = Number.isFinite(value) ? epvColor(value) : '#c4cbcf';
-        ctx.fillText(text, p[1], labelY);
+        curvedValue(ctx, p[1], -p[2], 1.95 * chipScale, text,
+          Number.isFinite(value) ? epvColor(value) : '#c4cbcf', turnoverText,
+          { x: f.ball[0], y: -f.ball[1], radius: 1.0 });
       } else if (offensive && flight) {
         const text = flightLabel(flight, p[0]);
         ctx.font = "600 1.05px monospace";
@@ -739,7 +731,7 @@ function drawCourt(blend = 0) {
   if (holder && !flight && !shotEvent && !f.reason) {
     const best = bestPass(f);
     const x = Math.max(-44, Math.min(44, holder[1]));
-    const y = -holder[2] + (holder[2] > 19 ? 4 : positionView ? -6.5 : -5.2);
+    const y = -holder[2] + (holder[2] > 19 ? 3.5 : positionView ? -4.3 : -4.5);
     ctx.strokeStyle = "#83948c66";
     ctx.lineWidth = 0.09;
     ctx.beginPath();
@@ -759,15 +751,23 @@ function drawCourt(blend = 0) {
   drawBallTrail(ctx, ballTrail(play.frames, f, visualFrame), b=>[b[0],-b[1]], 1.0);
   ctx.fillStyle = "#9d753733";
   ctx.beginPath();
-  ctx.ellipse(f.ball[0] + 0.3, -f.ball[1] + 0.4, 0.82, 0.43, 0, 0, Math.PI * 2);
+  ctx.ellipse(f.ball[0] + 0.3, -f.ball[1] + 0.4, 1.0, 0.5, 0, 0, Math.PI * 2);
   ctx.fill();
-  ctx.fillStyle = !shotEvent && Number.isFinite(flight ? flight.turnoverProbability : f.reason ? null : f.turnover2) && (flight ? flight.turnoverProbability : f.turnover2) >= .3 ? '#ef3939' : colors.ball;
+  ctx.fillStyle = ballRiskColor(flight ? flight.turnoverProbability : shotEvent || f.reason ? null : f.turnover2);
   ctx.strokeStyle = "#704915";
   ctx.lineWidth = 0.12;
   ctx.beginPath();
-  ctx.arc(f.ball[0], -f.ball[1], 0.82, 0, Math.PI * 2);
+  ctx.arc(f.ball[0], -f.ball[1], 1.0, 0, Math.PI * 2);
   ctx.fill();
   ctx.stroke();
+  const ballRisk = flight ? flight.turnoverProbability : shotEvent || f.reason ? null : f.turnover2;
+  if (Number.isFinite(ballRisk)) {
+    ctx.fillStyle = '#191919';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.font = '700 .72px "IBM Plex Mono", monospace';
+    ctx.fillText(`${Math.round(ballRisk * 100)}%`, f.ball[0], -f.ball[1], 1.8);
+  }
   ctx.restore();
 }
 function chart(id, key, color, max) {
