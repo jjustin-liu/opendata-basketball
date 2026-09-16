@@ -8,13 +8,13 @@ export function ballTrail(frames, current, time) {
   }
   points.push({ball:current.ball,alpha:1});return points;
 }
-export function drawBallTrail(ctx, samples, project, width) {
+export function drawBallTrail(ctx, samples, project, width, passing=false) {
   ctx.save();ctx.lineCap='round';
   for(let i=1;i<samples.length;i++){
     const a=project(samples[i-1].ball),b=project(samples[i].ball);
     if(!a||!b)continue;
-    ctx.strokeStyle=`rgba(242,180,64,${samples[i-1].alpha*.42})`;
-    ctx.lineWidth=width*(.35+.65*samples[i].alpha);
+    ctx.strokeStyle=`rgba(242,180,64,${samples[i-1].alpha*(passing?.85:.42)})`;
+    ctx.lineWidth=width*(passing?1.7:1)*(.35+.65*samples[i].alpha);
     ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();
   }
   ctx.restore();

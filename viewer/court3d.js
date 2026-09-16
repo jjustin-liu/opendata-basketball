@@ -1,12 +1,13 @@
-import { drawMovementIdea } from "./movement-ideas.js?v=3";
-import { drawPassAnnotation } from './release-annotations.js?v=ball-theme-3';
-import { ballTrail, drawBallTrail } from "./ball-trail.js";
+import { drawMovementIdea } from "./movement-ideas.js?v=defense-5";
+import { drawCatchStack } from './catch-stack.js?v=scaled-text-1';
+import { drawPassAnnotation } from './release-annotations.js?v=delta-7';
+import { ballTrail, drawBallTrail } from "./ball-trail.js?v=bold-2";
 import { drawDefenderLabel, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=compact-meters-3";
 import { displayBall } from "./ball-display.js";
 import { shootingMotion } from "./shooting-motion.js";
 import { flightLabel } from "./pass-flight.js?v=flight-risk-1";
 import { heightFeet, profileTab, defenderNumbers, defenderChipScale } from "./player-profile.js?v=position-size-1";
-import { bestPass, shotPps, actionCard } from "./action-display.js?v=release-3";
+import { bestPass, shotPps, actionCard } from "./action-display.js?v=foul-4";
 import { closestDefender, drawDefenderDistance } from "./defender-distance.js?v=distance-2";
 let followPose = null;
 let lastCameraTime = 0;
@@ -326,6 +327,7 @@ export function drawCourt3D(ctx, w, h, f, opts) {
     );
   }
   drawMovementIdea(ctx, opts.movement, p=>camera(p[0],p[1],.03)[2]>.8?project(p[0],p[1],.03):null, opts.movement?project(...opts.movement.to)[2]:1);
+  drawMovementIdea(ctx, opts.defenseMovement, p=>camera(p[0],p[1],.03)[2]>.8?project(p[0],p[1],.03):null, opts.defenseMovement?project(...opts.defenseMovement.to)[2]:1);
   const holder = f.offense.find((p) => p[0] === f.geometry?.handler);
   const matchup = closestDefender(f);
   let distanceLabel = null;
@@ -419,6 +421,9 @@ export function drawCourt3D(ctx, w, h, f, opts) {
     const option = f.passOptions?.find((o) => o.player === p[0]);
     const isHolder = p[0] === holder?.[0],
       isShooter = off && p[0] === opts.shotEvent?.player;
+    const catchPreview = off && !isHolder && !isShooter
+      ? opts.flight?.receiver===p[0] ? opts.flight : option?.catchShot ? option : null
+      : null;
     const good =
       option?.value > f[opts.epvKey] && option.route?.reachableDefenders === 0;
     let value = off ? (isHolder ? f[opts.epvKey] : option?.value) : defenderLabels.get(p[0]);
@@ -433,8 +438,8 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       value = flightLabel(opts.flight, p[0]);
       label = "";
       if (opts.flight.receiver === p[0]) {
-        value = Number.isFinite(opts.flight.turnoverProbability) ? (opts.flight.turnoverProbability * 100).toFixed(1) + '%' : '';
-        label = Number.isFinite(opts.flight.turnoverProbability) ? 'TOV' : '';
+        value = Number.isFinite(opts.flight.completedEpv) ? opts.flight.completedEpv : '';
+        label = Number.isFinite(opts.flight.completedEpv) ? 'CATCH EPV' : '';
       }
     } else if (isShooter) {
       value =
@@ -449,13 +454,9 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       x,
       y,
       r,
-      value,
-      label,
-      passTint ? opts.passFill(option.value) : off && (opts.flight?.receiver === p[0] || isShooter)
-        ? "#16834b"
-        : off
-          ? "#151719"
-          : "#4169a1",
+      catchPreview ? defenderNumbers(f.offense,opts.profile).get(p[0]) : value,
+      catchPreview ? '' : label,
+      off ? opts.circleColors?.get(p[0]) ?? '#707775' : '#4169a1',
       off && opts.flight?.receiver === p[0]
         ? "#36db7a"
         : isShooter
@@ -469,11 +470,14 @@ export function drawCourt3D(ctx, w, h, f, opts) {
                 : "#99abb6",
       passTint,
     );
+    if (catchPreview) {
+      drawCatchStack(ctx,x,y,r,catchPreview,opts.visualFrame);
+    }
     ctx.setLineDash([]);
-    if (off) {
+    if (off && !catchPreview) {
       profileTab(ctx, x, y - r * 1.23, r / 1.75, opts.profile(p[0]), true);
     }
-    else {
+    else if (!off) {
       const ballScreen = project(f.ball[0], f.ball[1]);
       drawDefenderLabel(ctx, x, y, r, opts.profile(p[0]), f, p[0], defenderLabels.get(p[0]), !!opts.tactical, {
         enabled: opts.defenseDetail,
@@ -530,14 +534,14 @@ export function drawCourt3D(ctx, w, h, f, opts) {
     opts.visualFrame ?? f.frame,
     opts.profile,
   );
-  drawBallTrail(ctx, ballTrail(opts.replayFrames || [], {...f,ball}, opts.visualFrame ?? f.frame), b=>camera(...b.slice(0,3))[2]>.8?project(b[0],b[1],Math.max(.39,b[2]||0)):null, Math.max(3,project(...ball)[2]*.7));
+  drawBallTrail(ctx, ballTrail(opts.replayFrames || [], {...f,ball}, opts.visualFrame ?? f.frame), b=>camera(...b.slice(0,3))[2]>.8?project(b[0],b[1],Math.max(.39,b[2]||0)):null, Math.max(3,project(...ball)[2]*.7), !!opts.flight);
   const [bx, by, bs] = project(ball[0], ball[1], Math.max(0.39, ball[2] || 0));
   if (opts.passNote && camera(opts.passNote.x,opts.passNote.y,0)[2]>.8) {
     const [px,py,ps]=project(opts.passNote.x,opts.passNote.y,0);
     drawPassAnnotation(ctx,px,py,Math.max(11,ps),opts.passNote);
   }
   if (camera(ball[0], ball[1], ball[2] || 0)[2] > 0.8) {
-    const ballRadius = Math.max(10, bs * .72) * (opts.shotBallState ? 1.5 : 1);
+    const ballRadius = Math.max(10, bs * .72) * (opts.shotBallState ? 1.5 : opts.flight ? 1.8 : 1.25);
     ctx.beginPath();
     ctx.arc(bx, by, ballRadius, 0, Math.PI * 2);
     ctx.fillStyle = opts.ballColor || "#f2b440";
@@ -549,8 +553,13 @@ export function drawCourt3D(ctx, w, h, f, opts) {
       ctx.fillStyle = '#191919';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.font = `700 ${ballRadius * .65}px monospace`;
-      ctx.fillText(opts.shotBallState ? opts.shotBallState.pps.toFixed(2) : `${Math.round(opts.ballRisk * 100)}%`, bx, by, ballRadius * 1.8);
+      const passLabel=opts.flight && !opts.shotBallState;
+      ctx.font = `700 ${ballRadius * (opts.shotBallState ? .65 : passLabel ? .78 : .86)}px monospace`;
+      ctx.fillText(opts.shotBallState ? opts.shotBallState.pps.toFixed(2) : `${Math.round(opts.ballRisk * 100)}%`, bx, by-(passLabel?ballRadius*.2:0), ballRadius * 1.8);
+      if (passLabel) {
+        ctx.font = `600 ${ballRadius*.41}px monospace`;
+        ctx.fillText('TOV',bx,by+ballRadius*.39);
+      }
       ctx.restore();
     }
   }

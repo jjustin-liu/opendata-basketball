@@ -1,4 +1,4 @@
-import { shotPps } from './action-display.js';
+import { shotPps } from './action-display.js?v=foul-4';
 
 // A catch estimate is the first supported sample within 0.4s of receipt.
 // All rows are cut off at replay time; release values use pre-release samples.
@@ -16,8 +16,11 @@ export function touchHistory(play, touches, passes, time, epvKey = 'epv') {
     const option=prior?.passOptions?.find(p=>p.player===pass.receiver);
     const risks=samples.map(f=>f.turnover2).filter(Number.isFinite);
     const catchEpv=first?.[epvKey] ?? null, endEpv=endSample?.[epvKey] ?? null;
+    const actionValue=pass?option?.value:shot?shotPps(shot):null;
+    const preActionEpv=pass?prior?.[epvKey]:endEpv;
     return {...t,ended,seconds:Math.max(0,Math.min(t.end,time)-t.start)/25,
       catchEpv,endEpv,change:Number.isFinite(catchEpv)&&Number.isFinite(endEpv)?endEpv-catchEpv:null,
+      decisionChange:Number.isFinite(actionValue)&&Number.isFinite(preActionEpv)?actionValue-preActionEpv:null,
       risk:ended ? risks.at(-1)??null : endSample?.turnover2??null,peakRisk:risks.length?Math.max(...risks):null,
       action:pass?'PASS':shot?'SHOT':ended?'RELEASED':'HOLDING',receiver:pass?.receiver,
       passEpv:option?.value??null,passRisk:option?.turnoverProbability??null,

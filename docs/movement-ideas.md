@@ -1,5 +1,7 @@
 # Movement exploration
 
+**Historical heuristic / candidate-generation reference.** The viewer now displays only candidates accepted by the [experimental EPV simulation](movement-epv.md). The colors, thresholds and explanations below describe the earlier heuristic, retained to propose destinations, not the current displayed EPV estimates.
+
 Enable **Movement ideas** in views 1–4 or 6 and click an off-ball teammate. The search is restricted to that player, including players without a currently supported pass option. Without a selected teammate, the best candidate across offense is shown. Selection also controls the existing pass preview.
 
 Blue arrows indicate **Clear improvement** within the heuristic; amber arrows indicate **Worth exploring**, with a response-dependent benefit. The toolbar names the player and opportunity. Hover the explanation for move length, duration and tradeoffs. No positive supported alternative produces no arrow. This does not prove that staying is optimal.

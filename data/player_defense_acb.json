@@ -1,0 +1,7725 @@
+{
+ "edition": 90,
+ "season": "2025-26",
+ "competition": "Liga Endesa (ACB)",
+ "note": "Official box score; regular season plus playoffs as published on acb.com.",
+ "players": [
+  {
+   "acbId": 20212265,
+   "name": "Joel Parra",
+   "fullName": "Joel Parra",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 43,
+   "timePlayed": 56770,
+   "starter": 15,
+   "steals": 37,
+   "blocks": 12,
+   "shotsRejected": 5,
+   "personalFouls": 69,
+   "foulsReceived": 68,
+   "turnovers": 34,
+   "rebounds": 179,
+   "defensiveRebounds": 129,
+   "offensiveRebounds": 50
+  },
+  {
+   "acbId": 30003361,
+   "name": "Kevin Punter",
+   "fullName": "Kevin Punter",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 42,
+   "timePlayed": 60101,
+   "starter": 38,
+   "steals": 38,
+   "blocks": 2,
+   "shotsRejected": 13,
+   "personalFouls": 95,
+   "foulsReceived": 101,
+   "turnovers": 64,
+   "rebounds": 81,
+   "defensiveRebounds": 70,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 20209919,
+   "name": "Darío Brizuela",
+   "fullName": "Darío Brizuela",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 42,
+   "timePlayed": 39439,
+   "starter": 3,
+   "steals": 20,
+   "blocks": 2,
+   "shotsRejected": 6,
+   "personalFouls": 74,
+   "foulsReceived": 61,
+   "turnovers": 34,
+   "rebounds": 52,
+   "defensiveRebounds": 42,
+   "offensiveRebounds": 10
+  },
+  {
+   "acbId": 20209187,
+   "name": "Willy Hernangómez",
+   "fullName": "Guillermo Hernangómez",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 42,
+   "timePlayed": 36927,
+   "starter": 12,
+   "steals": 21,
+   "blocks": 21,
+   "shotsRejected": 12,
+   "personalFouls": 66,
+   "foulsReceived": 121,
+   "turnovers": 36,
+   "rebounds": 163,
+   "defensiveRebounds": 113,
+   "offensiveRebounds": 50
+  },
+  {
+   "acbId": 30000107,
+   "name": "Brancou Badio",
+   "fullName": "El Hadji Badio",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 41,
+   "timePlayed": 48671,
+   "starter": 33,
+   "steals": 28,
+   "blocks": 9,
+   "shotsRejected": 10,
+   "personalFouls": 73,
+   "foulsReceived": 75,
+   "turnovers": 45,
+   "rebounds": 88,
+   "defensiveRebounds": 68,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30003922,
+   "name": "Henri Drell",
+   "fullName": "Henri Drell",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 40,
+   "timePlayed": 29896,
+   "starter": 7,
+   "steals": 16,
+   "blocks": 10,
+   "shotsRejected": 6,
+   "personalFouls": 92,
+   "foulsReceived": 54,
+   "turnovers": 20,
+   "rebounds": 93,
+   "defensiveRebounds": 64,
+   "offensiveRebounds": 29
+  },
+  {
+   "acbId": 30000095,
+   "name": "Yannick Kraag",
+   "fullName": "Yannick Kraag",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 40,
+   "timePlayed": 52027,
+   "starter": 29,
+   "steals": 23,
+   "blocks": 9,
+   "shotsRejected": 7,
+   "personalFouls": 108,
+   "foulsReceived": 42,
+   "turnovers": 28,
+   "rebounds": 190,
+   "defensiveRebounds": 136,
+   "offensiveRebounds": 54
+  },
+  {
+   "acbId": 20203955,
+   "name": "Tornike Shengelia",
+   "fullName": "Tornike Shengelia",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 40,
+   "timePlayed": 52295,
+   "starter": 31,
+   "steals": 24,
+   "blocks": 16,
+   "shotsRejected": 24,
+   "personalFouls": 84,
+   "foulsReceived": 167,
+   "turnovers": 56,
+   "rebounds": 160,
+   "defensiveRebounds": 114,
+   "offensiveRebounds": 46
+  },
+  {
+   "acbId": 30001166,
+   "name": "Thomas Scrubb",
+   "fullName": "Thomas Scrubb",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 40,
+   "timePlayed": 47611,
+   "starter": 26,
+   "steals": 27,
+   "blocks": 7,
+   "shotsRejected": 4,
+   "personalFouls": 63,
+   "foulsReceived": 56,
+   "turnovers": 13,
+   "rebounds": 136,
+   "defensiveRebounds": 95,
+   "offensiveRebounds": 41
+  },
+  {
+   "acbId": 20211625,
+   "name": "Tim Abromaitis",
+   "fullName": "Timothy Abromaitis",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 40,
+   "timePlayed": 44375,
+   "starter": 9,
+   "steals": 17,
+   "blocks": 12,
+   "shotsRejected": 8,
+   "personalFouls": 84,
+   "foulsReceived": 68,
+   "turnovers": 12,
+   "rebounds": 131,
+   "defensiveRebounds": 99,
+   "offensiveRebounds": 32
+  },
+  {
+   "acbId": 20211129,
+   "name": "Jaime Pradilla",
+   "fullName": "Jaime Pradilla",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 40,
+   "timePlayed": 50720,
+   "starter": 30,
+   "steals": 33,
+   "blocks": 8,
+   "shotsRejected": 12,
+   "personalFouls": 51,
+   "foulsReceived": 114,
+   "turnovers": 58,
+   "rebounds": 230,
+   "defensiveRebounds": 155,
+   "offensiveRebounds": 75
+  },
+  {
+   "acbId": 30003991,
+   "name": "Omari Moore",
+   "fullName": "Omari Moore",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 40,
+   "timePlayed": 44478,
+   "starter": 9,
+   "steals": 18,
+   "blocks": 16,
+   "shotsRejected": 11,
+   "personalFouls": 48,
+   "foulsReceived": 62,
+   "turnovers": 50,
+   "rebounds": 98,
+   "defensiveRebounds": 67,
+   "offensiveRebounds": 31
+  },
+  {
+   "acbId": 20210498,
+   "name": "Ludde Hakanson",
+   "fullName": "Ludvig Hakanson",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 39,
+   "timePlayed": 44044,
+   "starter": 17,
+   "steals": 17,
+   "blocks": 0,
+   "shotsRejected": 7,
+   "personalFouls": 77,
+   "foulsReceived": 51,
+   "turnovers": 39,
+   "rebounds": 61,
+   "defensiveRebounds": 54,
+   "offensiveRebounds": 7
+  },
+  {
+   "acbId": 30003415,
+   "name": "Cameron Hunt",
+   "fullName": "Cameron Hunt",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 39,
+   "timePlayed": 67467,
+   "starter": 38,
+   "steals": 40,
+   "blocks": 7,
+   "shotsRejected": 27,
+   "personalFouls": 90,
+   "foulsReceived": 132,
+   "turnovers": 68,
+   "rebounds": 68,
+   "defensiveRebounds": 44,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 20209836,
+   "name": "Adam Hanga",
+   "fullName": "Adam Hanga",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 39,
+   "timePlayed": 50888,
+   "starter": 11,
+   "steals": 43,
+   "blocks": 10,
+   "shotsRejected": 4,
+   "personalFouls": 82,
+   "foulsReceived": 74,
+   "turnovers": 35,
+   "rebounds": 132,
+   "defensiveRebounds": 105,
+   "offensiveRebounds": 27
+  },
+  {
+   "acbId": 30000108,
+   "name": "Juani Marcos",
+   "fullName": "Juan Marcos",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 39,
+   "timePlayed": 33567,
+   "starter": 22,
+   "steals": 28,
+   "blocks": 8,
+   "shotsRejected": 6,
+   "personalFouls": 84,
+   "foulsReceived": 35,
+   "turnovers": 40,
+   "rebounds": 58,
+   "defensiveRebounds": 52,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 20204124,
+   "name": "Jaime Fernández",
+   "fullName": "Jaime Fernández",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 38,
+   "timePlayed": 42011,
+   "starter": 7,
+   "steals": 38,
+   "blocks": 0,
+   "shotsRejected": 18,
+   "personalFouls": 71,
+   "foulsReceived": 116,
+   "turnovers": 43,
+   "rebounds": 77,
+   "defensiveRebounds": 65,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 30000032,
+   "name": "Matt Costello",
+   "fullName": "Matthew Costello",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 38,
+   "timePlayed": 38673,
+   "starter": 10,
+   "steals": 30,
+   "blocks": 23,
+   "shotsRejected": 6,
+   "personalFouls": 71,
+   "foulsReceived": 50,
+   "turnovers": 18,
+   "rebounds": 155,
+   "defensiveRebounds": 99,
+   "offensiveRebounds": 56
+  },
+  {
+   "acbId": 20201871,
+   "name": "Ricky Rubio",
+   "fullName": "Ricard Rubio",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 47910,
+   "starter": 18,
+   "steals": 51,
+   "blocks": 6,
+   "shotsRejected": 15,
+   "personalFouls": 83,
+   "foulsReceived": 185,
+   "turnovers": 82,
+   "rebounds": 128,
+   "defensiveRebounds": 106,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30003948,
+   "name": "Myles Cale",
+   "fullName": "Myles Cale",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 40173,
+   "starter": 13,
+   "steals": 27,
+   "blocks": 2,
+   "shotsRejected": 3,
+   "personalFouls": 74,
+   "foulsReceived": 32,
+   "turnovers": 16,
+   "rebounds": 76,
+   "defensiveRebounds": 56,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30001243,
+   "name": "Rafael Villar",
+   "fullName": "Rafael Villar",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 26547,
+   "starter": 25,
+   "steals": 33,
+   "blocks": 6,
+   "shotsRejected": 3,
+   "personalFouls": 51,
+   "foulsReceived": 46,
+   "turnovers": 18,
+   "rebounds": 53,
+   "defensiveRebounds": 38,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 20212189,
+   "name": "Aaron Doornekamp",
+   "fullName": "Aaron Doornekamp",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 51049,
+   "starter": 34,
+   "steals": 35,
+   "blocks": 5,
+   "shotsRejected": 1,
+   "personalFouls": 109,
+   "foulsReceived": 57,
+   "turnovers": 17,
+   "rebounds": 117,
+   "defensiveRebounds": 95,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30003919,
+   "name": "Michael Forrest",
+   "fullName": "Michael Forrest",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 37647,
+   "starter": 1,
+   "steals": 21,
+   "blocks": 0,
+   "shotsRejected": 18,
+   "personalFouls": 75,
+   "foulsReceived": 88,
+   "turnovers": 72,
+   "rebounds": 51,
+   "defensiveRebounds": 40,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 20210914,
+   "name": "Emanuel Cate",
+   "fullName": "Emanuel-Ion Cate",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 42760,
+   "starter": 20,
+   "steals": 19,
+   "blocks": 28,
+   "shotsRejected": 6,
+   "personalFouls": 82,
+   "foulsReceived": 78,
+   "turnovers": 28,
+   "rebounds": 185,
+   "defensiveRebounds": 102,
+   "offensiveRebounds": 83
+  },
+  {
+   "acbId": 30002724,
+   "name": "Nate Reuvers",
+   "fullName": "Nathan Reuvers",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 34982,
+   "starter": 17,
+   "steals": 10,
+   "blocks": 22,
+   "shotsRejected": 12,
+   "personalFouls": 86,
+   "foulsReceived": 71,
+   "turnovers": 17,
+   "rebounds": 103,
+   "defensiveRebounds": 68,
+   "offensiveRebounds": 35
+  },
+  {
+   "acbId": 30001360,
+   "name": "Sergio de Larrea",
+   "fullName": "Sergio de Larrea",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 37,
+   "timePlayed": 39791,
+   "starter": 17,
+   "steals": 20,
+   "blocks": 12,
+   "shotsRejected": 8,
+   "personalFouls": 59,
+   "foulsReceived": 109,
+   "turnovers": 60,
+   "rebounds": 110,
+   "defensiveRebounds": 67,
+   "offensiveRebounds": 43
+  },
+  {
+   "acbId": 30004014,
+   "name": "Mamadi Diakite",
+   "fullName": "Mamadi Diakite",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 45385,
+   "starter": 7,
+   "steals": 17,
+   "blocks": 65,
+   "shotsRejected": 8,
+   "personalFouls": 97,
+   "foulsReceived": 78,
+   "turnovers": 35,
+   "rebounds": 167,
+   "defensiveRebounds": 114,
+   "offensiveRebounds": 53
+  },
+  {
+   "acbId": 30000202,
+   "name": "Matteo Spagnolo",
+   "fullName": "Matteo Spagnolo",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 42853,
+   "starter": 5,
+   "steals": 32,
+   "blocks": 3,
+   "shotsRejected": 18,
+   "personalFouls": 63,
+   "foulsReceived": 81,
+   "turnovers": 37,
+   "rebounds": 98,
+   "defensiveRebounds": 82,
+   "offensiveRebounds": 16
+  },
+  {
+   "acbId": 20209934,
+   "name": "Fran Guerra",
+   "fullName": "Francisco Guerra",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 36105,
+   "starter": 21,
+   "steals": 19,
+   "blocks": 4,
+   "shotsRejected": 10,
+   "personalFouls": 86,
+   "foulsReceived": 94,
+   "turnovers": 44,
+   "rebounds": 125,
+   "defensiveRebounds": 87,
+   "offensiveRebounds": 38
+  },
+  {
+   "acbId": 20201774,
+   "name": "Sergio Llull",
+   "fullName": "Sergio Llull",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 35957,
+   "starter": 9,
+   "steals": 14,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 46,
+   "foulsReceived": 47,
+   "turnovers": 18,
+   "rebounds": 47,
+   "defensiveRebounds": 40,
+   "offensiveRebounds": 7
+  },
+  {
+   "acbId": 20212461,
+   "name": "Tryggvi Hlinason",
+   "fullName": "Tryggvi Hlinason",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 51153,
+   "starter": 35,
+   "steals": 21,
+   "blocks": 46,
+   "shotsRejected": 13,
+   "personalFouls": 86,
+   "foulsReceived": 138,
+   "turnovers": 58,
+   "rebounds": 245,
+   "defensiveRebounds": 164,
+   "offensiveRebounds": 81
+  },
+  {
+   "acbId": 30003947,
+   "name": "Luke Petrasek",
+   "fullName": "Luke Petrasek",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 45561,
+   "starter": 21,
+   "steals": 21,
+   "blocks": 6,
+   "shotsRejected": 4,
+   "personalFouls": 71,
+   "foulsReceived": 37,
+   "turnovers": 31,
+   "rebounds": 110,
+   "defensiveRebounds": 81,
+   "offensiveRebounds": 29
+  },
+  {
+   "acbId": 30004013,
+   "name": "Margiris Normantas",
+   "fullName": "Margiris Normantas",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 43248,
+   "starter": 23,
+   "steals": 34,
+   "blocks": 5,
+   "shotsRejected": 7,
+   "personalFouls": 64,
+   "foulsReceived": 81,
+   "turnovers": 49,
+   "rebounds": 80,
+   "defensiveRebounds": 60,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30000192,
+   "name": "Martin Krampelj",
+   "fullName": "Martin Krampelj",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 39260,
+   "starter": 14,
+   "steals": 24,
+   "blocks": 17,
+   "shotsRejected": 11,
+   "personalFouls": 124,
+   "foulsReceived": 87,
+   "turnovers": 33,
+   "rebounds": 119,
+   "defensiveRebounds": 88,
+   "offensiveRebounds": 31
+  },
+  {
+   "acbId": 30003944,
+   "name": "Justin Jaworski",
+   "fullName": "Justin Jaworski",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 49027,
+   "starter": 13,
+   "steals": 23,
+   "blocks": 0,
+   "shotsRejected": 19,
+   "personalFouls": 73,
+   "foulsReceived": 59,
+   "turnovers": 59,
+   "rebounds": 44,
+   "defensiveRebounds": 36,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30003940,
+   "name": "David DeJulius",
+   "fullName": "David De Julius",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 54547,
+   "starter": 35,
+   "steals": 27,
+   "blocks": 0,
+   "shotsRejected": 10,
+   "personalFouls": 51,
+   "foulsReceived": 134,
+   "turnovers": 61,
+   "rebounds": 63,
+   "defensiveRebounds": 50,
+   "offensiveRebounds": 13
+  },
+  {
+   "acbId": 30002036,
+   "name": "Howard Sant-Roos",
+   "fullName": "Howard Sant-roos",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 43165,
+   "starter": 5,
+   "steals": 36,
+   "blocks": 5,
+   "shotsRejected": 4,
+   "personalFouls": 59,
+   "foulsReceived": 81,
+   "turnovers": 39,
+   "rebounds": 138,
+   "defensiveRebounds": 118,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30001899,
+   "name": "Toni Nakic",
+   "fullName": "Toni Nakic",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 41443,
+   "starter": 24,
+   "steals": 20,
+   "blocks": 5,
+   "shotsRejected": 3,
+   "personalFouls": 62,
+   "foulsReceived": 41,
+   "turnovers": 15,
+   "rebounds": 76,
+   "defensiveRebounds": 50,
+   "offensiveRebounds": 26
+  },
+  {
+   "acbId": 30003973,
+   "name": "Neal Sako",
+   "fullName": "Neal Sako",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 36,
+   "timePlayed": 33811,
+   "starter": 23,
+   "steals": 17,
+   "blocks": 16,
+   "shotsRejected": 6,
+   "personalFouls": 69,
+   "foulsReceived": 63,
+   "turnovers": 20,
+   "rebounds": 148,
+   "defensiveRebounds": 76,
+   "offensiveRebounds": 72
+  },
+  {
+   "acbId": 20204158,
+   "name": "Guillem Vives",
+   "fullName": "Guillem Vives",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 27723,
+   "starter": 6,
+   "steals": 14,
+   "blocks": 6,
+   "shotsRejected": 4,
+   "personalFouls": 59,
+   "foulsReceived": 28,
+   "turnovers": 30,
+   "rebounds": 38,
+   "defensiveRebounds": 30,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30002869,
+   "name": "Michael Ruzic",
+   "fullName": "Michael Ruzic",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 37958,
+   "starter": 21,
+   "steals": 6,
+   "blocks": 23,
+   "shotsRejected": 4,
+   "personalFouls": 71,
+   "foulsReceived": 45,
+   "turnovers": 15,
+   "rebounds": 146,
+   "defensiveRebounds": 94,
+   "offensiveRebounds": 52
+  },
+  {
+   "acbId": 20212423,
+   "name": "Simon Birgander",
+   "fullName": "Simon Birgander",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 38009,
+   "starter": 17,
+   "steals": 9,
+   "blocks": 27,
+   "shotsRejected": 10,
+   "personalFouls": 69,
+   "foulsReceived": 47,
+   "turnovers": 35,
+   "rebounds": 175,
+   "defensiveRebounds": 108,
+   "offensiveRebounds": 67
+  },
+  {
+   "acbId": 30001949,
+   "name": "Jan Vesely",
+   "fullName": "Jan Vesely",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 35792,
+   "starter": 17,
+   "steals": 23,
+   "blocks": 11,
+   "shotsRejected": 2,
+   "personalFouls": 73,
+   "foulsReceived": 58,
+   "turnovers": 14,
+   "rebounds": 96,
+   "defensiveRebounds": 65,
+   "offensiveRebounds": 31
+  },
+  {
+   "acbId": 30003351,
+   "name": "Timothé Luwawu-Cabarrot",
+   "fullName": "Timothe Luwawu",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 49046,
+   "starter": 1,
+   "steals": 31,
+   "blocks": 4,
+   "shotsRejected": 12,
+   "personalFouls": 85,
+   "foulsReceived": 128,
+   "turnovers": 53,
+   "rebounds": 132,
+   "defensiveRebounds": 102,
+   "offensiveRebounds": 30
+  },
+  {
+   "acbId": 20201760,
+   "name": "Marcelinho Huertas",
+   "fullName": "Marcelo Tieppo",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 48812,
+   "starter": 24,
+   "steals": 20,
+   "blocks": 0,
+   "shotsRejected": 28,
+   "personalFouls": 64,
+   "foulsReceived": 114,
+   "turnovers": 90,
+   "rebounds": 83,
+   "defensiveRebounds": 62,
+   "offensiveRebounds": 21
+  },
+  {
+   "acbId": 20212357,
+   "name": "Melwin Pantzar",
+   "fullName": "Jan Pantzar",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 52009,
+   "starter": 14,
+   "steals": 40,
+   "blocks": 3,
+   "shotsRejected": 13,
+   "personalFouls": 53,
+   "foulsReceived": 165,
+   "turnovers": 63,
+   "rebounds": 151,
+   "defensiveRebounds": 127,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 30004000,
+   "name": "Devontae Cacok",
+   "fullName": "Devontae Cacok",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 36860,
+   "starter": 17,
+   "steals": 25,
+   "blocks": 5,
+   "shotsRejected": 8,
+   "personalFouls": 132,
+   "foulsReceived": 129,
+   "turnovers": 57,
+   "rebounds": 177,
+   "defensiveRebounds": 119,
+   "offensiveRebounds": 58
+  },
+  {
+   "acbId": 30000514,
+   "name": "Jean Montero",
+   "fullName": "Jean Montero",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 35,
+   "timePlayed": 46367,
+   "starter": 19,
+   "steals": 43,
+   "blocks": 6,
+   "shotsRejected": 12,
+   "personalFouls": 39,
+   "foulsReceived": 126,
+   "turnovers": 52,
+   "rebounds": 100,
+   "defensiveRebounds": 79,
+   "offensiveRebounds": 21
+  },
+  {
+   "acbId": 30003403,
+   "name": "Joaquín Rodríguez",
+   "fullName": "Joaquín Rodríguez",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 41828,
+   "starter": 10,
+   "steals": 43,
+   "blocks": 10,
+   "shotsRejected": 18,
+   "personalFouls": 81,
+   "foulsReceived": 66,
+   "turnovers": 55,
+   "rebounds": 118,
+   "defensiveRebounds": 96,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30001155,
+   "name": "Marco Spissu",
+   "fullName": "Marco Spissu",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 45044,
+   "starter": 16,
+   "steals": 38,
+   "blocks": 1,
+   "shotsRejected": 8,
+   "personalFouls": 82,
+   "foulsReceived": 77,
+   "turnovers": 53,
+   "rebounds": 64,
+   "defensiveRebounds": 43,
+   "offensiveRebounds": 21
+  },
+  {
+   "acbId": 30002444,
+   "name": "Devin Robinson",
+   "fullName": "Devin Robinson",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 52929,
+   "starter": 31,
+   "steals": 42,
+   "blocks": 20,
+   "shotsRejected": 6,
+   "personalFouls": 95,
+   "foulsReceived": 113,
+   "turnovers": 58,
+   "rebounds": 186,
+   "defensiveRebounds": 143,
+   "offensiveRebounds": 43
+  },
+  {
+   "acbId": 20212476,
+   "name": "Miguel González",
+   "fullName": "Miguel González",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 37394,
+   "starter": 12,
+   "steals": 22,
+   "blocks": 9,
+   "shotsRejected": 2,
+   "personalFouls": 74,
+   "foulsReceived": 16,
+   "turnovers": 11,
+   "rebounds": 104,
+   "defensiveRebounds": 67,
+   "offensiveRebounds": 37
+  },
+  {
+   "acbId": 20210918,
+   "name": "Santi Yusta",
+   "fullName": "Santiago Yusta",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 53911,
+   "starter": 32,
+   "steals": 31,
+   "blocks": 11,
+   "shotsRejected": 21,
+   "personalFouls": 88,
+   "foulsReceived": 168,
+   "turnovers": 61,
+   "rebounds": 129,
+   "defensiveRebounds": 96,
+   "offensiveRebounds": 33
+  },
+  {
+   "acbId": 30003420,
+   "name": "Luka Bozic",
+   "fullName": "Luka Bozic",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 59489,
+   "starter": 31,
+   "steals": 38,
+   "blocks": 6,
+   "shotsRejected": 27,
+   "personalFouls": 56,
+   "foulsReceived": 238,
+   "turnovers": 61,
+   "rebounds": 223,
+   "defensiveRebounds": 153,
+   "offensiveRebounds": 70
+  },
+  {
+   "acbId": 30000063,
+   "name": "Jonathan Rousselle",
+   "fullName": "Jonathan Rousselle",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 41862,
+   "starter": 10,
+   "steals": 24,
+   "blocks": 0,
+   "shotsRejected": 6,
+   "personalFouls": 107,
+   "foulsReceived": 57,
+   "turnovers": 48,
+   "rebounds": 49,
+   "defensiveRebounds": 37,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 30000291,
+   "name": "Ziga Samar",
+   "fullName": "Ziga Samar",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 23724,
+   "starter": 2,
+   "steals": 12,
+   "blocks": 1,
+   "shotsRejected": 7,
+   "personalFouls": 58,
+   "foulsReceived": 31,
+   "turnovers": 29,
+   "rebounds": 53,
+   "defensiveRebounds": 26,
+   "offensiveRebounds": 27
+  },
+  {
+   "acbId": 30003992,
+   "name": "Isaiah Wong",
+   "fullName": "Isaiah Wong",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 46014,
+   "starter": 24,
+   "steals": 32,
+   "blocks": 7,
+   "shotsRejected": 7,
+   "personalFouls": 93,
+   "foulsReceived": 121,
+   "turnovers": 43,
+   "rebounds": 68,
+   "defensiveRebounds": 51,
+   "offensiveRebounds": 17
+  },
+  {
+   "acbId": 20212648,
+   "name": "Nico Brussino",
+   "fullName": "Nicolás Brussino",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 56690,
+   "starter": 34,
+   "steals": 42,
+   "blocks": 8,
+   "shotsRejected": 10,
+   "personalFouls": 89,
+   "foulsReceived": 109,
+   "turnovers": 59,
+   "rebounds": 123,
+   "defensiveRebounds": 105,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 30002718,
+   "name": "Pierre Pelos",
+   "fullName": "Pierre Pelos",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 43834,
+   "starter": 7,
+   "steals": 27,
+   "blocks": 16,
+   "shotsRejected": 8,
+   "personalFouls": 90,
+   "foulsReceived": 41,
+   "turnovers": 27,
+   "rebounds": 174,
+   "defensiveRebounds": 130,
+   "offensiveRebounds": 44
+  },
+  {
+   "acbId": 30004008,
+   "name": "Mark Hughes",
+   "fullName": "Mark Hughes",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 38763,
+   "starter": 6,
+   "steals": 21,
+   "blocks": 3,
+   "shotsRejected": 7,
+   "personalFouls": 72,
+   "foulsReceived": 51,
+   "turnovers": 36,
+   "rebounds": 92,
+   "defensiveRebounds": 64,
+   "offensiveRebounds": 28
+  },
+  {
+   "acbId": 30002443,
+   "name": "Martinas Geben",
+   "fullName": "Martinas Geben",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 43269,
+   "starter": 25,
+   "steals": 22,
+   "blocks": 9,
+   "shotsRejected": 12,
+   "personalFouls": 108,
+   "foulsReceived": 95,
+   "turnovers": 47,
+   "rebounds": 209,
+   "defensiveRebounds": 131,
+   "offensiveRebounds": 78
+  },
+  {
+   "acbId": 30003939,
+   "name": "Otis Livingston",
+   "fullName": "Otis Antoine Livingston jr",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 51275,
+   "starter": 34,
+   "steals": 26,
+   "blocks": 0,
+   "shotsRejected": 6,
+   "personalFouls": 59,
+   "foulsReceived": 111,
+   "turnovers": 83,
+   "rebounds": 80,
+   "defensiveRebounds": 58,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30003946,
+   "name": "Derek Needham",
+   "fullName": "Derek Needham",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 44169,
+   "starter": 31,
+   "steals": 32,
+   "blocks": 4,
+   "shotsRejected": 8,
+   "personalFouls": 111,
+   "foulsReceived": 71,
+   "turnovers": 68,
+   "rebounds": 70,
+   "defensiveRebounds": 39,
+   "offensiveRebounds": 31
+  },
+  {
+   "acbId": 20211754,
+   "name": "Pep Busquets",
+   "fullName": "Josep Busquets",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 47648,
+   "starter": 17,
+   "steals": 25,
+   "blocks": 4,
+   "shotsRejected": 20,
+   "personalFouls": 77,
+   "foulsReceived": 86,
+   "turnovers": 49,
+   "rebounds": 157,
+   "defensiveRebounds": 118,
+   "offensiveRebounds": 39
+  },
+  {
+   "acbId": 30003988,
+   "name": "Caleb Agada",
+   "fullName": "Caleb Apochi Agada",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 33548,
+   "starter": 18,
+   "steals": 35,
+   "blocks": 7,
+   "shotsRejected": 11,
+   "personalFouls": 106,
+   "foulsReceived": 67,
+   "turnovers": 51,
+   "rebounds": 93,
+   "defensiveRebounds": 64,
+   "offensiveRebounds": 29
+  },
+  {
+   "acbId": 20209098,
+   "name": "Oriol Paulí",
+   "fullName": "Oriol Paulí",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 46864,
+   "starter": 16,
+   "steals": 25,
+   "blocks": 2,
+   "shotsRejected": 7,
+   "personalFouls": 49,
+   "foulsReceived": 100,
+   "turnovers": 56,
+   "rebounds": 131,
+   "defensiveRebounds": 111,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30003951,
+   "name": "Kaodirichi Akobundu",
+   "fullName": "Kaodirichi Akobundu",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 27806,
+   "starter": 17,
+   "steals": 5,
+   "blocks": 55,
+   "shotsRejected": 0,
+   "personalFouls": 77,
+   "foulsReceived": 42,
+   "turnovers": 23,
+   "rebounds": 81,
+   "defensiveRebounds": 50,
+   "offensiveRebounds": 31
+  },
+  {
+   "acbId": 30000133,
+   "name": "Marcis Steinbergs",
+   "fullName": "Marcis Steinbergs",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 41032,
+   "starter": 15,
+   "steals": 12,
+   "blocks": 3,
+   "shotsRejected": 9,
+   "personalFouls": 71,
+   "foulsReceived": 28,
+   "turnovers": 20,
+   "rebounds": 82,
+   "defensiveRebounds": 52,
+   "offensiveRebounds": 30
+  },
+  {
+   "acbId": 30003941,
+   "name": "Clement Frisch",
+   "fullName": "Clement Frisch",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 25276,
+   "starter": 2,
+   "steals": 13,
+   "blocks": 5,
+   "shotsRejected": 4,
+   "personalFouls": 42,
+   "foulsReceived": 13,
+   "turnovers": 6,
+   "rebounds": 93,
+   "defensiveRebounds": 66,
+   "offensiveRebounds": 27
+  },
+  {
+   "acbId": 20211643,
+   "name": "Artem Pustovyi",
+   "fullName": "Artem Pustovyi",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 38757,
+   "starter": 33,
+   "steals": 10,
+   "blocks": 24,
+   "shotsRejected": 5,
+   "personalFouls": 109,
+   "foulsReceived": 150,
+   "turnovers": 64,
+   "rebounds": 156,
+   "defensiveRebounds": 97,
+   "offensiveRebounds": 59
+  },
+  {
+   "acbId": 30003987,
+   "name": "Jermaine Samuels Jr",
+   "fullName": "Jermaine Samuels Jr",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 42577,
+   "starter": 29,
+   "steals": 35,
+   "blocks": 6,
+   "shotsRejected": 9,
+   "personalFouls": 85,
+   "foulsReceived": 78,
+   "turnovers": 56,
+   "rebounds": 137,
+   "defensiveRebounds": 92,
+   "offensiveRebounds": 45
+  },
+  {
+   "acbId": 20211887,
+   "name": "Arturs Kurucs",
+   "fullName": "Arturs Kurucs",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 41767,
+   "starter": 34,
+   "steals": 30,
+   "blocks": 0,
+   "shotsRejected": 6,
+   "personalFouls": 68,
+   "foulsReceived": 33,
+   "turnovers": 27,
+   "rebounds": 67,
+   "defensiveRebounds": 48,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 30004004,
+   "name": "Danko Brankovic",
+   "fullName": "Danko Brankovic",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 34520,
+   "starter": 13,
+   "steals": 15,
+   "blocks": 37,
+   "shotsRejected": 13,
+   "personalFouls": 91,
+   "foulsReceived": 65,
+   "turnovers": 37,
+   "rebounds": 165,
+   "defensiveRebounds": 101,
+   "offensiveRebounds": 64
+  },
+  {
+   "acbId": 30003394,
+   "name": "Aleksandar Aranitovic",
+   "fullName": "Aleksandar Aranitovic",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 43444,
+   "starter": 6,
+   "steals": 28,
+   "blocks": 3,
+   "shotsRejected": 4,
+   "personalFouls": 71,
+   "foulsReceived": 34,
+   "turnovers": 17,
+   "rebounds": 164,
+   "defensiveRebounds": 125,
+   "offensiveRebounds": 39
+  },
+  {
+   "acbId": 20212431,
+   "name": "Dominik Mavra",
+   "fullName": "Dominik Mavra",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 38100,
+   "starter": 0,
+   "steals": 27,
+   "blocks": 0,
+   "shotsRejected": 8,
+   "personalFouls": 49,
+   "foulsReceived": 80,
+   "turnovers": 83,
+   "rebounds": 69,
+   "defensiveRebounds": 44,
+   "offensiveRebounds": 25
+  },
+  {
+   "acbId": 20210585,
+   "name": "Francis Alonso",
+   "fullName": "Francisco Alonso",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 45359,
+   "starter": 0,
+   "steals": 24,
+   "blocks": 0,
+   "shotsRejected": 19,
+   "personalFouls": 64,
+   "foulsReceived": 151,
+   "turnovers": 50,
+   "rebounds": 69,
+   "defensiveRebounds": 50,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 20212984,
+   "name": "Darrun Hilliard",
+   "fullName": "Darrun Hilliard II",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 48838,
+   "starter": 29,
+   "steals": 31,
+   "blocks": 3,
+   "shotsRejected": 12,
+   "personalFouls": 78,
+   "foulsReceived": 87,
+   "turnovers": 83,
+   "rebounds": 103,
+   "defensiveRebounds": 84,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 30001917,
+   "name": "Jonah Radebaugh",
+   "fullName": "Jonah Radebaugh",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 43705,
+   "starter": 15,
+   "steals": 37,
+   "blocks": 7,
+   "shotsRejected": 8,
+   "personalFouls": 83,
+   "foulsReceived": 60,
+   "turnovers": 27,
+   "rebounds": 107,
+   "defensiveRebounds": 86,
+   "offensiveRebounds": 21
+  },
+  {
+   "acbId": 30001977,
+   "name": "Kendrick Perry",
+   "fullName": "Kendrick Perry",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 45297,
+   "starter": 30,
+   "steals": 53,
+   "blocks": 5,
+   "shotsRejected": 7,
+   "personalFouls": 82,
+   "foulsReceived": 113,
+   "turnovers": 53,
+   "rebounds": 67,
+   "defensiveRebounds": 53,
+   "offensiveRebounds": 14
+  },
+  {
+   "acbId": 20212243,
+   "name": "Olek Balcerowski",
+   "fullName": "Aleksander Balcerowski",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 40828,
+   "starter": 32,
+   "steals": 11,
+   "blocks": 26,
+   "shotsRejected": 9,
+   "personalFouls": 100,
+   "foulsReceived": 139,
+   "turnovers": 44,
+   "rebounds": 117,
+   "defensiveRebounds": 70,
+   "offensiveRebounds": 47
+  },
+  {
+   "acbId": 30001981,
+   "name": "Kameron Taylor",
+   "fullName": "Kameron Taylor",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 34,
+   "timePlayed": 45296,
+   "starter": 30,
+   "steals": 46,
+   "blocks": 9,
+   "shotsRejected": 13,
+   "personalFouls": 63,
+   "foulsReceived": 64,
+   "turnovers": 48,
+   "rebounds": 136,
+   "defensiveRebounds": 110,
+   "offensiveRebounds": 26
+  },
+  {
+   "acbId": 20202163,
+   "name": "Tomas Satoransky",
+   "fullName": "Tomas Satoransky",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 42344,
+   "starter": 18,
+   "steals": 22,
+   "blocks": 2,
+   "shotsRejected": 3,
+   "personalFouls": 61,
+   "foulsReceived": 63,
+   "turnovers": 44,
+   "rebounds": 83,
+   "defensiveRebounds": 69,
+   "offensiveRebounds": 14
+  },
+  {
+   "acbId": 30000213,
+   "name": "Babatunde Olumuyiwa",
+   "fullName": "Babatunde Olumuyiwa",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 37344,
+   "starter": 20,
+   "steals": 10,
+   "blocks": 20,
+   "shotsRejected": 13,
+   "personalFouls": 84,
+   "foulsReceived": 42,
+   "turnovers": 34,
+   "rebounds": 116,
+   "defensiveRebounds": 79,
+   "offensiveRebounds": 37
+  },
+  {
+   "acbId": 30002674,
+   "name": "Mindaugas Susinskas",
+   "fullName": "Mindaugas Susinskas",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 34720,
+   "starter": 13,
+   "steals": 13,
+   "blocks": 11,
+   "shotsRejected": 7,
+   "personalFouls": 79,
+   "foulsReceived": 18,
+   "turnovers": 18,
+   "rebounds": 97,
+   "defensiveRebounds": 75,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30000049,
+   "name": "Melvin Ejim",
+   "fullName": "Melvin Ejim",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 49024,
+   "starter": 30,
+   "steals": 24,
+   "blocks": 18,
+   "shotsRejected": 18,
+   "personalFouls": 94,
+   "foulsReceived": 98,
+   "turnovers": 49,
+   "rebounds": 175,
+   "defensiveRebounds": 131,
+   "offensiveRebounds": 44
+  },
+  {
+   "acbId": 20212478,
+   "name": "Mikel Sanz",
+   "fullName": "Mikel Sanz",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 28954,
+   "starter": 9,
+   "steals": 14,
+   "blocks": 8,
+   "shotsRejected": 2,
+   "personalFouls": 59,
+   "foulsReceived": 18,
+   "turnovers": 14,
+   "rebounds": 59,
+   "defensiveRebounds": 39,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 20211460,
+   "name": "Atoumane Diagne",
+   "fullName": "Atoumane Diagne",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 25250,
+   "starter": 22,
+   "steals": 8,
+   "blocks": 28,
+   "shotsRejected": 5,
+   "personalFouls": 93,
+   "foulsReceived": 47,
+   "turnovers": 32,
+   "rebounds": 108,
+   "defensiveRebounds": 56,
+   "offensiveRebounds": 52
+  },
+  {
+   "acbId": 20204133,
+   "name": "Álex Reyes",
+   "fullName": "Alejandro Reyes",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 49375,
+   "starter": 32,
+   "steals": 23,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 66,
+   "foulsReceived": 84,
+   "turnovers": 33,
+   "rebounds": 172,
+   "defensiveRebounds": 143,
+   "offensiveRebounds": 29
+  },
+  {
+   "acbId": 20212972,
+   "name": "Bruno Fitipaldo",
+   "fullName": "Bruno Fitipaldo",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 41764,
+   "starter": 25,
+   "steals": 14,
+   "blocks": 0,
+   "shotsRejected": 9,
+   "personalFouls": 87,
+   "foulsReceived": 71,
+   "turnovers": 42,
+   "rebounds": 40,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30003968,
+   "name": "Aaron Best",
+   "fullName": "Aaron Best",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 43274,
+   "starter": 28,
+   "steals": 15,
+   "blocks": 0,
+   "shotsRejected": 7,
+   "personalFouls": 90,
+   "foulsReceived": 61,
+   "turnovers": 33,
+   "rebounds": 71,
+   "defensiveRebounds": 47,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 20210959,
+   "name": "Chumi Ortega",
+   "fullName": "José Ortega",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 23060,
+   "starter": 6,
+   "steals": 20,
+   "blocks": 1,
+   "shotsRejected": 2,
+   "personalFouls": 44,
+   "foulsReceived": 25,
+   "turnovers": 11,
+   "rebounds": 66,
+   "defensiveRebounds": 51,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 30001331,
+   "name": "Gonzalo Corbalán",
+   "fullName": "Gonzalo Corbalán",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 51564,
+   "starter": 18,
+   "steals": 48,
+   "blocks": 10,
+   "shotsRejected": 12,
+   "personalFouls": 50,
+   "foulsReceived": 120,
+   "turnovers": 48,
+   "rebounds": 104,
+   "defensiveRebounds": 76,
+   "offensiveRebounds": 28
+  },
+  {
+   "acbId": 30000194,
+   "name": "Dragan Apic",
+   "fullName": "Dragan Apic",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 20993,
+   "starter": 5,
+   "steals": 9,
+   "blocks": 5,
+   "shotsRejected": 6,
+   "personalFouls": 69,
+   "foulsReceived": 52,
+   "turnovers": 21,
+   "rebounds": 66,
+   "defensiveRebounds": 39,
+   "offensiveRebounds": 27
+  },
+  {
+   "acbId": 20213102,
+   "name": "Bassala Bagayoko",
+   "fullName": "Bassala Bagayoko",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 25171,
+   "starter": 1,
+   "steals": 13,
+   "blocks": 12,
+   "shotsRejected": 4,
+   "personalFouls": 62,
+   "foulsReceived": 52,
+   "turnovers": 28,
+   "rebounds": 114,
+   "defensiveRebounds": 72,
+   "offensiveRebounds": 42
+  },
+  {
+   "acbId": 30000649,
+   "name": "Wilhelm Falk",
+   "fullName": "Wilhelm Falk",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 22301,
+   "starter": 9,
+   "steals": 10,
+   "blocks": 7,
+   "shotsRejected": 6,
+   "personalFouls": 69,
+   "foulsReceived": 36,
+   "turnovers": 9,
+   "rebounds": 91,
+   "defensiveRebounds": 49,
+   "offensiveRebounds": 42
+  },
+  {
+   "acbId": 20200191,
+   "name": "Jonathan Barreiro",
+   "fullName": "Jhonatan Barreiro",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 33,
+   "timePlayed": 31827,
+   "starter": 22,
+   "steals": 17,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 42,
+   "foulsReceived": 42,
+   "turnovers": 13,
+   "rebounds": 98,
+   "defensiveRebounds": 70,
+   "offensiveRebounds": 28
+  },
+  {
+   "acbId": 20212190,
+   "name": "Andrew Albicy",
+   "fullName": "Andrew Albicy",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 45088,
+   "starter": 31,
+   "steals": 27,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 58,
+   "foulsReceived": 83,
+   "turnovers": 49,
+   "rebounds": 38,
+   "defensiveRebounds": 26,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 20212399,
+   "name": "Mike Tobey",
+   "fullName": "Michael Tobey",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 40589,
+   "starter": 30,
+   "steals": 15,
+   "blocks": 18,
+   "shotsRejected": 5,
+   "personalFouls": 91,
+   "foulsReceived": 64,
+   "turnovers": 29,
+   "rebounds": 158,
+   "defensiveRebounds": 101,
+   "offensiveRebounds": 57
+  },
+  {
+   "acbId": 30003990,
+   "name": "Pepe Vildoza",
+   "fullName": "Jose Vildoza",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 28403,
+   "starter": 0,
+   "steals": 20,
+   "blocks": 1,
+   "shotsRejected": 6,
+   "personalFouls": 36,
+   "foulsReceived": 34,
+   "turnovers": 28,
+   "rebounds": 64,
+   "defensiveRebounds": 48,
+   "offensiveRebounds": 16
+  },
+  {
+   "acbId": 30003914,
+   "name": "James Batemon",
+   "fullName": "James Batemon",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 49825,
+   "starter": 24,
+   "steals": 28,
+   "blocks": 0,
+   "shotsRejected": 23,
+   "personalFouls": 85,
+   "foulsReceived": 160,
+   "turnovers": 56,
+   "rebounds": 70,
+   "defensiveRebounds": 44,
+   "offensiveRebounds": 26
+  },
+  {
+   "acbId": 30003965,
+   "name": "Cameron Krutwig",
+   "fullName": "Cameron Krutwig",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 29479,
+   "starter": 7,
+   "steals": 14,
+   "blocks": 14,
+   "shotsRejected": 6,
+   "personalFouls": 45,
+   "foulsReceived": 43,
+   "turnovers": 27,
+   "rebounds": 93,
+   "defensiveRebounds": 57,
+   "offensiveRebounds": 36
+  },
+  {
+   "acbId": 30003406,
+   "name": "Corey Walden",
+   "fullName": "Torijan Volden",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 32877,
+   "starter": 10,
+   "steals": 21,
+   "blocks": 3,
+   "shotsRejected": 6,
+   "personalFouls": 67,
+   "foulsReceived": 43,
+   "turnovers": 37,
+   "rebounds": 62,
+   "defensiveRebounds": 53,
+   "offensiveRebounds": 9
+  },
+  {
+   "acbId": 30001134,
+   "name": "Shannon Evans",
+   "fullName": "Shannon Evans II",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 49770,
+   "starter": 29,
+   "steals": 39,
+   "blocks": 2,
+   "shotsRejected": 15,
+   "personalFouls": 61,
+   "foulsReceived": 149,
+   "turnovers": 101,
+   "rebounds": 79,
+   "defensiveRebounds": 67,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 20210232,
+   "name": "Kyle Kuric",
+   "fullName": "Kyle Kuric",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 41526,
+   "starter": 2,
+   "steals": 16,
+   "blocks": 7,
+   "shotsRejected": 3,
+   "personalFouls": 52,
+   "foulsReceived": 72,
+   "turnovers": 28,
+   "rebounds": 72,
+   "defensiveRebounds": 54,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 20210707,
+   "name": "Rubén Guerrero",
+   "fullName": "Rubén Guerrero",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 14571,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 4,
+   "shotsRejected": 2,
+   "personalFouls": 39,
+   "foulsReceived": 19,
+   "turnovers": 8,
+   "rebounds": 66,
+   "defensiveRebounds": 40,
+   "offensiveRebounds": 26
+  },
+  {
+   "acbId": 30003969,
+   "name": "Justin Mckoy",
+   "fullName": "Justin Mckoy",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 34521,
+   "starter": 6,
+   "steals": 21,
+   "blocks": 2,
+   "shotsRejected": 5,
+   "personalFouls": 51,
+   "foulsReceived": 38,
+   "turnovers": 24,
+   "rebounds": 101,
+   "defensiveRebounds": 68,
+   "offensiveRebounds": 33
+  },
+  {
+   "acbId": 20210088,
+   "name": "Alberto Abalde",
+   "fullName": "Alberto Abalde",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 31379,
+   "starter": 21,
+   "steals": 16,
+   "blocks": 1,
+   "shotsRejected": 4,
+   "personalFouls": 47,
+   "foulsReceived": 33,
+   "turnovers": 15,
+   "rebounds": 47,
+   "defensiveRebounds": 40,
+   "offensiveRebounds": 7
+  },
+  {
+   "acbId": 30000294,
+   "name": "Leo Meindl",
+   "fullName": "Leonardo Simoes",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 46543,
+   "starter": 27,
+   "steals": 32,
+   "blocks": 9,
+   "shotsRejected": 14,
+   "personalFouls": 81,
+   "foulsReceived": 102,
+   "turnovers": 44,
+   "rebounds": 165,
+   "defensiveRebounds": 114,
+   "offensiveRebounds": 51
+  },
+  {
+   "acbId": 30003398,
+   "name": "Harald Frey",
+   "fullName": "Harald Frey",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 34178,
+   "starter": 22,
+   "steals": 24,
+   "blocks": 1,
+   "shotsRejected": 5,
+   "personalFouls": 76,
+   "foulsReceived": 85,
+   "turnovers": 34,
+   "rebounds": 42,
+   "defensiveRebounds": 34,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 20210147,
+   "name": "Aleix Font",
+   "fullName": "Aleix Font",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 17915,
+   "starter": 1,
+   "steals": 8,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 47,
+   "foulsReceived": 9,
+   "turnovers": 14,
+   "rebounds": 30,
+   "defensiveRebounds": 17,
+   "offensiveRebounds": 13
+  },
+  {
+   "acbId": 30004884,
+   "name": "Braxton Key",
+   "fullName": "Braxton Key",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 32,
+   "timePlayed": 33650,
+   "starter": 6,
+   "steals": 26,
+   "blocks": 14,
+   "shotsRejected": 7,
+   "personalFouls": 60,
+   "foulsReceived": 49,
+   "turnovers": 31,
+   "rebounds": 120,
+   "defensiveRebounds": 88,
+   "offensiveRebounds": 32
+  },
+  {
+   "acbId": 30003977,
+   "name": "Will Clyburn",
+   "fullName": "William Clyburn",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 44560,
+   "starter": 23,
+   "steals": 30,
+   "blocks": 6,
+   "shotsRejected": 4,
+   "personalFouls": 58,
+   "foulsReceived": 88,
+   "turnovers": 44,
+   "rebounds": 120,
+   "defensiveRebounds": 98,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30000037,
+   "name": "Youssoupha Fall",
+   "fullName": "Youssoupha Fall",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 23031,
+   "starter": 14,
+   "steals": 5,
+   "blocks": 14,
+   "shotsRejected": 8,
+   "personalFouls": 50,
+   "foulsReceived": 38,
+   "turnovers": 19,
+   "rebounds": 134,
+   "defensiveRebounds": 76,
+   "offensiveRebounds": 58
+  },
+  {
+   "acbId": 20210335,
+   "name": "Sergi Martínez",
+   "fullName": "Sergi Martínez",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 45522,
+   "starter": 27,
+   "steals": 19,
+   "blocks": 6,
+   "shotsRejected": 8,
+   "personalFouls": 65,
+   "foulsReceived": 48,
+   "turnovers": 24,
+   "rebounds": 146,
+   "defensiveRebounds": 99,
+   "offensiveRebounds": 47
+  },
+  {
+   "acbId": 30001332,
+   "name": "Agustín Ubal",
+   "fullName": "Agustín Ubal",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 35540,
+   "starter": 5,
+   "steals": 24,
+   "blocks": 5,
+   "shotsRejected": 14,
+   "personalFouls": 47,
+   "foulsReceived": 113,
+   "turnovers": 53,
+   "rebounds": 105,
+   "defensiveRebounds": 84,
+   "offensiveRebounds": 21
+  },
+  {
+   "acbId": 20200243,
+   "name": "Ferran Bassas",
+   "fullName": "Ferran Bassas",
+   "team": [
+    "kidsandus-manresa-10",
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90",
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 33617,
+   "starter": 9,
+   "steals": 25,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 63,
+   "foulsReceived": 63,
+   "turnovers": 68,
+   "rebounds": 45,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 13
+  },
+  {
+   "acbId": 20203882,
+   "name": "Joan Sastre",
+   "fullName": "Joan Sastre",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 25058,
+   "starter": 8,
+   "steals": 15,
+   "blocks": 3,
+   "shotsRejected": 1,
+   "personalFouls": 40,
+   "foulsReceived": 12,
+   "turnovers": 6,
+   "rebounds": 45,
+   "defensiveRebounds": 37,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30001114,
+   "name": "Andrés Feliz",
+   "fullName": "Andres Feliz",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 31581,
+   "starter": 6,
+   "steals": 19,
+   "blocks": 2,
+   "shotsRejected": 8,
+   "personalFouls": 60,
+   "foulsReceived": 67,
+   "turnovers": 28,
+   "rebounds": 86,
+   "defensiveRebounds": 62,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 30003979,
+   "name": "Theo Maledon",
+   "fullName": "Theo Maledon",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 36460,
+   "starter": 7,
+   "steals": 15,
+   "blocks": 7,
+   "shotsRejected": 7,
+   "personalFouls": 73,
+   "foulsReceived": 116,
+   "turnovers": 62,
+   "rebounds": 74,
+   "defensiveRebounds": 61,
+   "offensiveRebounds": 13
+  },
+  {
+   "acbId": 20210501,
+   "name": "Mario Hezonja",
+   "fullName": "Mario Hezonja",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 44456,
+   "starter": 30,
+   "steals": 29,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 33,
+   "foulsReceived": 115,
+   "turnovers": 59,
+   "rebounds": 151,
+   "defensiveRebounds": 125,
+   "offensiveRebounds": 26
+  },
+  {
+   "acbId": 20211331,
+   "name": "Facu Campazzo",
+   "fullName": "Facundo Campazzo",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 41680,
+   "starter": 27,
+   "steals": 35,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 69,
+   "foulsReceived": 97,
+   "turnovers": 63,
+   "rebounds": 58,
+   "defensiveRebounds": 50,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 20209859,
+   "name": "Raul Neto",
+   "fullName": "Raul Neto",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 37191,
+   "starter": 16,
+   "steals": 42,
+   "blocks": 4,
+   "shotsRejected": 8,
+   "personalFouls": 84,
+   "foulsReceived": 101,
+   "turnovers": 59,
+   "rebounds": 70,
+   "defensiveRebounds": 46,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 30004002,
+   "name": "Bakary Dibba",
+   "fullName": "Bakary Dibba",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 32128,
+   "starter": 4,
+   "steals": 34,
+   "blocks": 19,
+   "shotsRejected": 12,
+   "personalFouls": 75,
+   "foulsReceived": 45,
+   "turnovers": 16,
+   "rebounds": 109,
+   "defensiveRebounds": 56,
+   "offensiveRebounds": 53
+  },
+  {
+   "acbId": 30004003,
+   "name": "DeWayne Russell",
+   "fullName": "Dewayne Roberts-Russell",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 38627,
+   "starter": 31,
+   "steals": 28,
+   "blocks": 1,
+   "shotsRejected": 11,
+   "personalFouls": 77,
+   "foulsReceived": 76,
+   "turnovers": 69,
+   "rebounds": 41,
+   "defensiveRebounds": 30,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 30004007,
+   "name": "Keandre Cook",
+   "fullName": "Keandre Cook",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 37356,
+   "starter": 28,
+   "steals": 20,
+   "blocks": 4,
+   "shotsRejected": 7,
+   "personalFouls": 65,
+   "foulsReceived": 92,
+   "turnovers": 43,
+   "rebounds": 100,
+   "defensiveRebounds": 84,
+   "offensiveRebounds": 16
+  },
+  {
+   "acbId": 20212239,
+   "name": "Sander Raieste",
+   "fullName": "Sander Raieste",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 36964,
+   "starter": 24,
+   "steals": 20,
+   "blocks": 14,
+   "shotsRejected": 3,
+   "personalFouls": 105,
+   "foulsReceived": 35,
+   "turnovers": 21,
+   "rebounds": 165,
+   "defensiveRebounds": 125,
+   "offensiveRebounds": 40
+  },
+  {
+   "acbId": 20209226,
+   "name": "Alberto Díaz",
+   "fullName": "Alberto Díaz",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 36347,
+   "starter": 7,
+   "steals": 21,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 48,
+   "foulsReceived": 64,
+   "turnovers": 20,
+   "rebounds": 77,
+   "defensiveRebounds": 58,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 30001169,
+   "name": "Tyler Kalinoski",
+   "fullName": "Tyler Kalinoski",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 36085,
+   "starter": 17,
+   "steals": 26,
+   "blocks": 2,
+   "shotsRejected": 10,
+   "personalFouls": 86,
+   "foulsReceived": 25,
+   "turnovers": 25,
+   "rebounds": 76,
+   "defensiveRebounds": 48,
+   "offensiveRebounds": 28
+  },
+  {
+   "acbId": 30000954,
+   "name": "James Webb III",
+   "fullName": "James Webb III",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 31,
+   "timePlayed": 38397,
+   "starter": 16,
+   "steals": 21,
+   "blocks": 5,
+   "shotsRejected": 5,
+   "personalFouls": 77,
+   "foulsReceived": 58,
+   "turnovers": 42,
+   "rebounds": 122,
+   "defensiveRebounds": 95,
+   "offensiveRebounds": 27
+  },
+  {
+   "acbId": 20211466,
+   "name": "Nikola Maric",
+   "fullName": "Nikola Maric",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 21703,
+   "starter": 7,
+   "steals": 6,
+   "blocks": 7,
+   "shotsRejected": 10,
+   "personalFouls": 85,
+   "foulsReceived": 67,
+   "turnovers": 30,
+   "rebounds": 98,
+   "defensiveRebounds": 52,
+   "offensiveRebounds": 46
+  },
+  {
+   "acbId": 30003414,
+   "name": "Retin Obasohan",
+   "fullName": "Retin Obasohan",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 38308,
+   "starter": 20,
+   "steals": 35,
+   "blocks": 1,
+   "shotsRejected": 13,
+   "personalFouls": 95,
+   "foulsReceived": 166,
+   "turnovers": 66,
+   "rebounds": 69,
+   "defensiveRebounds": 55,
+   "offensiveRebounds": 14
+  },
+  {
+   "acbId": 20210659,
+   "name": "Giorgi Shermadini",
+   "fullName": "Giorgi Shermadini",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 39064,
+   "starter": 15,
+   "steals": 6,
+   "blocks": 13,
+   "shotsRejected": 10,
+   "personalFouls": 60,
+   "foulsReceived": 121,
+   "turnovers": 29,
+   "rebounds": 147,
+   "defensiveRebounds": 107,
+   "offensiveRebounds": 40
+  },
+  {
+   "acbId": 30003999,
+   "name": "Wesley Van Beck",
+   "fullName": "Wesley Van Beck",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 26366,
+   "starter": 6,
+   "steals": 9,
+   "blocks": 4,
+   "shotsRejected": 2,
+   "personalFouls": 60,
+   "foulsReceived": 50,
+   "turnovers": 30,
+   "rebounds": 37,
+   "defensiveRebounds": 25,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 30002671,
+   "name": "Yves Pons",
+   "fullName": "Yves Pons",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 39613,
+   "starter": 23,
+   "steals": 17,
+   "blocks": 9,
+   "shotsRejected": 6,
+   "personalFouls": 81,
+   "foulsReceived": 22,
+   "turnovers": 20,
+   "rebounds": 90,
+   "defensiveRebounds": 72,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 30002716,
+   "name": "David Kramer",
+   "fullName": "David Kramer",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 23272,
+   "starter": 10,
+   "steals": 16,
+   "blocks": 1,
+   "shotsRejected": 6,
+   "personalFouls": 60,
+   "foulsReceived": 45,
+   "turnovers": 12,
+   "rebounds": 54,
+   "defensiveRebounds": 39,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 30003978,
+   "name": "Jon Axel Gudmundsson",
+   "fullName": "Jon Gudmundsson",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 36048,
+   "starter": 15,
+   "steals": 32,
+   "blocks": 1,
+   "shotsRejected": 5,
+   "personalFouls": 82,
+   "foulsReceived": 62,
+   "turnovers": 41,
+   "rebounds": 61,
+   "defensiveRebounds": 49,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 20212411,
+   "name": "Luke Fischer",
+   "fullName": "Lucas Fischer",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 28535,
+   "starter": 19,
+   "steals": 7,
+   "blocks": 25,
+   "shotsRejected": 10,
+   "personalFouls": 74,
+   "foulsReceived": 55,
+   "turnovers": 30,
+   "rebounds": 89,
+   "defensiveRebounds": 53,
+   "offensiveRebounds": 36
+  },
+  {
+   "acbId": 30002695,
+   "name": "Mihajlo Andric",
+   "fullName": "Mihajlo Andrić",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 30,
+   "timePlayed": 40750,
+   "starter": 26,
+   "steals": 25,
+   "blocks": 4,
+   "shotsRejected": 5,
+   "personalFouls": 67,
+   "foulsReceived": 50,
+   "turnovers": 29,
+   "rebounds": 67,
+   "defensiveRebounds": 42,
+   "offensiveRebounds": 25
+  },
+  {
+   "acbId": 20210254,
+   "name": "Bojan Dubljevic",
+   "fullName": "Bojan Dubljevic",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 36218,
+   "starter": 18,
+   "steals": 18,
+   "blocks": 7,
+   "shotsRejected": 6,
+   "personalFouls": 64,
+   "foulsReceived": 81,
+   "turnovers": 44,
+   "rebounds": 182,
+   "defensiveRebounds": 111,
+   "offensiveRebounds": 71
+  },
+  {
+   "acbId": 20209470,
+   "name": "Lluís Costa",
+   "fullName": "Lluís Costa",
+   "team": [
+    "coviran-granada-592",
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90",
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 41085,
+   "starter": 23,
+   "steals": 26,
+   "blocks": 0,
+   "shotsRejected": 9,
+   "personalFouls": 66,
+   "foulsReceived": 97,
+   "turnovers": 71,
+   "rebounds": 71,
+   "defensiveRebounds": 66,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30003949,
+   "name": "Kur Kuath",
+   "fullName": "Kur Kuath",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 23629,
+   "starter": 3,
+   "steals": 10,
+   "blocks": 45,
+   "shotsRejected": 6,
+   "personalFouls": 52,
+   "foulsReceived": 48,
+   "turnovers": 20,
+   "rebounds": 85,
+   "defensiveRebounds": 51,
+   "offensiveRebounds": 34
+  },
+  {
+   "acbId": 20210670,
+   "name": "John Shurna",
+   "fullName": "John Shurna",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 31809,
+   "starter": 1,
+   "steals": 10,
+   "blocks": 16,
+   "shotsRejected": 2,
+   "personalFouls": 36,
+   "foulsReceived": 23,
+   "turnovers": 9,
+   "rebounds": 85,
+   "defensiveRebounds": 67,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 30004878,
+   "name": "Kobi Simmons",
+   "fullName": "Kobi Simmons",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 38607,
+   "starter": 12,
+   "steals": 18,
+   "blocks": 2,
+   "shotsRejected": 7,
+   "personalFouls": 89,
+   "foulsReceived": 67,
+   "turnovers": 46,
+   "rebounds": 65,
+   "defensiveRebounds": 51,
+   "offensiveRebounds": 14
+  },
+  {
+   "acbId": 30000306,
+   "name": "Rokas Giedraitis",
+   "fullName": "Rokas Giedraitis",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 31327,
+   "starter": 14,
+   "steals": 24,
+   "blocks": 7,
+   "shotsRejected": 5,
+   "personalFouls": 34,
+   "foulsReceived": 37,
+   "turnovers": 15,
+   "rebounds": 81,
+   "defensiveRebounds": 61,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30003980,
+   "name": "Gabriele Procida",
+   "fullName": "Gabriele Procida",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 24997,
+   "starter": 6,
+   "steals": 15,
+   "blocks": 4,
+   "shotsRejected": 1,
+   "personalFouls": 51,
+   "foulsReceived": 25,
+   "turnovers": 16,
+   "rebounds": 47,
+   "defensiveRebounds": 29,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 20212244,
+   "name": "Jordan Sakho",
+   "fullName": "Jordan Djounorou",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 26127,
+   "starter": 19,
+   "steals": 13,
+   "blocks": 15,
+   "shotsRejected": 3,
+   "personalFouls": 76,
+   "foulsReceived": 58,
+   "turnovers": 28,
+   "rebounds": 111,
+   "defensiveRebounds": 64,
+   "offensiveRebounds": 47
+  },
+  {
+   "acbId": 20210828,
+   "name": "Emir Sulejmanovic",
+   "fullName": "Emir Sulejmanovic",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 29,
+   "timePlayed": 25557,
+   "starter": 0,
+   "steals": 9,
+   "blocks": 10,
+   "shotsRejected": 4,
+   "personalFouls": 68,
+   "foulsReceived": 45,
+   "turnovers": 24,
+   "rebounds": 125,
+   "defensiveRebounds": 83,
+   "offensiveRebounds": 42
+  },
+  {
+   "acbId": 20212348,
+   "name": "Jaime Fernández",
+   "fullName": "Jaime Fernández",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 17229,
+   "starter": 3,
+   "steals": 10,
+   "blocks": 6,
+   "shotsRejected": 2,
+   "personalFouls": 53,
+   "foulsReceived": 14,
+   "turnovers": 10,
+   "rebounds": 60,
+   "defensiveRebounds": 33,
+   "offensiveRebounds": 27
+  },
+  {
+   "acbId": 20212139,
+   "name": "Millán Jiménez",
+   "fullName": "Millán Jiménez",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 23064,
+   "starter": 13,
+   "steals": 12,
+   "blocks": 3,
+   "shotsRejected": 5,
+   "personalFouls": 35,
+   "foulsReceived": 30,
+   "turnovers": 33,
+   "rebounds": 73,
+   "defensiveRebounds": 55,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 20211797,
+   "name": "Rodions Kurucs",
+   "fullName": "Rodions Kurucs",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 35470,
+   "starter": 23,
+   "steals": 24,
+   "blocks": 5,
+   "shotsRejected": 9,
+   "personalFouls": 84,
+   "foulsReceived": 66,
+   "turnovers": 42,
+   "rebounds": 130,
+   "defensiveRebounds": 89,
+   "offensiveRebounds": 41
+  },
+  {
+   "acbId": 20212966,
+   "name": "Stan Okoye",
+   "fullName": "Stanley Okoye",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 35280,
+   "starter": 26,
+   "steals": 23,
+   "blocks": 6,
+   "shotsRejected": 8,
+   "personalFouls": 66,
+   "foulsReceived": 35,
+   "turnovers": 24,
+   "rebounds": 96,
+   "defensiveRebounds": 76,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 20200274,
+   "name": "Rafa Luz",
+   "fullName": "Rafael Luz",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 26240,
+   "starter": 5,
+   "steals": 15,
+   "blocks": 3,
+   "shotsRejected": 3,
+   "personalFouls": 51,
+   "foulsReceived": 40,
+   "turnovers": 43,
+   "rebounds": 77,
+   "defensiveRebounds": 58,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 30004061,
+   "name": "Trey Lyles",
+   "fullName": "Trey Lyles",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 34997,
+   "starter": 8,
+   "steals": 12,
+   "blocks": 21,
+   "shotsRejected": 6,
+   "personalFouls": 50,
+   "foulsReceived": 77,
+   "turnovers": 39,
+   "rebounds": 141,
+   "defensiveRebounds": 117,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 20204078,
+   "name": "Pablo Almazán",
+   "fullName": "Pablo Almazán",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 16709,
+   "starter": 2,
+   "steals": 19,
+   "blocks": 2,
+   "shotsRejected": 0,
+   "personalFouls": 40,
+   "foulsReceived": 6,
+   "turnovers": 2,
+   "rebounds": 30,
+   "defensiveRebounds": 13,
+   "offensiveRebounds": 17
+  },
+  {
+   "acbId": 30000479,
+   "name": "Yannick Nzosa",
+   "fullName": "Yannick Nzosa",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 12402,
+   "starter": 0,
+   "steals": 10,
+   "blocks": 13,
+   "shotsRejected": 2,
+   "personalFouls": 48,
+   "foulsReceived": 12,
+   "turnovers": 9,
+   "rebounds": 36,
+   "defensiveRebounds": 26,
+   "offensiveRebounds": 10
+  },
+  {
+   "acbId": 30001900,
+   "name": "Darius Thompson",
+   "fullName": "Darius Thompson",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 28,
+   "timePlayed": 29319,
+   "starter": 11,
+   "steals": 20,
+   "blocks": 7,
+   "shotsRejected": 2,
+   "personalFouls": 51,
+   "foulsReceived": 39,
+   "turnovers": 25,
+   "rebounds": 51,
+   "defensiveRebounds": 27,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 20202164,
+   "name": "Pierre Oriola",
+   "fullName": "Pierre  Oriola",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 27,
+   "timePlayed": 32719,
+   "starter": 6,
+   "steals": 4,
+   "blocks": 5,
+   "shotsRejected": 5,
+   "personalFouls": 76,
+   "foulsReceived": 83,
+   "turnovers": 29,
+   "rebounds": 159,
+   "defensiveRebounds": 102,
+   "offensiveRebounds": 57
+  },
+  {
+   "acbId": 30000207,
+   "name": "Gustav Knudsen",
+   "fullName": "Gustav Knudsen",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 27,
+   "timePlayed": 21994,
+   "starter": 12,
+   "steals": 18,
+   "blocks": 8,
+   "shotsRejected": 10,
+   "personalFouls": 41,
+   "foulsReceived": 14,
+   "turnovers": 18,
+   "rebounds": 75,
+   "defensiveRebounds": 56,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 30005184,
+   "name": "Gytis Radzevicius",
+   "fullName": "Gytis Radzevicius",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 27,
+   "timePlayed": 30547,
+   "starter": 27,
+   "steals": 14,
+   "blocks": 3,
+   "shotsRejected": 1,
+   "personalFouls": 39,
+   "foulsReceived": 20,
+   "turnovers": 17,
+   "rebounds": 85,
+   "defensiveRebounds": 57,
+   "offensiveRebounds": 28
+  },
+  {
+   "acbId": 30003367,
+   "name": "Kostas Kostadinov",
+   "fullName": "Konstantin Kostadinov",
+   "team": [
+    "la-laguna-tenerife-28",
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90",
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 27,
+   "timePlayed": 20740,
+   "starter": 5,
+   "steals": 12,
+   "blocks": 6,
+   "shotsRejected": 9,
+   "personalFouls": 51,
+   "foulsReceived": 28,
+   "turnovers": 24,
+   "rebounds": 65,
+   "defensiveRebounds": 35,
+   "offensiveRebounds": 30
+  },
+  {
+   "acbId": 20210544,
+   "name": "Juan Rubio",
+   "fullName": "Juan Rubio",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 27,
+   "timePlayed": 15651,
+   "starter": 4,
+   "steals": 10,
+   "blocks": 1,
+   "shotsRejected": 1,
+   "personalFouls": 37,
+   "foulsReceived": 6,
+   "turnovers": 5,
+   "rebounds": 40,
+   "defensiveRebounds": 19,
+   "offensiveRebounds": 21
+  },
+  {
+   "acbId": 30004012,
+   "name": "Stefan Lazarevic",
+   "fullName": "Stefan Lazarevic",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 27,
+   "timePlayed": 22965,
+   "starter": 7,
+   "steals": 11,
+   "blocks": 0,
+   "shotsRejected": 3,
+   "personalFouls": 65,
+   "foulsReceived": 21,
+   "turnovers": 17,
+   "rebounds": 79,
+   "defensiveRebounds": 53,
+   "offensiveRebounds": 26
+  },
+  {
+   "acbId": 30003966,
+   "name": "Chris Duarte",
+   "fullName": "Christopher Theoret",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 27,
+   "timePlayed": 29019,
+   "starter": 11,
+   "steals": 17,
+   "blocks": 7,
+   "shotsRejected": 6,
+   "personalFouls": 57,
+   "foulsReceived": 83,
+   "turnovers": 40,
+   "rebounds": 50,
+   "defensiveRebounds": 43,
+   "offensiveRebounds": 7
+  },
+  {
+   "acbId": 30005186,
+   "name": "Eugene Omoruyi",
+   "fullName": "Eugene Omoruyi",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 26,
+   "timePlayed": 27222,
+   "starter": 8,
+   "steals": 25,
+   "blocks": 3,
+   "shotsRejected": 8,
+   "personalFouls": 62,
+   "foulsReceived": 64,
+   "turnovers": 52,
+   "rebounds": 65,
+   "defensiveRebounds": 45,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30003408,
+   "name": "Trent Forrest",
+   "fullName": "Landon Forrest",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 26,
+   "timePlayed": 40047,
+   "starter": 25,
+   "steals": 32,
+   "blocks": 7,
+   "shotsRejected": 9,
+   "personalFouls": 36,
+   "foulsReceived": 110,
+   "turnovers": 55,
+   "rebounds": 94,
+   "defensiveRebounds": 82,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 20212174,
+   "name": "Usman Garuba",
+   "fullName": "Usman Garuba",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 26,
+   "timePlayed": 20110,
+   "starter": 1,
+   "steals": 21,
+   "blocks": 21,
+   "shotsRejected": 6,
+   "personalFouls": 59,
+   "foulsReceived": 34,
+   "turnovers": 24,
+   "rebounds": 82,
+   "defensiveRebounds": 48,
+   "offensiveRebounds": 34
+  },
+  {
+   "acbId": 20210392,
+   "name": "Josep Puerto",
+   "fullName": "Josep Puerto",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 26,
+   "timePlayed": 26437,
+   "starter": 6,
+   "steals": 8,
+   "blocks": 2,
+   "shotsRejected": 6,
+   "personalFouls": 36,
+   "foulsReceived": 28,
+   "turnovers": 15,
+   "rebounds": 76,
+   "defensiveRebounds": 48,
+   "offensiveRebounds": 28
+  },
+  {
+   "acbId": 30003505,
+   "name": "Amida Brimah",
+   "fullName": "Amida Brimah",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 18422,
+   "starter": 9,
+   "steals": 3,
+   "blocks": 36,
+   "shotsRejected": 4,
+   "personalFouls": 66,
+   "foulsReceived": 44,
+   "turnovers": 25,
+   "rebounds": 53,
+   "defensiveRebounds": 27,
+   "offensiveRebounds": 26
+  },
+  {
+   "acbId": 20211456,
+   "name": "Eric Vila",
+   "fullName": "Eric Vila",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 15247,
+   "starter": 2,
+   "steals": 5,
+   "blocks": 2,
+   "shotsRejected": 2,
+   "personalFouls": 28,
+   "foulsReceived": 18,
+   "turnovers": 5,
+   "rebounds": 40,
+   "defensiveRebounds": 27,
+   "offensiveRebounds": 13
+  },
+  {
+   "acbId": 30002719,
+   "name": "Gyorgy Goloman",
+   "fullName": "Gyorgy Golomán",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 22102,
+   "starter": 5,
+   "steals": 10,
+   "blocks": 10,
+   "shotsRejected": 3,
+   "personalFouls": 57,
+   "foulsReceived": 61,
+   "turnovers": 22,
+   "rebounds": 84,
+   "defensiveRebounds": 56,
+   "offensiveRebounds": 28
+  },
+  {
+   "acbId": 30003981,
+   "name": "Chuma Okeke",
+   "fullName": "Chukwuma Okeke",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 29314,
+   "starter": 14,
+   "steals": 18,
+   "blocks": 8,
+   "shotsRejected": 2,
+   "personalFouls": 33,
+   "foulsReceived": 18,
+   "turnovers": 9,
+   "rebounds": 90,
+   "defensiveRebounds": 60,
+   "offensiveRebounds": 30
+  },
+  {
+   "acbId": 30001954,
+   "name": "Ethan Happ",
+   "fullName": "Itan Hap",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 36233,
+   "starter": 15,
+   "steals": 47,
+   "blocks": 22,
+   "shotsRejected": 11,
+   "personalFouls": 71,
+   "foulsReceived": 86,
+   "turnovers": 41,
+   "rebounds": 163,
+   "defensiveRebounds": 96,
+   "offensiveRebounds": 67
+  },
+  {
+   "acbId": 20212941,
+   "name": "Dylan Ennis",
+   "fullName": "Dylan Howell",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 36654,
+   "starter": 22,
+   "steals": 27,
+   "blocks": 2,
+   "shotsRejected": 15,
+   "personalFouls": 46,
+   "foulsReceived": 65,
+   "turnovers": 44,
+   "rebounds": 79,
+   "defensiveRebounds": 60,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 30005183,
+   "name": "Chase Audige",
+   "fullName": "Chase Audige",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 21557,
+   "starter": 5,
+   "steals": 13,
+   "blocks": 4,
+   "shotsRejected": 11,
+   "personalFouls": 47,
+   "foulsReceived": 20,
+   "turnovers": 19,
+   "rebounds": 32,
+   "defensiveRebounds": 15,
+   "offensiveRebounds": 17
+  },
+  {
+   "acbId": 30003424,
+   "name": "Killian Tillie",
+   "fullName": "Killian Tillie",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 20541,
+   "starter": 8,
+   "steals": 16,
+   "blocks": 6,
+   "shotsRejected": 4,
+   "personalFouls": 53,
+   "foulsReceived": 25,
+   "turnovers": 19,
+   "rebounds": 66,
+   "defensiveRebounds": 36,
+   "offensiveRebounds": 30
+  },
+  {
+   "acbId": 20213230,
+   "name": "Yankuba Sima",
+   "fullName": "Yankuba Sima",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 25,
+   "timePlayed": 13304,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 8,
+   "shotsRejected": 6,
+   "personalFouls": 36,
+   "foulsReceived": 23,
+   "turnovers": 12,
+   "rebounds": 50,
+   "defensiveRebounds": 26,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 20211947,
+   "name": "Nico Laprovittola",
+   "fullName": "Nicolas Laprovittola",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 24,
+   "timePlayed": 25696,
+   "starter": 3,
+   "steals": 14,
+   "blocks": 0,
+   "shotsRejected": 5,
+   "personalFouls": 56,
+   "foulsReceived": 60,
+   "turnovers": 42,
+   "rebounds": 35,
+   "defensiveRebounds": 29,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 20212102,
+   "name": "Guillem Ferrando",
+   "fullName": "Guillem Ferrando",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 24,
+   "timePlayed": 10338,
+   "starter": 0,
+   "steals": 3,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 16,
+   "foulsReceived": 18,
+   "turnovers": 21,
+   "rebounds": 12,
+   "defensiveRebounds": 6,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 20212073,
+   "name": "Miguel Allen",
+   "fullName": "Miguel Allen",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 23,
+   "timePlayed": 10524,
+   "starter": 4,
+   "steals": 2,
+   "blocks": 6,
+   "shotsRejected": 1,
+   "personalFouls": 38,
+   "foulsReceived": 12,
+   "turnovers": 7,
+   "rebounds": 24,
+   "defensiveRebounds": 17,
+   "offensiveRebounds": 7
+  },
+  {
+   "acbId": 20202172,
+   "name": "Ante Tomic",
+   "fullName": "Ante Tomic",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 23,
+   "timePlayed": 27364,
+   "starter": 8,
+   "steals": 6,
+   "blocks": 7,
+   "shotsRejected": 5,
+   "personalFouls": 38,
+   "foulsReceived": 87,
+   "turnovers": 27,
+   "rebounds": 141,
+   "defensiveRebounds": 101,
+   "offensiveRebounds": 40
+  },
+  {
+   "acbId": 30005191,
+   "name": "Jassel Perez",
+   "fullName": "Jassel Perez",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 23,
+   "timePlayed": 29860,
+   "starter": 7,
+   "steals": 39,
+   "blocks": 7,
+   "shotsRejected": 9,
+   "personalFouls": 73,
+   "foulsReceived": 70,
+   "turnovers": 46,
+   "rebounds": 87,
+   "defensiveRebounds": 63,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 30003994,
+   "name": "Louis Olinde",
+   "fullName": "Louis Olinde",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 23,
+   "timePlayed": 29543,
+   "starter": 10,
+   "steals": 18,
+   "blocks": 9,
+   "shotsRejected": 7,
+   "personalFouls": 47,
+   "foulsReceived": 64,
+   "turnovers": 28,
+   "rebounds": 98,
+   "defensiveRebounds": 58,
+   "offensiveRebounds": 40
+  },
+  {
+   "acbId": 20212488,
+   "name": "Héctor Alderete",
+   "fullName": "Héctor Alderete",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 23,
+   "timePlayed": 11339,
+   "starter": 0,
+   "steals": 3,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 36,
+   "foulsReceived": 5,
+   "turnovers": 3,
+   "rebounds": 26,
+   "defensiveRebounds": 18,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 20202039,
+   "name": "Nihad Djedovic",
+   "fullName": "Nihad Dedovic",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 23,
+   "timePlayed": 24117,
+   "starter": 5,
+   "steals": 18,
+   "blocks": 0,
+   "shotsRejected": 7,
+   "personalFouls": 37,
+   "foulsReceived": 34,
+   "turnovers": 31,
+   "rebounds": 55,
+   "defensiveRebounds": 42,
+   "offensiveRebounds": 13
+  },
+  {
+   "acbId": 30003817,
+   "name": "DJ Stephens",
+   "fullName": "Dalenta Stephens",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 22,
+   "timePlayed": 20163,
+   "starter": 11,
+   "steals": 9,
+   "blocks": 7,
+   "shotsRejected": 1,
+   "personalFouls": 31,
+   "foulsReceived": 14,
+   "turnovers": 10,
+   "rebounds": 49,
+   "defensiveRebounds": 35,
+   "offensiveRebounds": 14
+  },
+  {
+   "acbId": 30001171,
+   "name": "Trae Bell-Haynes",
+   "fullName": "Trae Bell-Haynes",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 22,
+   "timePlayed": 33100,
+   "starter": 18,
+   "steals": 21,
+   "blocks": 7,
+   "shotsRejected": 22,
+   "personalFouls": 60,
+   "foulsReceived": 95,
+   "turnovers": 74,
+   "rebounds": 49,
+   "defensiveRebounds": 34,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 20204156,
+   "name": "Dani Díez",
+   "fullName": "Daniel Díez",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 22,
+   "timePlayed": 26403,
+   "starter": 4,
+   "steals": 9,
+   "blocks": 0,
+   "shotsRejected": 5,
+   "personalFouls": 16,
+   "foulsReceived": 14,
+   "turnovers": 15,
+   "rebounds": 82,
+   "defensiveRebounds": 60,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30005200,
+   "name": "Kelan Martin",
+   "fullName": "Kelan Martin",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 22,
+   "timePlayed": 23151,
+   "starter": 8,
+   "steals": 10,
+   "blocks": 3,
+   "shotsRejected": 1,
+   "personalFouls": 40,
+   "foulsReceived": 23,
+   "turnovers": 19,
+   "rebounds": 44,
+   "defensiveRebounds": 37,
+   "offensiveRebounds": 7
+  },
+  {
+   "acbId": 20209407,
+   "name": "Edy Tavares",
+   "fullName": "Walter Tavares",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 21,
+   "timePlayed": 27347,
+   "starter": 21,
+   "steals": 16,
+   "blocks": 46,
+   "shotsRejected": 2,
+   "personalFouls": 61,
+   "foulsReceived": 69,
+   "turnovers": 23,
+   "rebounds": 134,
+   "defensiveRebounds": 83,
+   "offensiveRebounds": 51
+  },
+  {
+   "acbId": 30004910,
+   "name": "Alex Len",
+   "fullName": "Oleksii Len",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 21,
+   "timePlayed": 16869,
+   "starter": 8,
+   "steals": 11,
+   "blocks": 26,
+   "shotsRejected": 2,
+   "personalFouls": 39,
+   "foulsReceived": 40,
+   "turnovers": 23,
+   "rebounds": 76,
+   "defensiveRebounds": 44,
+   "offensiveRebounds": 32
+  },
+  {
+   "acbId": 20210278,
+   "name": "Moussa Diagne",
+   "fullName": "Cheikh Diagné",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 21,
+   "timePlayed": 8562,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 4,
+   "shotsRejected": 1,
+   "personalFouls": 30,
+   "foulsReceived": 20,
+   "turnovers": 7,
+   "rebounds": 28,
+   "defensiveRebounds": 18,
+   "offensiveRebounds": 10
+  },
+  {
+   "acbId": 30005177,
+   "name": "Augustine Rubit",
+   "fullName": "Augustin Rubit",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 21,
+   "timePlayed": 16039,
+   "starter": 0,
+   "steals": 8,
+   "blocks": 4,
+   "shotsRejected": 3,
+   "personalFouls": 48,
+   "foulsReceived": 48,
+   "turnovers": 10,
+   "rebounds": 44,
+   "defensiveRebounds": 26,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 30000053,
+   "name": "Tyson Pérez",
+   "fullName": "José Pérez",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 21,
+   "timePlayed": 21599,
+   "starter": 15,
+   "steals": 18,
+   "blocks": 4,
+   "shotsRejected": 8,
+   "personalFouls": 34,
+   "foulsReceived": 32,
+   "turnovers": 18,
+   "rebounds": 129,
+   "defensiveRebounds": 85,
+   "offensiveRebounds": 44
+  },
+  {
+   "acbId": 30002721,
+   "name": "Jabari Parker",
+   "fullName": "Jabari Parker",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 29556,
+   "starter": 17,
+   "steals": 12,
+   "blocks": 9,
+   "shotsRejected": 7,
+   "personalFouls": 36,
+   "foulsReceived": 41,
+   "turnovers": 26,
+   "rebounds": 90,
+   "defensiveRebounds": 61,
+   "offensiveRebounds": 29
+  },
+  {
+   "acbId": 30004050,
+   "name": "Miles Norris",
+   "fullName": "Miles Norris",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 24783,
+   "starter": 9,
+   "steals": 15,
+   "blocks": 11,
+   "shotsRejected": 3,
+   "personalFouls": 30,
+   "foulsReceived": 16,
+   "turnovers": 5,
+   "rebounds": 72,
+   "defensiveRebounds": 61,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 30005193,
+   "name": "Amar Alibegovic",
+   "fullName": "Amar Alibegovic",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 29293,
+   "starter": 7,
+   "steals": 11,
+   "blocks": 3,
+   "shotsRejected": 6,
+   "personalFouls": 47,
+   "foulsReceived": 30,
+   "turnovers": 34,
+   "rebounds": 77,
+   "defensiveRebounds": 60,
+   "offensiveRebounds": 17
+  },
+  {
+   "acbId": 20204145,
+   "name": "Beqa Burjanadze",
+   "fullName": "Beka Burjanadze",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 14699,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 1,
+   "shotsRejected": 7,
+   "personalFouls": 21,
+   "foulsReceived": 33,
+   "turnovers": 13,
+   "rebounds": 42,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 10
+  },
+  {
+   "acbId": 20213002,
+   "name": "Louis Labeyrie",
+   "fullName": "Louis Labeyrie",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 20753,
+   "starter": 14,
+   "steals": 5,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 25,
+   "foulsReceived": 30,
+   "turnovers": 8,
+   "rebounds": 56,
+   "defensiveRebounds": 41,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 30000138,
+   "name": "Juan Fernández",
+   "fullName": "Juan Fernandez",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 23222,
+   "starter": 9,
+   "steals": 11,
+   "blocks": 10,
+   "shotsRejected": 3,
+   "personalFouls": 55,
+   "foulsReceived": 67,
+   "turnovers": 22,
+   "rebounds": 87,
+   "defensiveRebounds": 66,
+   "offensiveRebounds": 21
+  },
+  {
+   "acbId": 30003970,
+   "name": "Morris Udeze",
+   "fullName": "Morris Udeze",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 16523,
+   "starter": 1,
+   "steals": 12,
+   "blocks": 3,
+   "shotsRejected": 7,
+   "personalFouls": 56,
+   "foulsReceived": 45,
+   "turnovers": 20,
+   "rebounds": 64,
+   "defensiveRebounds": 39,
+   "offensiveRebounds": 25
+  },
+  {
+   "acbId": 20212952,
+   "name": "Gabriel Deck",
+   "fullName": "Gabriel Deck",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 26494,
+   "starter": 10,
+   "steals": 12,
+   "blocks": 3,
+   "shotsRejected": 3,
+   "personalFouls": 33,
+   "foulsReceived": 39,
+   "turnovers": 17,
+   "rebounds": 67,
+   "defensiveRebounds": 47,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30003983,
+   "name": "Jhivvan Jackson",
+   "fullName": "Jhivvan Jackson",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 20,
+   "timePlayed": 30568,
+   "starter": 13,
+   "steals": 33,
+   "blocks": 1,
+   "shotsRejected": 3,
+   "personalFouls": 64,
+   "foulsReceived": 75,
+   "turnovers": 40,
+   "rebounds": 50,
+   "defensiveRebounds": 38,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 30002043,
+   "name": "William Howard",
+   "fullName": "William Howard",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 20081,
+   "starter": 8,
+   "steals": 13,
+   "blocks": 2,
+   "shotsRejected": 5,
+   "personalFouls": 41,
+   "foulsReceived": 27,
+   "turnovers": 13,
+   "rebounds": 81,
+   "defensiveRebounds": 61,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 20212441,
+   "name": "Miquel Salvó",
+   "fullName": "Miquel Salvó",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 14059,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 2,
+   "shotsRejected": 0,
+   "personalFouls": 21,
+   "foulsReceived": 22,
+   "turnovers": 10,
+   "rebounds": 44,
+   "defensiveRebounds": 33,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 30003475,
+   "name": "Lucas Maniema",
+   "fullName": "Lucas Nzambi",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 3524,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 6,
+   "foulsReceived": 9,
+   "turnovers": 1,
+   "rebounds": 7,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30000287,
+   "name": "Kassius Robertson",
+   "fullName": "Kassius Robertson",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 23418,
+   "starter": 9,
+   "steals": 4,
+   "blocks": 1,
+   "shotsRejected": 11,
+   "personalFouls": 35,
+   "foulsReceived": 40,
+   "turnovers": 27,
+   "rebounds": 28,
+   "defensiveRebounds": 26,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 20203826,
+   "name": "Dani Pérez",
+   "fullName": "Daniel Pérez",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 18205,
+   "starter": 7,
+   "steals": 6,
+   "blocks": 0,
+   "shotsRejected": 4,
+   "personalFouls": 37,
+   "foulsReceived": 32,
+   "turnovers": 37,
+   "rebounds": 28,
+   "defensiveRebounds": 22,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 20212905,
+   "name": "Khalifa Diop",
+   "fullName": "Khalifa Diop",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 18218,
+   "starter": 15,
+   "steals": 11,
+   "blocks": 14,
+   "shotsRejected": 5,
+   "personalFouls": 42,
+   "foulsReceived": 26,
+   "turnovers": 20,
+   "rebounds": 82,
+   "defensiveRebounds": 59,
+   "offensiveRebounds": 23
+  },
+  {
+   "acbId": 20212616,
+   "name": "Izan Almansa",
+   "fullName": "Izan Almansa",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 11953,
+   "starter": 1,
+   "steals": 4,
+   "blocks": 5,
+   "shotsRejected": 3,
+   "personalFouls": 36,
+   "foulsReceived": 19,
+   "turnovers": 5,
+   "rebounds": 44,
+   "defensiveRebounds": 25,
+   "offensiveRebounds": 19
+  },
+  {
+   "acbId": 30004053,
+   "name": "Isaac Nogués",
+   "fullName": "Isaac Nogués",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 19,
+   "timePlayed": 9083,
+   "starter": 1,
+   "steals": 15,
+   "blocks": 1,
+   "shotsRejected": 1,
+   "personalFouls": 36,
+   "foulsReceived": 10,
+   "turnovers": 6,
+   "rebounds": 30,
+   "defensiveRebounds": 21,
+   "offensiveRebounds": 9
+  },
+  {
+   "acbId": 30000550,
+   "name": "Christ Koumadje",
+   "fullName": "Jean Koumadje",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 18,
+   "timePlayed": 11123,
+   "starter": 8,
+   "steals": 2,
+   "blocks": 9,
+   "shotsRejected": 2,
+   "personalFouls": 36,
+   "foulsReceived": 23,
+   "turnovers": 14,
+   "rebounds": 48,
+   "defensiveRebounds": 26,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 20210357,
+   "name": "Carlos Alocén",
+   "fullName": "Carlos Alocén",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 18,
+   "timePlayed": 12710,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 21,
+   "foulsReceived": 33,
+   "turnovers": 27,
+   "rebounds": 34,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30001182,
+   "name": "Erik Quintela",
+   "fullName": "Erik Quintela",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 18,
+   "timePlayed": 4602,
+   "starter": 3,
+   "steals": 4,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 14,
+   "foulsReceived": 13,
+   "turnovers": 8,
+   "rebounds": 16,
+   "defensiveRebounds": 10,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 30001214,
+   "name": "Elias Valtonen",
+   "fullName": "Elias Valtonen",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 17,
+   "timePlayed": 25996,
+   "starter": 17,
+   "steals": 11,
+   "blocks": 4,
+   "shotsRejected": 8,
+   "personalFouls": 47,
+   "foulsReceived": 38,
+   "turnovers": 15,
+   "rebounds": 53,
+   "defensiveRebounds": 39,
+   "offensiveRebounds": 14
+  },
+  {
+   "acbId": 30005189,
+   "name": "Eli Brooks",
+   "fullName": "Eli Brooks",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 17,
+   "timePlayed": 20533,
+   "starter": 14,
+   "steals": 19,
+   "blocks": 0,
+   "shotsRejected": 3,
+   "personalFouls": 35,
+   "foulsReceived": 41,
+   "turnovers": 26,
+   "rebounds": 45,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 13
+  },
+  {
+   "acbId": 30005323,
+   "name": "Jesse Edwards",
+   "fullName": "Jesse Edwards",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 17,
+   "timePlayed": 11273,
+   "starter": 15,
+   "steals": 2,
+   "blocks": 9,
+   "shotsRejected": 7,
+   "personalFouls": 34,
+   "foulsReceived": 29,
+   "turnovers": 14,
+   "rebounds": 51,
+   "defensiveRebounds": 31,
+   "offensiveRebounds": 20
+  },
+  {
+   "acbId": 30005322,
+   "name": "Patty Mills",
+   "fullName": "Patrick Mills",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 17,
+   "timePlayed": 22403,
+   "starter": 9,
+   "steals": 9,
+   "blocks": 1,
+   "shotsRejected": 5,
+   "personalFouls": 33,
+   "foulsReceived": 73,
+   "turnovers": 27,
+   "rebounds": 14,
+   "defensiveRebounds": 13,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30002005,
+   "name": "Amar Sylla",
+   "fullName": "Amar Sylla",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 17,
+   "timePlayed": 6973,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 3,
+   "shotsRejected": 0,
+   "personalFouls": 7,
+   "foulsReceived": 8,
+   "turnovers": 2,
+   "rebounds": 27,
+   "defensiveRebounds": 18,
+   "offensiveRebounds": 9
+  },
+  {
+   "acbId": 30002813,
+   "name": "Youssouf Traoré",
+   "fullName": "Youssouf Traore",
+   "team": [
+    "casademont-zaragoza-16",
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90",
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 16,
+   "timePlayed": 4469,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 1,
+   "shotsRejected": 3,
+   "personalFouls": 15,
+   "foulsReceived": 7,
+   "turnovers": 6,
+   "rebounds": 13,
+   "defensiveRebounds": 5,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30003936,
+   "name": "Joel Soriano",
+   "fullName": "Joel Soriano",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 16,
+   "timePlayed": 13292,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 5,
+   "shotsRejected": 9,
+   "personalFouls": 34,
+   "foulsReceived": 31,
+   "turnovers": 18,
+   "rebounds": 55,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 23
+  },
+  {
+   "acbId": 20211660,
+   "name": "Xabi López-Arostegui",
+   "fullName": "Xabier López-Arostegui",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 16,
+   "timePlayed": 14379,
+   "starter": 3,
+   "steals": 16,
+   "blocks": 0,
+   "shotsRejected": 4,
+   "personalFouls": 21,
+   "foulsReceived": 33,
+   "turnovers": 17,
+   "rebounds": 75,
+   "defensiveRebounds": 51,
+   "offensiveRebounds": 24
+  },
+  {
+   "acbId": 20213001,
+   "name": "Edu Durán",
+   "fullName": "Eduardo Durán",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 15,
+   "timePlayed": 3077,
+   "starter": 1,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 6,
+   "foulsReceived": 2,
+   "turnovers": 4,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003950,
+   "name": "Braian Angola",
+   "fullName": "Braian Angola",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 15,
+   "timePlayed": 17448,
+   "starter": 1,
+   "steals": 13,
+   "blocks": 2,
+   "shotsRejected": 3,
+   "personalFouls": 38,
+   "foulsReceived": 45,
+   "turnovers": 23,
+   "rebounds": 38,
+   "defensiveRebounds": 23,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 30003945,
+   "name": "Grant Golden",
+   "fullName": "Grant Golden",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 15,
+   "timePlayed": 14337,
+   "starter": 8,
+   "steals": 3,
+   "blocks": 3,
+   "shotsRejected": 7,
+   "personalFouls": 27,
+   "foulsReceived": 18,
+   "turnovers": 26,
+   "rebounds": 54,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 22
+  },
+  {
+   "acbId": 30005316,
+   "name": "Justin Wright-Foreman",
+   "fullName": "Justin Wright-Foreman",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 14,
+   "timePlayed": 16570,
+   "starter": 5,
+   "steals": 9,
+   "blocks": 0,
+   "shotsRejected": 4,
+   "personalFouls": 20,
+   "foulsReceived": 30,
+   "turnovers": 29,
+   "rebounds": 15,
+   "defensiveRebounds": 10,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 20212430,
+   "name": "Matt Thomas",
+   "fullName": "Matthew Thomas",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 14,
+   "timePlayed": 23290,
+   "starter": 13,
+   "steals": 9,
+   "blocks": 0,
+   "shotsRejected": 3,
+   "personalFouls": 39,
+   "foulsReceived": 26,
+   "turnovers": 23,
+   "rebounds": 32,
+   "defensiveRebounds": 21,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 20203675,
+   "name": "Pere Tomàs",
+   "fullName": "Pere Tomàs",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 14,
+   "timePlayed": 5080,
+   "starter": 0,
+   "steals": 3,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 11,
+   "foulsReceived": 2,
+   "turnovers": 1,
+   "rebounds": 11,
+   "defensiveRebounds": 8,
+   "offensiveRebounds": 3
+  },
+  {
+   "acbId": 30003976,
+   "name": "Kristers Zoriks",
+   "fullName": "Kristers Zoriks",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 14,
+   "timePlayed": 10934,
+   "starter": 3,
+   "steals": 7,
+   "blocks": 1,
+   "shotsRejected": 5,
+   "personalFouls": 25,
+   "foulsReceived": 25,
+   "turnovers": 15,
+   "rebounds": 12,
+   "defensiveRebounds": 10,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30000015,
+   "name": "Dani García",
+   "fullName": "Daniel García",
+   "team": [
+    "ilerna-lleida-658",
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90",
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 14,
+   "timePlayed": 16716,
+   "starter": 10,
+   "steals": 14,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 46,
+   "foulsReceived": 30,
+   "turnovers": 26,
+   "rebounds": 39,
+   "defensiveRebounds": 34,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30005318,
+   "name": "Sir'Jabari Rice",
+   "fullName": "Sir Jabari Rice",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 14,
+   "timePlayed": 20607,
+   "starter": 6,
+   "steals": 9,
+   "blocks": 5,
+   "shotsRejected": 8,
+   "personalFouls": 36,
+   "foulsReceived": 54,
+   "turnovers": 39,
+   "rebounds": 53,
+   "defensiveRebounds": 38,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 30004089,
+   "name": "Zach Hicks",
+   "fullName": "Zachariah Hicks",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 14,
+   "timePlayed": 7268,
+   "starter": 4,
+   "steals": 1,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 25,
+   "foulsReceived": 2,
+   "turnovers": 4,
+   "rebounds": 18,
+   "defensiveRebounds": 13,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30005207,
+   "name": "Isaiah Washington",
+   "fullName": "Isaiah Washington",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 10943,
+   "starter": 1,
+   "steals": 4,
+   "blocks": 1,
+   "shotsRejected": 2,
+   "personalFouls": 21,
+   "foulsReceived": 10,
+   "turnovers": 12,
+   "rebounds": 17,
+   "defensiveRebounds": 12,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 20212462,
+   "name": "Jovan Kljajic",
+   "fullName": "Jovan Kljajic",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 14507,
+   "starter": 4,
+   "steals": 7,
+   "blocks": 5,
+   "shotsRejected": 6,
+   "personalFouls": 29,
+   "foulsReceived": 29,
+   "turnovers": 19,
+   "rebounds": 36,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 30002524,
+   "name": "Mehdy Ngouama",
+   "fullName": "Mehdy Ngouama",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 17387,
+   "starter": 8,
+   "steals": 14,
+   "blocks": 1,
+   "shotsRejected": 5,
+   "personalFouls": 32,
+   "foulsReceived": 32,
+   "turnovers": 27,
+   "rebounds": 30,
+   "defensiveRebounds": 19,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 30003943,
+   "name": "Hugo Benitez",
+   "fullName": "Hugo Benitez",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 17068,
+   "starter": 8,
+   "steals": 17,
+   "blocks": 1,
+   "shotsRejected": 4,
+   "personalFouls": 33,
+   "foulsReceived": 27,
+   "turnovers": 29,
+   "rebounds": 35,
+   "defensiveRebounds": 24,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 30001521,
+   "name": "Gerard Fernández",
+   "fullName": "Gerard Fernández",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 5057,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 12,
+   "foulsReceived": 5,
+   "turnovers": 7,
+   "rebounds": 6,
+   "defensiveRebounds": 3,
+   "offensiveRebounds": 3
+  },
+  {
+   "acbId": 20210830,
+   "name": "Tadas Sedekerskis",
+   "fullName": "Tadas Sedekerskis",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 11488,
+   "starter": 3,
+   "steals": 2,
+   "blocks": 0,
+   "shotsRejected": 4,
+   "personalFouls": 16,
+   "foulsReceived": 12,
+   "turnovers": 7,
+   "rebounds": 43,
+   "defensiveRebounds": 32,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 30003967,
+   "name": "Xavier Castañeda",
+   "fullName": "Xavier Castañeda",
+   "team": [
+    "morabanc-andorra-22",
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90",
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 11652,
+   "starter": 0,
+   "steals": 6,
+   "blocks": 0,
+   "shotsRejected": 3,
+   "personalFouls": 26,
+   "foulsReceived": 36,
+   "turnovers": 22,
+   "rebounds": 16,
+   "defensiveRebounds": 14,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30005249,
+   "name": "Justin Cobbs",
+   "fullName": "Justin Cobbs",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 13,
+   "timePlayed": 9472,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 12,
+   "foulsReceived": 17,
+   "turnovers": 3,
+   "rebounds": 13,
+   "defensiveRebounds": 13,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003529,
+   "name": "Sam Dekker",
+   "fullName": "Samuel Dekker",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 12,
+   "timePlayed": 11695,
+   "starter": 7,
+   "steals": 6,
+   "blocks": 3,
+   "shotsRejected": 0,
+   "personalFouls": 17,
+   "foulsReceived": 3,
+   "turnovers": 6,
+   "rebounds": 38,
+   "defensiveRebounds": 27,
+   "offensiveRebounds": 11
+  },
+  {
+   "acbId": 30003392,
+   "name": "Chimezie Metu",
+   "fullName": "Chimezie Metu",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 12,
+   "timePlayed": 18867,
+   "starter": 12,
+   "steals": 7,
+   "blocks": 2,
+   "shotsRejected": 2,
+   "personalFouls": 23,
+   "foulsReceived": 46,
+   "turnovers": 28,
+   "rebounds": 54,
+   "defensiveRebounds": 46,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30005203,
+   "name": "Pauly Paulicap",
+   "fullName": "Pauly Paulicap",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 12,
+   "timePlayed": 3986,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 6,
+   "shotsRejected": 1,
+   "personalFouls": 13,
+   "foulsReceived": 7,
+   "turnovers": 9,
+   "rebounds": 11,
+   "defensiveRebounds": 6,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30001957,
+   "name": "Markus Howard",
+   "fullName": "Markus Howard",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 12,
+   "timePlayed": 16625,
+   "starter": 6,
+   "steals": 10,
+   "blocks": 0,
+   "shotsRejected": 3,
+   "personalFouls": 21,
+   "foulsReceived": 33,
+   "turnovers": 28,
+   "rebounds": 10,
+   "defensiveRebounds": 8,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30005335,
+   "name": "Álvaro Cárdenas",
+   "fullName": "Álvaro Cárdenas",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 12,
+   "timePlayed": 9842,
+   "starter": 0,
+   "steals": 6,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 33,
+   "foulsReceived": 11,
+   "turnovers": 8,
+   "rebounds": 12,
+   "defensiveRebounds": 8,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 30000093,
+   "name": "Juan Núñez",
+   "fullName": "Juan Núñez",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 11,
+   "timePlayed": 8307,
+   "starter": 0,
+   "steals": 5,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 14,
+   "foulsReceived": 20,
+   "turnovers": 18,
+   "rebounds": 26,
+   "defensiveRebounds": 22,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 30003985,
+   "name": "Travis Munnings",
+   "fullName": "Travis Munnings",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 11,
+   "timePlayed": 8076,
+   "starter": 3,
+   "steals": 9,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 11,
+   "foulsReceived": 3,
+   "turnovers": 7,
+   "rebounds": 14,
+   "defensiveRebounds": 12,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 20213406,
+   "name": "Max Gaspà",
+   "fullName": "Max Gaspà",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 11,
+   "timePlayed": 6157,
+   "starter": 1,
+   "steals": 4,
+   "blocks": 2,
+   "shotsRejected": 0,
+   "personalFouls": 21,
+   "foulsReceived": 14,
+   "turnovers": 3,
+   "rebounds": 11,
+   "defensiveRebounds": 6,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30003332,
+   "name": "Jaylen Hands",
+   "fullName": "Jaylen Hands",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 11,
+   "timePlayed": 9152,
+   "starter": 1,
+   "steals": 5,
+   "blocks": 1,
+   "shotsRejected": 3,
+   "personalFouls": 16,
+   "foulsReceived": 15,
+   "turnovers": 13,
+   "rebounds": 21,
+   "defensiveRebounds": 18,
+   "offensiveRebounds": 3
+  },
+  {
+   "acbId": 30000023,
+   "name": "David Kravish",
+   "fullName": "David Kravish",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 11,
+   "timePlayed": 10719,
+   "starter": 2,
+   "steals": 2,
+   "blocks": 2,
+   "shotsRejected": 0,
+   "personalFouls": 18,
+   "foulsReceived": 13,
+   "turnovers": 17,
+   "rebounds": 37,
+   "defensiveRebounds": 25,
+   "offensiveRebounds": 12
+  },
+  {
+   "acbId": 30005330,
+   "name": "Cameron Hildreth",
+   "fullName": "Cameron Hildreth",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 10,
+   "timePlayed": 8411,
+   "starter": 0,
+   "steals": 6,
+   "blocks": 0,
+   "shotsRejected": 6,
+   "personalFouls": 20,
+   "foulsReceived": 31,
+   "turnovers": 16,
+   "rebounds": 17,
+   "defensiveRebounds": 11,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 30005328,
+   "name": "David Duke Jr",
+   "fullName": "David Duke Jr",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 10,
+   "timePlayed": 9996,
+   "starter": 4,
+   "steals": 4,
+   "blocks": 2,
+   "shotsRejected": 4,
+   "personalFouls": 23,
+   "foulsReceived": 30,
+   "turnovers": 16,
+   "rebounds": 26,
+   "defensiveRebounds": 10,
+   "offensiveRebounds": 16
+  },
+  {
+   "acbId": 30004071,
+   "name": "Stefan Joksimovic",
+   "fullName": "Stefan Joksimovic",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 10,
+   "timePlayed": 4955,
+   "starter": 1,
+   "steals": 3,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 11,
+   "foulsReceived": 8,
+   "turnovers": 8,
+   "rebounds": 11,
+   "defensiveRebounds": 7,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 30003984,
+   "name": "Silvio de Sousa",
+   "fullName": "Silvio de Sousa",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 10,
+   "timePlayed": 7352,
+   "starter": 2,
+   "steals": 8,
+   "blocks": 7,
+   "shotsRejected": 3,
+   "personalFouls": 30,
+   "foulsReceived": 25,
+   "turnovers": 12,
+   "rebounds": 43,
+   "defensiveRebounds": 25,
+   "offensiveRebounds": 18
+  },
+  {
+   "acbId": 30003347,
+   "name": "Yannis Morin",
+   "fullName": "Yannis Morin",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 9,
+   "timePlayed": 5137,
+   "starter": 0,
+   "steals": 3,
+   "blocks": 1,
+   "shotsRejected": 5,
+   "personalFouls": 17,
+   "foulsReceived": 15,
+   "turnovers": 8,
+   "rebounds": 25,
+   "defensiveRebounds": 16,
+   "offensiveRebounds": 9
+  },
+  {
+   "acbId": 30003348,
+   "name": "Sayon Keita",
+   "fullName": "Sayon Keita",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 9,
+   "timePlayed": 2948,
+   "starter": 1,
+   "steals": 2,
+   "blocks": 4,
+   "shotsRejected": 1,
+   "personalFouls": 12,
+   "foulsReceived": 4,
+   "turnovers": 4,
+   "rebounds": 12,
+   "defensiveRebounds": 6,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 30004016,
+   "name": "Zach Hankins",
+   "fullName": "Zachary Hankins",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 9,
+   "timePlayed": 10612,
+   "starter": 4,
+   "steals": 4,
+   "blocks": 9,
+   "shotsRejected": 2,
+   "personalFouls": 30,
+   "foulsReceived": 14,
+   "turnovers": 11,
+   "rebounds": 59,
+   "defensiveRebounds": 44,
+   "offensiveRebounds": 15
+  },
+  {
+   "acbId": 30005324,
+   "name": "Adria Rodriguez",
+   "fullName": "Adrià Rodriguez i",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 9,
+   "timePlayed": 6558,
+   "starter": 2,
+   "steals": 5,
+   "blocks": 5,
+   "shotsRejected": 2,
+   "personalFouls": 15,
+   "foulsReceived": 10,
+   "turnovers": 8,
+   "rebounds": 20,
+   "defensiveRebounds": 12,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30002042,
+   "name": "Dylan Bordón",
+   "fullName": "Dylan Bordon",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 9,
+   "timePlayed": 1496,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 2,
+   "foulsReceived": 1,
+   "turnovers": 2,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30002514,
+   "name": "Max Heidegger",
+   "fullName": "Maximillian Heidegger",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 9,
+   "timePlayed": 10104,
+   "starter": 4,
+   "steals": 7,
+   "blocks": 0,
+   "shotsRejected": 3,
+   "personalFouls": 26,
+   "foulsReceived": 14,
+   "turnovers": 19,
+   "rebounds": 10,
+   "defensiveRebounds": 9,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30004065,
+   "name": "Nikola Kusturica",
+   "fullName": "Nikola Kusturica",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 8,
+   "timePlayed": 3038,
+   "starter": 1,
+   "steals": 4,
+   "blocks": 1,
+   "shotsRejected": 1,
+   "personalFouls": 8,
+   "foulsReceived": 5,
+   "turnovers": 3,
+   "rebounds": 15,
+   "defensiveRebounds": 10,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30003995,
+   "name": "Erik Stevenson",
+   "fullName": "Erik Stevenson",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 8,
+   "timePlayed": 6399,
+   "starter": 1,
+   "steals": 5,
+   "blocks": 1,
+   "shotsRejected": 1,
+   "personalFouls": 13,
+   "foulsReceived": 8,
+   "turnovers": 11,
+   "rebounds": 14,
+   "defensiveRebounds": 12,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30004854,
+   "name": "Khory Brunot",
+   "fullName": "Khory Rosembert Brunot",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 8,
+   "timePlayed": 2908,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 7,
+   "foulsReceived": 3,
+   "turnovers": 3,
+   "rebounds": 6,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 30003998,
+   "name": "Hamidou Diallo",
+   "fullName": "Hamidou Diallo",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 8,
+   "timePlayed": 9545,
+   "starter": 7,
+   "steals": 11,
+   "blocks": 4,
+   "shotsRejected": 2,
+   "personalFouls": 27,
+   "foulsReceived": 25,
+   "turnovers": 15,
+   "rebounds": 43,
+   "defensiveRebounds": 34,
+   "offensiveRebounds": 9
+  },
+  {
+   "acbId": 30004088,
+   "name": "Sander Hollanders",
+   "fullName": "Sander Hollanders",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 7,
+   "timePlayed": 2578,
+   "starter": 1,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 10,
+   "foulsReceived": 2,
+   "turnovers": 4,
+   "rebounds": 8,
+   "defensiveRebounds": 6,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30005339,
+   "name": "Kevin Yebo",
+   "fullName": "Kevin Yebo",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 7,
+   "timePlayed": 7373,
+   "starter": 1,
+   "steals": 3,
+   "blocks": 1,
+   "shotsRejected": 4,
+   "personalFouls": 18,
+   "foulsReceived": 18,
+   "turnovers": 4,
+   "rebounds": 25,
+   "defensiveRebounds": 15,
+   "offensiveRebounds": 10
+  },
+  {
+   "acbId": 30005329,
+   "name": "Jaden Shackelford",
+   "fullName": "Jaden Shackelford",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 7,
+   "timePlayed": 5203,
+   "starter": 0,
+   "steals": 4,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 15,
+   "foulsReceived": 13,
+   "turnovers": 5,
+   "rebounds": 7,
+   "defensiveRebounds": 6,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30000132,
+   "name": "Rubén López De La Torre",
+   "fullName": "Rubén López de la Torre",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 7,
+   "timePlayed": 2406,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 8,
+   "foulsReceived": 3,
+   "turnovers": 5,
+   "rebounds": 4,
+   "defensiveRebounds": 4,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30001494,
+   "name": "Diego Niebla",
+   "fullName": "Diego Niebla",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 6,
+   "timePlayed": 1750,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 5,
+   "foulsReceived": 3,
+   "turnovers": 0,
+   "rebounds": 1,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003937,
+   "name": "Dani González",
+   "fullName": "Daniel González",
+   "team": [
+    "barca-2"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/barca-2/estadisticas?editionId=90"
+   ],
+   "numGames": 6,
+   "timePlayed": 1229,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 2,
+   "foulsReceived": 1,
+   "turnovers": 3,
+   "rebounds": 1,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30005265,
+   "name": "Javan Johnson",
+   "fullName": "Javan Johnson",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 6,
+   "timePlayed": 5144,
+   "starter": 3,
+   "steals": 4,
+   "blocks": 3,
+   "shotsRejected": 3,
+   "personalFouls": 6,
+   "foulsReceived": 1,
+   "turnovers": 4,
+   "rebounds": 11,
+   "defensiveRebounds": 10,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30005333,
+   "name": "James Karnik",
+   "fullName": "James Karnik",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 6,
+   "timePlayed": 5092,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 1,
+   "shotsRejected": 1,
+   "personalFouls": 16,
+   "foulsReceived": 14,
+   "turnovers": 7,
+   "rebounds": 23,
+   "defensiveRebounds": 15,
+   "offensiveRebounds": 8
+  },
+  {
+   "acbId": 30003996,
+   "name": "Alfonso Plummer",
+   "fullName": "Alfonso Plummer",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 6,
+   "timePlayed": 5838,
+   "starter": 1,
+   "steals": 2,
+   "blocks": 2,
+   "shotsRejected": 1,
+   "personalFouls": 17,
+   "foulsReceived": 5,
+   "turnovers": 5,
+   "rebounds": 5,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 3
+  },
+  {
+   "acbId": 30004081,
+   "name": "Markquis Nowell",
+   "fullName": "Markquis Nowell",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 6,
+   "timePlayed": 6660,
+   "starter": 2,
+   "steals": 5,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 12,
+   "foulsReceived": 13,
+   "turnovers": 15,
+   "rebounds": 16,
+   "defensiveRebounds": 11,
+   "offensiveRebounds": 5
+  },
+  {
+   "acbId": 30003442,
+   "name": "Aaron Ganal",
+   "fullName": "Aaron Ganal",
+   "team": [
+    "morabanc-andorra-22"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/morabanc-andorra-22/estadisticas?editionId=90"
+   ],
+   "numGames": 6,
+   "timePlayed": 494,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 1,
+   "turnovers": 1,
+   "rebounds": 1,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30005334,
+   "name": "Brandon Jefferson",
+   "fullName": "Brandon Jefferson",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 5,
+   "timePlayed": 4758,
+   "starter": 1,
+   "steals": 3,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 12,
+   "foulsReceived": 4,
+   "turnovers": 4,
+   "rebounds": 3,
+   "defensiveRebounds": 3,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30005338,
+   "name": "Elvar Fridriksson",
+   "fullName": "Elvar Fridriksson",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 5,
+   "timePlayed": 4300,
+   "starter": 1,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 7,
+   "foulsReceived": 9,
+   "turnovers": 5,
+   "rebounds": 7,
+   "defensiveRebounds": 5,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30005337,
+   "name": "Ömer Yurtseven",
+   "fullName": "Omer Yurtseven",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 5,
+   "timePlayed": 4059,
+   "starter": 3,
+   "steals": 2,
+   "blocks": 6,
+   "shotsRejected": 0,
+   "personalFouls": 11,
+   "foulsReceived": 11,
+   "turnovers": 6,
+   "rebounds": 15,
+   "defensiveRebounds": 11,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 30004052,
+   "name": "Joaquín Taboada",
+   "fullName": "Joaquín Taboada",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 5,
+   "timePlayed": 3454,
+   "starter": 1,
+   "steals": 1,
+   "blocks": 1,
+   "shotsRejected": 2,
+   "personalFouls": 11,
+   "foulsReceived": 1,
+   "turnovers": 1,
+   "rebounds": 4,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 20200277,
+   "name": "Augusto Lima",
+   "fullName": "Augusto Lima",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 5,
+   "timePlayed": 1091,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 8,
+   "foulsReceived": 1,
+   "turnovers": 3,
+   "rebounds": 6,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 20210685,
+   "name": "Sergi García",
+   "fullName": "Sergi García",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 5,
+   "timePlayed": 1507,
+   "starter": 1,
+   "steals": 2,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 4,
+   "foulsReceived": 2,
+   "turnovers": 4,
+   "rebounds": 4,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 20212451,
+   "name": "Gabriel Olaseni",
+   "fullName": "Abodunrin Olaseni",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 4,
+   "timePlayed": 5358,
+   "starter": 3,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 2,
+   "personalFouls": 10,
+   "foulsReceived": 9,
+   "turnovers": 5,
+   "rebounds": 20,
+   "defensiveRebounds": 14,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 20210887,
+   "name": "Iván Aurrecoechea",
+   "fullName": "Iván Aurrecoechea",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 4,
+   "timePlayed": 597,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 3,
+   "foulsReceived": 2,
+   "turnovers": 2,
+   "rebounds": 4,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 3
+  },
+  {
+   "acbId": 30003942,
+   "name": "Archange Izaw-Bolavie",
+   "fullName": "Archange Izaw",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 4,
+   "timePlayed": 741,
+   "starter": 1,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 7,
+   "foulsReceived": 0,
+   "turnovers": 1,
+   "rebounds": 3,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 20204153,
+   "name": "Iván Cruz",
+   "fullName": "Iván Cruz",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 4,
+   "timePlayed": 726,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 2,
+   "foulsReceived": 1,
+   "turnovers": 1,
+   "rebounds": 1,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30005332,
+   "name": "Jordan Walker",
+   "fullName": "Jordan Walker",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 4,
+   "timePlayed": 2404,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 1,
+   "shotsRejected": 1,
+   "personalFouls": 7,
+   "foulsReceived": 0,
+   "turnovers": 5,
+   "rebounds": 2,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30003464,
+   "name": "Ferran Mauri",
+   "fullName": "Ferran Mauri",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 361,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30005205,
+   "name": "Josh Richardson",
+   "fullName": "Joshua Richardson",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 3205,
+   "starter": 1,
+   "steals": 1,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 5,
+   "foulsReceived": 3,
+   "turnovers": 4,
+   "rebounds": 5,
+   "defensiveRebounds": 5,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004017,
+   "name": "Micah Speight",
+   "fullName": "Micah Speight",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 3337,
+   "starter": 2,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 6,
+   "foulsReceived": 1,
+   "turnovers": 5,
+   "rebounds": 2,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 20213211,
+   "name": "Álvaro Fernandez",
+   "fullName": "Álvaro Fernandez",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 266,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 1,
+   "foulsReceived": 1,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004713,
+   "name": "Mervedi Miteo",
+   "fullName": "Mervedi Kasekelayi Miteo",
+   "team": [
+    "dreamland-gran-canaria-5"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/dreamland-gran-canaria-5/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 648,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 4,
+   "foulsReceived": 4,
+   "turnovers": 1,
+   "rebounds": 2,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30001997,
+   "name": "Maxi Fjellerup",
+   "fullName": "Máximo Fjellerup",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 2354,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 3,
+   "personalFouls": 7,
+   "foulsReceived": 8,
+   "turnovers": 3,
+   "rebounds": 5,
+   "defensiveRebounds": 5,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 20213506,
+   "name": "Enric Sanmartín",
+   "fullName": "Enric Sanmartín",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 615,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 1,
+   "turnovers": 0,
+   "rebounds": 2,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004082,
+   "name": "Guillem Naspler",
+   "fullName": "Guillem Naspler",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 307,
+   "starter": 0,
+   "steals": 2,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 1,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30005340,
+   "name": "Mady Sissoko",
+   "fullName": "Mady Sissoko",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 2612,
+   "starter": 2,
+   "steals": 0,
+   "blocks": 2,
+   "shotsRejected": 0,
+   "personalFouls": 12,
+   "foulsReceived": 7,
+   "turnovers": 1,
+   "rebounds": 14,
+   "defensiveRebounds": 10,
+   "offensiveRebounds": 4
+  },
+  {
+   "acbId": 30003852,
+   "name": "Bruno Fernando",
+   "fullName": "Bruno Fernando",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 3,
+   "timePlayed": 1825,
+   "starter": 1,
+   "steals": 2,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 5,
+   "foulsReceived": 4,
+   "turnovers": 4,
+   "rebounds": 11,
+   "defensiveRebounds": 5,
+   "offensiveRebounds": 6
+  },
+  {
+   "acbId": 30003447,
+   "name": "Adrián Torres",
+   "fullName": "Adrian Torres",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 164,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 1,
+   "turnovers": 1,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 20213222,
+   "name": "Carlos Alías",
+   "fullName": "Carlos Alías",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 108,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 1,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003465,
+   "name": "Ibou Dabo",
+   "fullName": "Ibrahima Dabo",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 720,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 3,
+   "foulsReceived": 1,
+   "turnovers": 1,
+   "rebounds": 2,
+   "defensiveRebounds": 2,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30001606,
+   "name": "Mate Khatiashvili",
+   "fullName": "Mate Khatiashvili",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 604,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 3,
+   "turnovers": 0,
+   "rebounds": 1,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30004069,
+   "name": "Juom Maker Bol",
+   "fullName": "Juom Bol",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 321,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 1,
+   "turnovers": 0,
+   "rebounds": 1,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 20212330,
+   "name": "Luka Samanic",
+   "fullName": "Luka Samanic",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 2767,
+   "starter": 1,
+   "steals": 4,
+   "blocks": 1,
+   "shotsRejected": 0,
+   "personalFouls": 4,
+   "foulsReceived": 12,
+   "turnovers": 2,
+   "rebounds": 8,
+   "defensiveRebounds": 6,
+   "offensiveRebounds": 2
+  },
+  {
+   "acbId": 30002867,
+   "name": "Vit Hrabar",
+   "fullName": "Vit Hrabar",
+   "team": [
+    "kosner-baskonia-3"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kosner-baskonia-3/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 544,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 4,
+   "foulsReceived": 1,
+   "turnovers": 0,
+   "rebounds": 2,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30004018,
+   "name": "Marcos Bella",
+   "fullName": "Marcos Bella",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 176,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 1,
+   "personalFouls": 1,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 1,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004635,
+   "name": "Bingen Errasti",
+   "fullName": "Bingen Errasti Ugarte",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 96,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004850,
+   "name": "Pablo Sevilla",
+   "fullName": "Pablo Sevilla Navarro",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 2,
+   "timePlayed": 396,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30001513,
+   "name": "Humberto Ruiz",
+   "fullName": "Humberto Ruiz",
+   "team": [
+    "asisa-joventut-8"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/asisa-joventut-8/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 527,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 3,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 20213218,
+   "name": "Lucas Langarita",
+   "fullName": "Lucas Langarita",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 57,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30002866,
+   "name": "Aleksandr Savkov",
+   "fullName": "Aleksandr Savkov",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 64,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004678,
+   "name": "Matija Lukic",
+   "fullName": "Matija Lukic",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 96,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 1,
+   "turnovers": 0,
+   "rebounds": 1,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004861,
+   "name": "Izan Soler",
+   "fullName": "Izan Soler",
+   "team": [
+    "fiatc-girona-591"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/fiatc-girona-591/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 10,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003491,
+   "name": "Pau Torrens",
+   "fullName": "Pau Torrens",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 140,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 0,
+   "turnovers": 1,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004024,
+   "name": "Pol Rios",
+   "fullName": "Pol Rios",
+   "team": [
+    "ilerna-lleida-658"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ilerna-lleida-658/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 136,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30001526,
+   "name": "Lucas Sánchez",
+   "fullName": "Lucas Sánchez",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 382,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 3,
+   "foulsReceived": 1,
+   "turnovers": 0,
+   "rebounds": 1,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004697,
+   "name": "Xabi López",
+   "fullName": "Xabier Lopez Rodriguez",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 50,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30002830,
+   "name": "Mohamed Sangare",
+   "fullName": "Mohamed Sangare",
+   "team": [
+    "la-laguna-tenerife-28"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/la-laguna-tenerife-28/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 92,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004076,
+   "name": "Egor Amosov",
+   "fullName": "Egor Amosov",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 72,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30001729,
+   "name": "Gunars Grinvalds",
+   "fullName": "Gunars Grinvalds",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 66,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 1,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004662,
+   "name": "Alonso Reyes",
+   "fullName": "Alonso Reyes Abad",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 176,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 1,
+   "defensiveRebounds": 1,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004080,
+   "name": "Ramiro Rodríguez",
+   "fullName": "Ramiro Rodríguez",
+   "team": [
+    "recoletas-salud-san-pablo-burgos-549"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/recoletas-salud-san-pablo-burgos-549/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 13,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004005,
+   "name": "Dario Dreznjak",
+   "fullName": "Dario Dreznjak",
+   "team": [
+    "rio-breogan-25"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/rio-breogan-25/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 1097,
+   "starter": 1,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 3,
+   "foulsReceived": 2,
+   "turnovers": 1,
+   "rebounds": 1,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30004090,
+   "name": "Aleksandar Zecevic",
+   "fullName": "Aleksandar Zecevic",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 8,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30000659,
+   "name": "Kepa de Castro",
+   "fullName": "Kepa de Castro",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 98,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 2,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 20213168,
+   "name": "José Tomás Martínez",
+   "fullName": "Jose Martinez",
+   "team": [
+    "ucam-murcia-12"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/ucam-murcia-12/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 19,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003780,
+   "name": "Arturas Butajevas",
+   "fullName": "Arturas Butajevas",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 90,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003470,
+   "name": "Manuel Trujillo",
+   "fullName": "Manuel Trujillo",
+   "team": [
+    "unicaja-14"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/unicaja-14/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 241,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 0,
+   "turnovers": 1,
+   "rebounds": 1,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 1
+  },
+  {
+   "acbId": 30002683,
+   "name": "Ike Iroegbu",
+   "fullName": "Ikenna Iroegbu",
+   "team": [
+    "valencia-basket-13"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/valencia-basket-13/estadisticas?editionId=90"
+   ],
+   "numGames": 1,
+   "timePlayed": 197,
+   "starter": 0,
+   "steals": 1,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 1,
+   "foulsReceived": 0,
+   "turnovers": 1,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003963,
+   "name": "Emir Kabaca",
+   "fullName": "Sadik Emir Kabaca",
+   "team": [
+    "casademont-zaragoza-16"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/casademont-zaragoza-16/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003443,
+   "name": "Luca Medal",
+   "fullName": "Luca Medal",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003444,
+   "name": "Osi Cerdá",
+   "fullName": "Osaretin Cerdá",
+   "team": [
+    "coviran-granada-592"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/coviran-granada-592/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30003920,
+   "name": "Ludvik Bergseng",
+   "fullName": "Ludvik Bergseng",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 20213051,
+   "name": "Ferran Torreblanca",
+   "fullName": "Ferran Torreblanca",
+   "team": [
+    "kidsandus-manresa-10"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/kidsandus-manresa-10/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004751,
+   "name": "Fabian Kayser",
+   "fullName": "Fabian Kayser",
+   "team": [
+    "real-madrid-9"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/real-madrid-9/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30000661,
+   "name": "Aiert Velasco",
+   "fullName": "Aiert Velasco",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004636,
+   "name": "Urko Madariaga",
+   "fullName": "Urko Madariaga",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  },
+  {
+   "acbId": 30004638,
+   "name": "Aimar Mintegui",
+   "fullName": "Aimar Mintegui",
+   "team": [
+    "surne-bilbao-4"
+   ],
+   "source": [
+    "https://www.acb.com/es/liga/equipos/surne-bilbao-4/estadisticas?editionId=90"
+   ],
+   "numGames": 0,
+   "timePlayed": 0,
+   "starter": 0,
+   "steals": 0,
+   "blocks": 0,
+   "shotsRejected": 0,
+   "personalFouls": 0,
+   "foulsReceived": 0,
+   "turnovers": 0,
+   "rebounds": 0,
+   "defensiveRebounds": 0,
+   "offensiveRebounds": 0
+  }
+ ]
+}

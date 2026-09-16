@@ -5,7 +5,7 @@ from collections import Counter
 import joblib
 import numpy as np
 from threadpoolctl import threadpool_limits
-from .defense import load_counts,fit_priors
+from .defense import load_counts,load_season,fit_priors
 from .passing import load_passes
 from .steal_probability import JointStealModel,with_priors,score
 
@@ -70,10 +70,10 @@ def training(root,manifest):
     joblib.dump((output,dict(audit)),cache);return output,dict(audit)
 
 
-def evaluate(data,counts,regularization=.01):
+def evaluate(data,counts,regularization=.01,season=None):
     x,y,ids,gids=(data[k] for k in ['x','y','ids','gids']);folds=[];models={}
     for gid in np.unique(gids):
-        train=gids!=gid;test=~train;z=with_priors(x,ids,gids,counts,{int(gid)})
+        train=gids!=gid;test=~train;z=with_priors(x,ids,gids,counts,{int(gid)},season)
         model=JointStealModel(regularization).fit(z[train],y[train]);p=model.predict(z[test]);rate=(y[train]>0).mean()
         base=np.full_like(p,rate/5);base[:,0]=1-rate
         folds.append(dict(gameId=int(gid),actions=int(test.sum()),positives=int((y[test]>0).sum()),model=score(y[test],p),baseline=score(y[test],base)))
@@ -86,14 +86,17 @@ def evaluate(data,counts,regularization=.01):
 def main():
     root=Path(__file__).resolve().parents[1];manifest=json.loads((root/'viewer/data/manifest.json').read_text())
     data,audit=training(root,manifest);models={};reports={};counts={}
+    # The official ACB season line backs the steal prior only; blocks stay tracking-only.
+    names={int(pid):player['name'] for game in manifest['games'] for pid,player in game['players'].items()}
+    seasons={'steal':load_season(root,names)[0],'block':None}
     with threadpool_limits(limits=1):
         for kind in ['steal','block']:
-            counts[kind]=load_counts(root,kind);models[kind],reports[kind]=evaluate(data[kind],counts[kind],.1 if kind=='steal' else .01)
+            counts[kind]=load_counts(root,kind);models[kind],reports[kind]=evaluate(data[kind],counts[kind],.1 if kind=='steal' else .01,seasons[kind])
         report=dict(models=reports,audit=audit,scope='One pre-action tracking state per observed shot/pass. Six exclusive outcomes per action. Other-game priors exclude evaluation game and own training game. Pass sample retains conservative early-flight receiver reconstruction and its selection bias. Forecasts describe similar observed actions, not validated forced-action effects. None class for passes includes uncredited/non-steal turnovers; interception is not all pass TO.')
         (root/'viewer/data/action-defense.json').write_text(json.dumps(report,indent=2))
         print(json.dumps({k:{key:v for key,v in r.items() if key!='folds'} for k,r in reports.items()}),flush=True)
         for game in manifest['games']:
-            gid=game['match']['id'];priors={k:fit_priors(counts[k],{gid}) for k in counts}
+            gid=game['match']['id'];priors={k:fit_priors(counts[k],{gid},season=seasons[k]) for k in counts}
             for entry in game['plays']:
                 path=root/f"viewer/data/plays/{entry['id']}.json";play=json.loads(path.read_text());rows={k:[] for k in counts};refs={k:[] for k in counts}
                 for f in play['frames']:

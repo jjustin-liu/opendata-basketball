@@ -1,4 +1,4 @@
-import { bestPass, shotPps } from "./action-display.js";
+import { bestPass, shotPps } from "./action-display.js?v=foul-4";
 export function shotReview(play, time) {
   const event = (play.events || [])
     .filter((e) => e.type === "shot" && e.frame <= time)
@@ -19,7 +19,10 @@ export function shotReview(play, time) {
   return {
     event,
     first: forecast?.quality?.fieldGoalValue ?? null,
-    second: forecast?.secondChancePerShot ?? null,
+    second: Number.isFinite(forecast?.secondChancePerShot) ? forecast.secondChancePerShot+(forecast.ftSecondChancePerShot??0) : null,
+    freeThrows: forecast?.freeThrowValue ?? null,
+    foulProbability: forecast?.foulProbability ?? null,
+    ftPercentage: forecast?.freeThrowMakeProbability ?? null,
     orb: forecast?.offensiveReboundProbability ?? null,
     perMiss: forecast?.secondChancePerMiss ?? null,
     total: shotPps(event),

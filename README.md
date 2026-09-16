@@ -33,6 +33,16 @@ node scripts/build_rebound_annotations.mjs
 The prototype shows modest short-term turnover signal; EPV remains experimental
 and has not beaten a constant baseline overall on these ten games.
 
+Movement hints can show [experimental move-then-pass EPV gains](docs/movement-epv.md)
+when all three simulated defensive responses remain positive. These are conditional
+scenario estimates, not validated recommendations.
+
+An [exploitable-space field](docs/space-field.md) (control probability times
+open-shot value, ported from Blommesteyn's "Holes in the Defense") drives the
+valuable-space overlay, proposes hole destinations for the movement search, and
+gives [event-aligned action values](docs/action-values.md). It did not improve
+possession EPV in leave-one-game-out tests, so the EPV models are unchanged.
+
 ## About this repo
 
 ### Description

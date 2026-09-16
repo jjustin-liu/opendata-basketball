@@ -446,12 +446,20 @@ def train_and_export(table, payloads):
                 result[target + "_" + name] = pred
                 if target == "points" and name == "shooting":
                     projected_epv_model = model
+        from epv.rop_risk import conservative_rop
         for name in model_names:
             result["turnover2_" + name], result["turnover_rest_" + name] = (
                 coherent_risks(
                     result["turnover2_" + name], result["turnover_rest_" + name]
                 )
             )
+            if name == "geometry":
+                result["turnover_rest_raw"] = result["turnover_rest_geometry"].copy()
+                result["turnover_rest_geometry"] = conservative_rop(
+                    result["turnover_rest_raw"],
+                    np.average(train.turnover_rest, weights=tw),
+                    result["turnover2_geometry"],
+                )
             for target in TARGETS:
                 all_metrics.append(
                     {
@@ -609,6 +617,7 @@ def train_and_export(table, payloads):
                 fr.pop("shot", None)
             fr["turnover2"] = round(float(result["turnover2_geometry"][i]), 5)
             fr["turnoverRest"] = round(float(result["turnover_rest_geometry"][i]), 5)
+            fr["turnoverRestRaw"] = round(float(result["turnover_rest_raw"][i]), 5)
         entries = []
         for pid, play in payload["plays"].items():
             valid = [f for f in play["frames"] if "epv" in f]
@@ -715,6 +724,10 @@ def main():
     from .vendor_surrogate import main as annotate_surrogate
 
     annotate_surrogate()
+    from .foul_value import main as annotate_foul_value
+    annotate_foul_value()
+    from .catch_shoot import main as annotate_catch_shoot
+    annotate_catch_shoot()
     from .steal_risk import main as annotate_steal_risk
     from .steal_probability import main as annotate_steal_probability
     annotate_steal_risk()
@@ -727,6 +740,13 @@ def main():
     subprocess.run(["node", str(ROOT / "scripts/build_decision_audit.mjs")], check=True)
     for script in ("build_touch_history.mjs", "build_rebound_annotations.mjs"):
         subprocess.run(["node", str(ROOT / "scripts" / script)], cwd=ROOT, check=True)
+    import sys
+    # Exploitable-space fields: open-shot value grids, per-frame summaries, holes
+    # (docs/space-field.md); replaces scripts/build_space_value.py.
+    subprocess.run([sys.executable, "-m", "epv.space_field"], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "-m", "epv.action_values"], cwd=ROOT, check=True)
+    subprocess.run(["node", str(ROOT / "scripts/build_movement_candidates.mjs")], cwd=ROOT, check=True)
+    subprocess.run([sys.executable, "-m", "epv.movement"], cwd=ROOT, check=True)
 
 
 if __name__ == "__main__":

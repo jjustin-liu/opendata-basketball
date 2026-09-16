@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Possession Lab · EPV</title>
-    <link rel="stylesheet" href="style.css?v=clean-flow-7" />
+    <link rel="stylesheet" href="style.css?v=cumulative-10" />
   </head>
   <body>
     <header class="masthead">
@@ -28,6 +28,8 @@
             <option value="turnovers">Turnovers</option>
             <option value="scored">Scoring possessions</option>
             <option value="risk">Highest predicted risk</option>
+            <option value="final-high">Highest final EPV · PPA × survival</option>
+            <option value="final-low">Lowest final EPV · PPA × survival</option>
           </select>
         </div>
         <label for="search" class="sr-only">Search by team or period</label
@@ -129,7 +131,7 @@
                       space</label
                     >
                     <label style="color:#71b1e4" title="Blue = off-ball teammates only. Experimental: arrival advantage × other-game shot value. Position error softens boundaries. Two-second arrival horizon; cells ≥0.5. Excludes ball delivery, player shooting skill, rebounds and fouls. Not EPV or a calibrated probability."><input id="spaceControl" type="checkbox" /> Blue · Valuable space</label>
-                    <label title="Click an off-ball teammate to explore relocation. Blue: clear modeled improvement. Amber: worth exploring, response-dependent. Experimental, not validated EPV."><input id="movementIdeas" type="checkbox" /> Movement ideas</label>
+                    <label title="Experimental: offense requires +0.01 EPV across three responses. Half-court defensive shifts must also pass a backcut/pass stress test. Negative labels mean lower offensive EPV, not validated policy benefits. Click an off-ball teammate to focus offense."><input id="movementIdeas" type="checkbox" /> Movement ideas</label>
                     <span id="movementContext" hidden style="width:340px;overflow:hidden;text-overflow:ellipsis;font-size:10px;color:#80c8dd"></span>
                     <label><input id="defenderNames" type="checkbox" /> Defender names</label>
                     <span title="Ball gradually shifts from gold at 6% turnover risk to full red at 15%" style="font-size:10px;color:#e66b65">Ball · gold → red · TOV 6–15%</span>
@@ -160,6 +162,13 @@
                   </div>
                 </div>
                 <div class="court-wrap">
+                  <div class="court-scoreboard" aria-label="Live possession scoreboard">
+                    <div><span>EPV</span><strong id="floorEpv">—</strong></div>
+                    <div title="Conservative rest-of-possession estimate: 75% other-game baseline + 25% situation model, never below next-2-second risk. Experimental."><span>TOV% <small>(ROP)</small></span><strong id="floorTov">—</strong></div>
+                    <div><span>CUM. TOV <small>≈</small></span><strong id="floorCumulative">—</strong></div>
+                    <div title="Seconds on the shot clock"><span>CLOCK</span><strong id="floorClock">—</strong></div>
+                    <small id="floorHeld" class="scoreboard-held" hidden>EPV / ROP held during pass</small>
+                  </div>
                   <canvas
                     id="court"
                     aria-label="Animated basketball court showing player and ball locations"
@@ -182,19 +191,20 @@
                 <div class="transport">
                   <button
                     id="prevPlay"
-                    title="Previous possession"
+                    title="Previous possession (A · rewinds to 0:00 mid-play)"
                     aria-label="Previous possession"
                   >
                     ‹</button
                   ><button
                     id="playPause"
                     class="primary"
+                    title="Play / pause (V or Space · S stops)"
                     aria-label="Play possession"
                   >
                     ▶ Play</button
                   ><button
                     id="nextPlay"
-                    title="Next possession"
+                    title="Next possession (D)"
                     aria-label="Next possession"
                   >
                     ›</button
@@ -414,6 +424,6 @@
       </div>
       <div id="modelDetails"></div>
     </dialog>
-    <script src="app.js?v=clean-flow-21" type="module"></script>
+    <script src="app.js?v=transport-48" type="module"></script>
   </body>
 </html>

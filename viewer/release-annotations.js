@@ -1,16 +1,39 @@
 import { passWithRisk } from './pass-flight.js?v=recap-2';
-import { shotPps } from './action-display.js';
-import { ballRiskColor } from './ball-risk-color.js';
+import { shotPps } from './action-display.js?v=foul-4';
 
 export function passAnnotation(play, passes, time) {
   const pass=(passes || []).filter(p=>p.possession===play.id && p.start<=time && time-p.start<30).sort((a,b)=>b.start-a.start)[0];
   if (!pass) return null;
-  const risk=passWithRisk(pass,play.frames).turnoverProbability;
-  const frame=play.frames.filter(f=>f.frame<=pass.start).at(-1);
-  const from=frame?.offense.find(p=>p[0]===pass.passer), to=frame?.offense.find(p=>p[0]===pass.receiver);
-  if (!from || !to) return null;
-  const dx=to[1]-from[1],dy=to[2]-from[2],length=Math.hypot(dx,dy)||1;
-  return {x:(from[1]+to[1])/2-dy/length*1.3,y:(from[2]+to[2])/2+dx/length*1.3,risk,alpha:Math.min(1,(30-(time-pass.start))/5)};
+  const forecast=passWithRisk(pass,play.frames);
+  const risk=forecast.turnoverProbability;
+  const prior=play.frames.filter(f=>f.frame<pass.start && pass.start-f.frame<=10 && !f.reason && f.geometry?.handler===pass.passer).at(-1);
+  const delta=Number.isFinite(forecast.epv)&&Number.isFinite(prior?.epv)?forecast.epv-prior.epv:null;
+  const midpoint=passPathMidpoint(play.frames,pass.start,pass.end);
+  if (!midpoint) return null;
+  return {x:midpoint[0],y:midpoint[1],risk,delta,alpha:Math.min(1,(30-(time-pass.start))/5)};
+}
+
+// Replay-only annotation: midpoint by traveled floor distance, not player positions.
+export function passPathMidpoint(frames,start,end) {
+  if (!Number.isFinite(end) || end<=start) return null;
+  const sample=t=>{
+    const a=frames.filter(f=>f.frame<=t).at(-1),b=frames.find(f=>f.frame>=t);
+    if (!a || !b || b.frame-a.frame>10 || !a.ball || !b.ball) return null;
+    const u=b.frame===a.frame?0:(t-a.frame)/(b.frame-a.frame);
+    const point=[0,1].map(i=>a.ball[i]+(b.ball[i]-a.ball[i])*u);
+    return point.every(Number.isFinite)?point:null;
+  };
+  const times=[start,...frames.filter(f=>f.frame>start && f.frame<end).map(f=>f.frame),end];
+  if(times.some((t,i)=>i && t-times[i-1]>10))return null;
+  const points=times.map(sample);
+  if(points.some(p=>!p))return null;
+  const lengths=points.slice(1).map((p,i)=>Math.hypot(p[0]-points[i][0],p[1]-points[i][1]));
+  let remaining=lengths.reduce((a,b)=>a+b,0)/2;
+  for(let i=0;i<lengths.length;i++){
+    if(remaining<=lengths[i]) {const u=lengths[i]?remaining/lengths[i]:0;return points[i].map((v,j)=>v+(points[i+1][j]-v)*u);}
+    remaining-=lengths[i];
+  }
+  return points[0];
 }
 
 export function shotBall(play,time) {
@@ -23,23 +46,20 @@ export function shotBall(play,time) {
 
 export function drawPassAnnotation(ctx,x,y,unit,annotation) {
   ctx.save();
+  if (!Number.isFinite(annotation.risk) && !Number.isFinite(annotation.delta)) { ctx.restore(); return; }
   ctx.globalAlpha=annotation.alpha;
   ctx.textAlign='center';ctx.textBaseline='middle';
-  ctx.fillStyle=ballRiskColor(annotation.risk);
-  ctx.beginPath();
-  ctx.roundRect(x-unit*1.55,y-unit*1.5,unit*3.1,unit*3,unit*.3);
-  ctx.fill();
-  ctx.strokeStyle='#805219';
-  ctx.lineWidth=unit*.09;
-  ctx.stroke();
-  ctx.fillStyle='#191919';
-  ctx.font=`700 ${unit*1.08}px monospace`;
-  ctx.fillText(Number.isFinite(annotation.risk) ? `${Math.round(annotation.risk*100)}%` : '',x,y-unit*.75);
-  ctx.font=`700 ${unit*.7}px monospace`;
-  ctx.fillStyle='#191919';
-  ctx.fillText('PASS',x,y+unit*.12);
-  ctx.font=`600 ${unit*.57}px monospace`;
-  ctx.fillStyle='#392c20';
-  ctx.fillText('TOV%',x,y+unit*.87);
+  ctx.strokeStyle='#f3eddb';ctx.lineWidth=unit*.22;ctx.lineJoin='round';
+  ctx.fillStyle='#1b302b';
+  const lines=Number.isFinite(annotation.risk)?[[`${(annotation.risk*100).toFixed(1)}%`,1.2,-.45],['TOV',.7,.48]]:[];
+  if(Number.isFinite(annotation.delta)) {
+    const rounded=Math.round(annotation.delta*100)/100;
+    lines.push([`${rounded>=0?'+':''}${rounded.toFixed(2)} EPV`,.9,1.5]);
+  }
+  for (const [text,size,offset] of lines) {
+    ctx.font=`700 ${unit*size}px monospace`;
+    ctx.strokeText(text,x,y+unit*offset);
+    ctx.fillText(text,x,y+unit*offset);
+  }
   ctx.restore();
 }

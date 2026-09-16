@@ -1,3 +1,4 @@
+import { passFeedbackActive } from './pass-feedback.js';
 export function bestPass(frame) {
   if (frame.reason || !frame.geometry?.handler) return null;
   return (frame.passOptions || [])
@@ -11,6 +12,7 @@ export function bestPass(frame) {
 }
 export function shotPps(event) {
   const f = event?.shotForecast;
+  if (Number.isFinite(f?.shotPlusSecondChance)) return f.shotPlusSecondChance;
   return Number.isFinite(f?.quality?.fieldGoalValue) &&
     Number.isFinite(f?.secondChancePerShot)
     ? f.quality.fieldGoalValue + f.secondChancePerShot
@@ -19,7 +21,7 @@ export function shotPps(event) {
 // One compact attached card: action labels on top, point values beneath.
 export function releaseCard(play, passes, time) {
   const actions = [
-    ...(passes || []).filter(p => p.possession === play.id).map(p => ({frame:p.start, player:p.passer, receiver:p.receiver, selected:'PASS'})),
+    ...(passes || []).filter(p => p.possession === play.id && passFeedbackActive(p,time)).map(p => ({frame:p.start, player:p.passer, receiver:p.receiver, selected:'PASS'})),
     ...(play.events || []).filter(e => e.type === 'shot').map(e => ({frame:e.frame, player:e.player, selected:'SHOT', releasePps:shotPps(e)})),
   ].filter(a => a.frame <= time && time - a.frame < 25).sort((a,b) => b.frame-a.frame);
   const action = actions[0];
@@ -30,7 +32,7 @@ export function releaseCard(play, passes, time) {
   return {...action, shot:action.selected === 'SHOT' ? action.releasePps : prior?.shot?.shotPlusSecondChance, pass:pass?.value};
 }
 
-export function actionCard(ctx, x, y, unit, shot, pass, color, selected = null) {
+export function actionCard(ctx, x, y, unit, shot, pass, color, selected = null, largeLabels = false) {
   ctx.save();
   const width = unit * 5.6,
     height = unit * 2;
@@ -58,8 +60,8 @@ export function actionCard(ctx, x, y, unit, shot, pass, color, selected = null) 
       ctx.roundRect(px-width/4+.08*unit, y-height/2+.08*unit, width/2-.16*unit, height-.16*unit, .2*unit);
       ctx.fill();
     }
-    ctx.fillStyle = i === 1 ? "#83cfa1" : "#b4bdb9";
-    ctx.font = `500 ${unit * 0.48}px monospace`;
+    ctx.fillStyle = largeLabels ? '#ffffff' : i === 1 ? "#83cfa1" : "#b4bdb9";
+    ctx.font = `${largeLabels ? 700 : 500} ${unit * (largeLabels ? 0.65 : 0.48)}px monospace`;
     ctx.fillText(label, px, y - unit * 0.45);
     ctx.fillStyle = color(value);
     ctx.font = `600 ${unit * 0.85}px monospace`;

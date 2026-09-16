@@ -6,7 +6,7 @@ import numpy as np
 from scipy.optimize import minimize
 from scipy.special import logsumexp
 from threadpoolctl import threadpool_limits
-from .defense import load_counts, fit_priors
+from .defense import load_counts, load_season, fit_priors
 from .passing import velocities, lane_weights
 
 FEATURES=['ball_distance','holder_distance','nearest_receiver_distance','maximum_lane_proximity','closing_speed','steals_per_100_prior']
@@ -57,10 +57,10 @@ class JointStealModel:
         return np.exp(logits-logsumexp(logits,axis=1)[:,None])
 
 
-def with_priors(x,ids,gids,counts,excluded=()):
+def with_priors(x,ids,gids,counts,excluded=(),season=None):
     result=x.copy()
     for gid in np.unique(gids):
-        profiles,pool=fit_priors(counts,set(excluded)|{int(gid)})
+        profiles,pool=fit_priors(counts,set(excluded)|{int(gid)},season=season)
         for i in np.flatnonzero(gids==gid):
             result[i,:,-1]=[profiles.get(int(pid),{}).get('priorPer100',pool) for pid in ids[i]]
     return result
@@ -76,6 +76,11 @@ def main(kind='steal'):
     root=Path(__file__).resolve().parents[1];counts=load_counts(root,kind)
     manifest=json.loads((root/'viewer/data/manifest.json').read_text())
     aliases={int(r['player_id']):int(r['canonical_player_id']) for r in csv.DictReader((root/'data/player_id_aliases.csv').open())}
+    # Only steals have an official season line wired in; blocks stay tracking-only.
+    season=None
+    if kind=='steal':
+        names={int(pid):player['name'] for game in manifest['games'] for pid,player in game['players'].items()}
+        season,_=load_season(root,names)
     xs=[];ys=[];ids=[];gids=[];references=[];sample=[]
     for game in manifest['games']:
         gid=game['match']['id']
@@ -112,7 +117,7 @@ def main(kind='steal'):
     with threadpool_limits(limits=1):
         for gid in np.unique(gids):
             train=(gids!=gid)&sample;test=(gids==gid)&sample;alltest=gids==gid
-            z=with_priors(x,ids,gids,counts,{int(gid)})
+            z=with_priors(x,ids,gids,counts,{int(gid)},season)
             model=JointStealModel().fit(z[train],y[train])
             p=model.predict(z[test]);predictions[alltest]=model.predict(z[alltest])
             rate=float((y[train]>0).mean());baseline=np.full_like(p,rate/5);baseline[:,0]=1-rate

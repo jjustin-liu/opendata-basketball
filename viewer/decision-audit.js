@@ -1,4 +1,4 @@
-import { shotPps } from "./action-display.js";
+import { shotPps } from "./action-display.js?v=foul-4";
 export const AUDIT_RULES = {
   lookback: 2,
   commitment: 0.3,

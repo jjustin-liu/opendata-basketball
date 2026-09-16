@@ -1,5 +1,6 @@
 import { passWithRisk } from './pass-flight.js?v=recap-2';
-import { shotPps } from './action-display.js';
+import { shotPps } from './action-display.js?v=foul-4';
+import { passFeedbackActive } from './pass-feedback.js';
 
 export function actionRecap(play, passes, player, time) {
   const pass = (passes || []).filter(p => p.possession === play.id && p.passer === player && p.start <= time && time - p.start <= 50).sort((a,b) => b.start-a.start)[0];
@@ -8,7 +9,7 @@ export function actionRecap(play, passes, player, time) {
     const value = shotPps(shot);
     return ['SHOT', Number.isFinite(value) ? value.toFixed(2) : '', 'PPS'];
   }
-  if (!pass) return null;
+  if (!pass || !passFeedbackActive(pass,time)) return null;
   const forecast = passWithRisk(pass, play.frames);
   return [Number.isFinite(forecast.epv) ? forecast.epv.toFixed(2) : '', 'PASS'];
 }

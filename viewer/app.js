@@ -1,22 +1,28 @@
-import { movementIdea, drawMovementIdea, smoothMovement } from "./movement-ideas.js?v=3";
+import { drawMovementIdea, smoothMovement } from "./movement-ideas.js?v=defense-5";
+import { simulatedMovement, defensiveMovement } from './movement-simulation.js?v=backcut-4';
+import { scoreboardEstimate, cumulativeRisk } from './possession-scoreboard.js?v=aligned-2';
+import { playerColor } from './player-color.js';
+const playerColors = new Map();
 let movementVisual = null;
-const movementCache = new WeakMap();
-import { ballTrail, drawBallTrail } from "./ball-trail.js";
-import { spaceControl } from "./space-control.js?v=1";
+const movementData = new Map();
+const defensiveMovementData = new Map();
+import { ballTrail, drawBallTrail } from "./ball-trail.js?v=bold-2";
+import { spaceControl } from "./space-control.js?v=clark-2";
 let spaceGrids = {};
 const spaceCache = new WeakMap();
 import { drawRealistic } from "./realistic.js?v=realistic-2";
 import { drawDefenderLabel, defenderProbability, defenderForecast, defenderThreatReference, rimWingAngle } from "./defender-label.js?v=compact-meters-3";
 import { drawThreatOverlay } from "./threat-overlay.js?v=1";
-import { auditShot } from "./decision-audit.js?v=foul-4";
-import { shotReview } from "./shot-review.js";
+import { auditShot } from "./decision-audit.js?v=foul-5";
+import { shotReview } from "./shot-review.js?v=branches-2";
 import { followPass } from "./follow-pass.js";
-import { activePass, flightLabel, passWithRisk } from "./pass-flight.js?v=recap-2";
-import { actionRecap, drawActionRecap } from "./action-recap.js?v=shot-5";
-import { passAnnotation, shotBall, drawPassAnnotation } from './release-annotations.js?v=ball-theme-3';
-import { playRecap, playOutcome } from './play-recap.js?v=total-2';
+import { activePass, flightLabel, passWithRisk } from "./pass-flight.js?v=catch-3";
+import { actionRecap, drawActionRecap } from "./action-recap.js?v=quick-7";
+import { passAnnotation, shotBall, drawPassAnnotation } from './release-annotations.js?v=delta-7';
+import { playRecap, playOutcome, recapMarkup } from './play-recap.js?v=aligned-8';
 let reboundAnnotations = {};
-import { touchHistory } from './touch-history.js';
+import { touchHistory } from './touch-history.js?v=decision-2';
+import { compactPlayer } from './compact-player.js?v=curved-3';
 let touchAnnotations = {};
 let touchSheetKey = '';
 
@@ -38,19 +44,21 @@ function renderTouchSheet(time) {
     const action = r.action==='PASS' ? `Pass → ${r.receiver == null ? '?' : escape(shortName(r.receiver))}` : r.action==='SHOT' ? 'Shot' : r.ended ? 'Released' : 'On the ball';
     const value = r.action==='PASS' ? r.passEpv : r.action==='SHOT' ? r.pps : r.endEpv;
     const unit = r.action==='SHOT' ? 'PPS' : 'EPV';
-    const delta = Number.isFinite(r.change) ? `<span class="flow-delta ${r.change>=0?'positive':'negative'}" title="EPV change while holding">${r.change>=0?'+':''}${r.change.toFixed(2)}</span>` : '';
-    return `<details class="flow-row ${r.ended?'':'is-current'}" data-touch="${escape(r.id)}" ${openRows.has(r.id)?'open':''}><summary><span class="flow-step">${i+1}</span><span class="flow-main"><span class="flow-player" title="${escape(name(r.player))}">${escape(shortName(r.player))}<small>${r.seconds.toFixed(1)}s</small></span><span class="flow-action">${action}</span></span><span class="flow-value">${num(value)}<small>${unit}</small>${delta}</span></summary><div class="flow-detail"><dl><div><dt>Received · shot clock</dt><dd>${Number.isFinite(r.shotClock)?r.shotClock.toFixed(1)+'s':'—'}</dd></div><div><dt>Catch EPV</dt><dd>${num(r.catchEpv)}</dd></div><div><dt>${r.ended?'Pre-release':'Current'} EPV</dt><dd>${num(r.endEpv)}</dd></div><div><dt>Holding TOV · latest / peak</dt><dd>${risk(r.risk)} / ${risk(r.peakRisk)}</dd></div>${r.action==='PASS'?`<div><dt>Pass TOV</dt><dd>${risk(r.passRisk)}</dd></div><div><dt>Projected catch EPV</dt><dd>${num(r.projectedCatch)}</dd></div>`:''}</dl></div></details>`;
-  }).join('') || '<p class="touch-empty">Waiting for the first touch.</p>'}</div><details class="flow-help" data-touch="help" ${openRows.has('help')?'open':''}><summary>About these numbers</summary><p>Tap a player for receipt clock and risk. Signed change is EPV gained or lost while holding, not individual credit. Holding risk covers the next two seconds. Catch EPV uses the first supported sample within 0.4s. Pass EPV includes interception risk and clock cost; projected catch EPV excludes the pass-risk discount. Missing estimates remain blank.</p></details>`;
+    const change=Number.isFinite(r.decisionChange)?Math.round(r.decisionChange*100)/100:null;
+    const delta = Number.isFinite(change) ? `<span class="flow-delta ${change>=0?'positive':'negative'}" title="Chosen action value minus pre-release EPV; model comparison, not causal player credit">${change>=0?'+':''}${change.toFixed(2)} <small>vs pre-release</small></span>` : '';
+    return `<details class="flow-row ${r.ended?'':'is-current'}" data-touch="${escape(r.id)}" ${openRows.has(r.id)?'open':''}><summary><span class="flow-step">${i+1}</span><span class="flow-main"><span class="flow-player" title="${escape(name(r.player))}">${escape(shortName(r.player))}<small>${r.seconds.toFixed(1)}s</small></span><span class="flow-action">${action}</span></span><span class="flow-value">${num(value)}<small>${unit}</small>${delta}</span></summary><div class="flow-detail"><dl><div><dt>Received · shot clock</dt><dd>${Number.isFinite(r.shotClock)?r.shotClock.toFixed(1)+'s':'—'}</dd></div><div><dt>Catch EPV</dt><dd>${num(r.catchEpv)}</dd></div><div><dt>${r.ended?'Pre-release':'Current'} EPV</dt><dd>${num(r.endEpv)}</dd></div><div><dt>EPV change while holding</dt><dd>${Number.isFinite(r.change)?(r.change>=0?'+':'')+r.change.toFixed(2):'—'}</dd></div><div><dt>Holding TOV · latest / peak</dt><dd>${risk(r.risk)} / ${risk(r.peakRisk)}</dd></div>${r.action==='PASS'?`<div><dt>Pass TOV</dt><dd>${risk(r.passRisk)}</dd></div><div><dt>Projected catch EPV</dt><dd>${num(r.projectedCatch)}</dd></div>`:''}</dl></div></details>`;
+  }).join('') || '<p class="touch-empty">Waiting for the first touch.</p>'}</div><details class="flow-help" data-touch="help" ${openRows.has('help')?'open':''}><summary>About these numbers</summary><p>Tap a player for receipt clock and risk. The prominent signed change compares the chosen shot or pass value with pre-release EPV. Holding change appears in the expanded details. These are comparisons between model estimates, not causal player credit. Holding risk covers the next two seconds. Catch EPV uses the first supported sample within 0.4s. Pass EPV includes interception risk and clock cost; projected catch EPV excludes the pass-risk discount. Missing estimates remain blank.</p></details>`;
   if (!follow) sheet.scrollTop = oldScroll;
   if (follow) sheet.scrollTop=sheet.scrollHeight;
 }
 import { playerProfile, profileTab, defenderNumbers, defenderChipScale } from "./player-profile.js?v=position-size-1";
-import { bestPass, shotPps, actionCard, releaseCard } from "./action-display.js?v=release-3";
+import { bestPass, shotPps, actionCard, releaseCard } from "./action-display.js?v=white-6";
 import { driveSpace } from "./drive-space.js";
 import { ballRiskColor } from "./ball-risk-color.js";
-import { curvedValue } from "./curved-value.js?v=avoid-ball-5";
+import { curvedValue } from "./curved-value.js?v=bigger-cap-1";
+import { drawCatchStack } from './catch-stack.js?v=scaled-text-1';
 import { closestDefender, drawDefenderDistance } from "./defender-distance.js?v=distance-2";
-import { drawCourt3D } from "./court3d.js?v=movement-11";
+import { drawCourt3D } from "./court3d.js?v=trail-23";
 import { interpolateFrame } from "./playback.js";
 let surrogateReport = null;
 let tacticalView = false;
@@ -76,6 +84,7 @@ let manifest,
   game,
   play,
   index = 0,
+  startIndex = 0,
   playing = false,
   lastTime = 0,
   requestId = 0,
@@ -151,11 +160,37 @@ function selectGame(gid) {
   const preferred = game.plays.find((p) => p.id === hash.get("play"));
   loadPlay(preferred?.id || visiblePlays[0]?.id);
 }
+const finalValues = new Map();
+const finalValueLoads = new Map();
+async function loadFinalValues(selectedGame) {
+  const queue = selectedGame.plays.filter(p=>!finalValues.has(p.id));
+  await Promise.all(Array.from({length:6}, async()=>{
+    while(queue.length) {
+      const summary=queue.shift();
+      const data=await getJSON(`data/plays/${summary.id}.json`);
+      finalValues.set(summary.id,playRecap(data,data.frames.at(-1).frame,selectedGame.recordedPasses));
+    }
+  }));
+}
 function renderList() {
   if (!game) return;
   const filter = $("filter").value,
     query = $("search").value.toLowerCase();
-  $("listMetric").textContent = filter === "audit" ? "" : "PTS / PEAK RISK¹";
+  const finalSort=filter==='final-high'||filter==='final-low';
+  $("listMetric").textContent = finalSort ? 'FINAL EPV · PPA × SURVIVAL' : filter === "audit" ? "" : "PTS / PEAK RISK¹";
+  if(finalSort && game.plays.some(p=>!finalValues.has(p.id))) {
+    const selectedGame=game;
+    $("playCount").textContent='Calculating final EPV…';
+    $("playList").innerHTML='';
+    if(!finalValueLoads.has(game.match.id)) {
+      const pending=loadFinalValues(selectedGame).then(()=>{if(game===selectedGame)renderList();}).catch(()=>{
+        finalValueLoads.delete(selectedGame.match.id);
+        if(game===selectedGame && $("filter").value.startsWith('final-')) $("playCount").textContent='Could not load final EPV. Select again to retry.';
+      });
+      finalValueLoads.set(game.match.id,pending);
+    }
+    return;
+  }
   if (filter === "audit") {
     const candidates = (game.shotAudits || [])
       .filter((a) =>
@@ -189,12 +224,18 @@ function renderList() {
       `${teamName(p.offTeamId)} q${p.period}`.toLowerCase().includes(query),
   );
   if (filter === "risk") visiblePlays.sort((a, b) => b.peakRisk - a.peakRisk);
+  if(finalSort) visiblePlays.sort((a,b)=>{
+    const av=finalValues.get(a.id)?.playValue,bv=finalValues.get(b.id)?.playValue;
+    if(!Number.isFinite(av))return Number.isFinite(bv)?1:0;
+    if(!Number.isFinite(bv))return -1;
+    return filter==='final-high'?bv-av:av-bv;
+  });
   $("playCount").textContent = `${visiblePlays.length} possessions`;
   $("playList").innerHTML =
     visiblePlays
       .map(
         (p) =>
-          `<button class="play-item ${play?.id === p.id ? "active" : ""}" data-play="${p.id}"><div><span>${escape(teamName(p.offTeamId))}</span><small>Q${p.period} · ${clock(p.startClock)}${p.turnover ? " · TURNOVER" : ""}</small></div><div class="play-numbers">${p.points}<small>${pct(p.peakRisk)}%</small></div></button>`,
+          `<button class="play-item ${play?.id === p.id ? "active" : ""}" data-play="${p.id}"><div><span>${escape(teamName(p.offTeamId))}</span><small>Q${p.period} · ${clock(p.startClock)}${p.turnover ? " · TURNOVER" : ""}</small></div><div class="play-numbers">${finalSort ? (Number.isFinite(finalValues.get(p.id)?.playValue)?finalValues.get(p.id).playValue.toFixed(2):'—') : p.points}<small>${finalSort ? 'EPV' : pct(p.peakRisk)+'%'}</small></div></button>`,
       )
       .join("") || '<p class="microcopy">No matching possessions.</p>';
   $("playList")
@@ -209,13 +250,19 @@ async function loadPlay(pid, reviewFrame = null) {
   setPlaying(false);
   const ticket = ++requestId;
   try {
-    const next = await getJSON(`data/plays/${pid}.json`);
+    const gid=game.match.id;
+    const [next] = await Promise.all([
+      getJSON(`data/plays/${pid}.json`),
+      movementData.has(gid) ? Promise.resolve() : getJSON(`data/movement/${gid}.json`).then(data=>movementData.set(gid,data)).catch(()=>{}),
+      defensiveMovementData.has(gid) ? Promise.resolve() : getJSON(`data/movement/${gid}-defense.json`).then(data=>defensiveMovementData.set(gid,data)).catch(()=>{}),
+    ]);
     if (ticket !== requestId) return;
     play = next;
     index = Math.max(
       0,
       play.frames.findIndex((f) => f.epv != null && f.offense.some(p => p[0] === f.geometry?.handler && p[1] <= 0)),
     );
+    startIndex = index;
     history.replaceState(null, "", `#game=${game.match.id}&play=${pid}`);
     $("scrubber").max = play.frames.length - 1;
     $("playKicker").textContent =
@@ -299,6 +346,7 @@ function drawCourt(blend = 0) {
     scale = Math.min(w / 98, h / 56) * courtZoom.flat,
     cx = w * (0.5 + zoomOffsets.flat[0]),
     cy = h * (0.5 + zoomOffsets.flat[1]);
+  $('floorClock').textContent = Number.isFinite(f.shotClock) ? f.shotClock.toFixed(1) : '—';
   const sourceFrame = play.frames[index];
   const nextFrame = play.frames[index + 1];
   const visualFrame =
@@ -311,6 +359,21 @@ function drawCourt(blend = 0) {
   const passNote = passAnnotation(play, game.recordedPasses, visualFrame);
   const shotBallState = shotBall(play, visualFrame);
   const flight = passWithRisk(activePass(game.recordedPasses, play.id, visualFrame), play.frames);
+  const scoreboard=scoreboardEstimate(play,f,visualFrame,game.recordedPasses,epvKey());
+  $('floorEpv').textContent=Number.isFinite(scoreboard.epv)?scoreboard.epv.toFixed(2):'—';
+  $('floorTov').textContent=Number.isFinite(scoreboard.rest)?`${pct(scoreboard.rest)}%`:'—';
+  $('floorHeld').hidden=!scoreboard.held;
+  const cumulative=cumulativeRisk(play,visualFrame,game.recordedPasses);
+  $('floorCumulative').textContent=Number.isFinite(cumulative.risk)?`${pct(cumulative.risk)}%`:'—';
+  $('floorCumulative').title=`Approximate accepted risk before the first shot: time-weighted supported holding risk plus each pass risk once at release; flight time excluded from holding exposure. ${cumulative.covered.toFixed(1)}s of supported holding risk, ${cumulative.passCount} scored passes. Freezes at the first shot; resets next possession. Recap survival = 100% minus this value. Missing tracking is omitted; overlapping model risks may double-count exposure. Not calibrated whole-play TOV probability.`;
+  const circleColors = new Map();
+  for (const p of f.offense) {
+    const holder=p[0]===f.geometry?.handler;
+    const value=holder?f[epvKey()]:f.passOptions?.find(o=>o.player===p[0])?.value;
+    const current=!flight && !f.reason && Number.isFinite(value) ? (holder?'#151719':passFill(value)) : null;
+    const state=playerColor(playerColors.get(p[0]),current,visualFrame,`${play.id}:${epvKey()}`);
+    playerColors.set(p[0],state);circleColors.set(p[0],state.fill);
+  }
   if (driveCacheFrame !== sourceFrame) {
     driveCacheFrame = sourceFrame;
     driveCache = driveSpace(sourceFrame);
@@ -327,26 +390,17 @@ function drawCourt(blend = 0) {
     ...($("driveSpace").checked && !recentShot(f) ? driveCache : []),
   ];
   let movement = null;
+  let defenseMovement = null;
   if ($("movementIdeas").checked && !realisticView && !flight && !recentShot(f)) {
-    const evaluate = i => {
-      const frame = play.frames[i];
-      if (!frame) return null;
-      if (!movementCache.has(frame)) movementCache.set(frame,new Map());
-      const cache=movementCache.get(frame),key=selectedPass??'auto';
-      if(!cache.has(key))cache.set(key,movementIdea(frame,play.frames[i-1],spaceGrids[String(play.gameId)],id=>playerProfile(game,id),selectedPass));
-      return cache.get(key);
-    };
-    const candidate=evaluate(index);
-    if(candidate){
-      const player=f.offense.find(p=>p[0]===candidate.player);
-      movement={...candidate,from:[player[1],player[2]]};
-    }
+    movement=simulatedMovement(movementData.get(game.match.id),play.id,f,selectedPass);
+    defenseMovement=defensiveMovement(defensiveMovementData.get(game.match.id),play.id,f);
   }
   movementVisual=smoothMovement(movementVisual,movement,visualFrame,`${play.id}:${selectedPass??'auto'}`);
   movement=movementVisual?.idea??null;
   $("movementContext").hidden=!$("movementIdeas").checked;
-  $("movementContext").textContent=realisticView?'Movement ideas: views 1–4 / 6':movement?`${shortName(movement.player)} · ${movement.confidence} · ${movement.reason}`:selectedPass?`${shortName(selectedPass)} · no supported improvement; try another teammate`:'Click a teammate to explore movement';
-  $("movementContext").title=movement?`${name(movement.player)}: ${Math.hypot(movement.to[0]-movement.from[0],movement.to[1]-movement.from[1]).toFixed(1)} ft, about ${movement.seconds.toFixed(1)}s. ${movement.reason}. ${movement.tradeoff}. Compares staying with moving, including space for teammates under hold, momentum and closeout responses. Experimental heuristic, not validated EPV gain.`:'Select an off-ball teammate. No arrow means no supported positive alternative under this limited search, not that staying is optimal.';
+  $("movementContext").textContent=realisticView?'Movement ideas: views 1–4 / 6':[movement?`Offense +${movement.gain.toFixed(2)}`:'',defenseMovement?`Defense −${defenseMovement.gain.toFixed(2)} EPV`:''].filter(Boolean).join(' · ') || 'No supported shift above 0.01 EPV';
+  $("movementContext").title='Offense: at least +0.01 EPV across hold, momentum and closeout responses. Defense: half-court shifts stress-tested against passes and 4/8 ft backcuts at a matched 2-second horizon, including pass risk. Reject if a tested response improves by more than 0.005 EPV or cannot be scored. Negative labels show reduction in the best tested offensive response. No defensive recovery is modeled. Experimental sensitivity estimates, not validated policy value.';
+  if(defenseMovement) $('movementContext').title=`${name(defenseMovement.player)}: offensive EPV ${defenseMovement.before.toFixed(2)} → ${defenseMovement.after.toFixed(2)} after the shift. `+$('movementContext').title;
 
   const guard = closestDefender(f);
   $("guardAngle").textContent =
@@ -396,10 +450,10 @@ function drawCourt(blend = 0) {
       cameraKey: play.id,
       flight,
       profile: (id) => playerProfile(game, id, f.frame),
-      driveCells, movement, released, passNote, shotBallState,
+      driveCells, movement, defenseMovement, released, passNote, shotBallState,
       rebounds: reboundAnnotations[play.id] || [],
       epvKey: epvKey(),
-      epvColor, passFill,
+      epvColor, passFill, circleColors,
       shotEvent: flight ? null : recentShot(f),
       lanes: $("lanes").checked || cameraPlayer !== null,
       pressure: $("pressure").checked,
@@ -493,6 +547,7 @@ function drawCourt(blend = 0) {
     ctx.fill();
   }
   drawMovementIdea(ctx, movement, p=>[p[0],-p[1]], 1);
+  drawMovementIdea(ctx, defenseMovement, p=>[p[0],-p[1]], 1);
   const shotEvent = flight ? null : recentShot(f);
   const holder = f.offense.find((p) => p[0] === f.geometry?.handler);
   if (holder && $("lanes").checked) {
@@ -575,7 +630,7 @@ function drawCourt(blend = 0) {
     for (const p of players) {
       ctx.beginPath();
       const offensive = players === f.offense;
-      const chipScale = defenderChipScale((offensive ? offenseLabels : defenderLabels).get(p[0])) * (positionView ? .88 : 1);
+      const chipScale = defenderChipScale((offensive ? offenseLabels : defenderLabels).get(p[0]));
       const option = offensive && f.passOptions?.find((o) => o.player === p[0]);
       const passTint = offensive && p[0] !== holder?.[0] && !flight && p[0] !== shotEvent?.player && Number.isFinite(option?.value);
       if (!offensive && !$("defenseDetail").checked && !threatView) {
@@ -597,11 +652,8 @@ function drawCourt(blend = 0) {
         ctx.restore();
       }
       ctx.beginPath();
-      ctx.arc(p[1], -p[2], (passTint ? 1.95 : 1.75) * chipScale, 0, Math.PI * 2);
-      ctx.fillStyle = passTint ? passFill(option.value) : positionView && offensive ? colors.off :
-        offensive && (flight?.receiver === p[0] || p[0] === shotEvent?.player)
-          ? "#16834b"
-          : color;
+      ctx.arc(p[1], -p[2], (offensive ? 1.95 : 1.75) * chipScale, 0, Math.PI * 2);
+      ctx.fillStyle = offensive ? circleColors.get(p[0]) : color;
       ctx.fill();
       const higherOpenPass =
         option &&
@@ -609,6 +661,9 @@ function drawCourt(blend = 0) {
         option.value > f[epvKey()] &&
         option.route?.reachableDefenders === 0;
       const isShooter = offensive && p[0] === shotEvent?.player;
+      const catchPreview = offensive && !isShooter && p[0] !== holder?.[0]
+        ? flight?.receiver===p[0] ? flight : option?.catchShot ? option : null
+        : null;
       ctx.strokeStyle =
         offensive && flight?.receiver === p[0]
           ? "#36db7a"
@@ -634,26 +689,39 @@ function drawCourt(blend = 0) {
       ctx.font = "500 1.2px monospace";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      if (offensive && !positionView && flight?.receiver === p[0]) {
+      if (catchPreview) {
+        ctx.font=`600 ${2.05*chipScale}px sans-serif`;
+        ctx.fillText(offenseLabels.get(p[0]),p[1],-p[2]);
+        drawCatchStack(ctx,p[1],-p[2],1.95*chipScale,catchPreview,visualFrame,positionView?1.3:1);
+      } else if (offensive && !positionView && !threatView) {
+        const isHolder=p[0]===holder?.[0];
+        const value=isShooter?shotPps(shotEvent):isHolder?f[epvKey()]:option?.value;
+        compactPlayer(ctx,p[1],-p[2],1.95*chipScale,{
+          position:offenseLabels.get(p[0]),profile:playerProfile(game,p[0]),
+          text:flight?flight.receiver===p[0] && Number.isFinite(flight.completedEpv)?flight.completedEpv.toFixed(2):flightLabel(flight,p[0]):Number.isFinite(value)?value.toFixed(2):'',
+          color:passTint?'#f7faf8':Number.isFinite(value)?epvColor(value):'#dce6e9',
+          risk:flight?null:isHolder||isShooter?null:option?.turnoverProbability,
+        });
+      } else if (offensive && !positionView && flight?.receiver === p[0]) {
         ctx.fillStyle = '#f7faf8';
         ctx.font = '700 1.05px "IBM Plex Mono", monospace';
-        ctx.fillText(Number.isFinite(flight.turnoverProbability) ? pct(flight.turnoverProbability) + '%' : '', p[1], -p[2]-.35);
+        ctx.fillText(Number.isFinite(flight.completedEpv) ? flight.completedEpv.toFixed(2) : '', p[1], -p[2]-.35);
         ctx.font = '500 .65px "IBM Plex Mono", monospace';
-        ctx.fillText(Number.isFinite(flight.turnoverProbability) ? 'TOV' : '', p[1], -p[2]+.65);
+        ctx.fillText(Number.isFinite(flight.completedEpv) ? 'CATCH EPV' : '', p[1], -p[2]+.65);
       } else if (offensive && positionView) {
         ctx.fillStyle = passTint ? '#f7faf8' : '#e2e6e8';
         ctx.font = `600 ${2.05 * chipScale}px "DM Sans", sans-serif`;
         ctx.fillText(offenseLabels.get(p[0]), p[1], -p[2]);
         const isHolder = p[0] === holder?.[0];
-        const value = isShooter ? shotPps(shotEvent) : isHolder ? f[epvKey()] : option?.value;
+        const value = flight?.receiver===p[0] ? flight.completedEpv : isShooter ? shotPps(shotEvent) : flight || f.reason ? null : isHolder ? f[epvKey()] : option?.value;
         const text = Number.isFinite(value) ? value.toFixed(2) : '';
         const turnover = isShooter || flight || isHolder ? null : option?.turnoverProbability;
         const turnoverText = isShooter ? 'SHOT' : Number.isFinite(turnover) ? `${pct(turnover)}% TOV${isHolder ? ' · 2s' : ''}` : '';
         const recap = actionRecap(play, game.recordedPasses, p[0], visualFrame);
-        if (recap) drawActionRecap(ctx, p[1], -p[2], 1.95 * chipScale, recap);
+        if (recap && (recap[0]==='SHOT' || !Number.isFinite(value))) drawActionRecap(ctx, p[1], -p[2], 1.95 * chipScale, recap);
         else curvedValue(ctx, p[1], -p[2], 1.95 * chipScale, text,
           Number.isFinite(value) ? epvColor(value) : '#c4cbcf', turnoverText,
-          { x: f.ball[0], y: -f.ball[1], radius: 1.0 });
+          { x: f.ball[0], y: -f.ball[1], radius: shotBallState ? 1.5 : flight ? 1.8 : 1.25 });
       } else if (offensive && flight) {
         const text = flightLabel(flight, p[0]);
         ctx.font = "600 1.05px monospace";
@@ -707,7 +775,7 @@ function drawCourt(blend = 0) {
         drawDefenderLabel(ctx, p[1], -p[2], 1.95 * chipScale, playerProfile(game, p[0]), f, p[0], defenderLabels.get(p[0]), true, { hover: hoverPlayer, showNames: $("defenderNames").checked, enabled: $("defenseDetail").checked && !threatView, receiver: selectedPass, unit: 1.95, reference: defenderThreatReference(play.frames), wingAngle: rimWingAngle((x, y) => [x, -y], p[1], p[2]) });
         if (!threatView) drawDefenderDistance(ctx, p[1], -p[2] + 1.95 * chipScale + .65, 1.2, p, f);
       }
-      if (offensive && !positionView) profileTab(
+      if (offensive && !positionView && threatView) profileTab(
         ctx,
         p[1],
         -p[2] - 1.95 * chipScale - .4,
@@ -746,12 +814,12 @@ function drawCourt(blend = 0) {
       1,
       released ? released.shot : f.shot?.shotPlusSecondChance,
       released ? released.pass : best?.value,
-      epvColor, released?.selected,
+      epvColor, released?.selected, positionView,
     );
   }
-  drawBallTrail(ctx, ballTrail(play.frames, f, visualFrame), b=>[b[0],-b[1]], 1.0);
+  drawBallTrail(ctx, ballTrail(play.frames, f, visualFrame), b=>[b[0],-b[1]], 1.0, !!flight);
   if (passNote) drawPassAnnotation(ctx,passNote.x,-passNote.y,Math.max(1,10/scale),passNote);
-  const ballRadius = shotBallState ? 1.5 : 1;
+  const ballRadius = shotBallState ? 1.5 : flight ? 1.8 : 1.25;
   ctx.fillStyle = "#9d753733";
   ctx.beginPath();
   ctx.ellipse(f.ball[0] + 0.3, -f.ball[1] + 0.4, 1.0, 0.5, 0, 0, Math.PI * 2);
@@ -768,8 +836,12 @@ function drawCourt(blend = 0) {
     ctx.fillStyle = '#191919';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.font = `700 ${shotBallState ? .95 : .72}px "IBM Plex Mono", monospace`;
-    ctx.fillText(shotBallState ? shotBallState.pps.toFixed(2) : `${Math.round(ballRisk * 100)}%`, f.ball[0], -f.ball[1], ballRadius*1.8);
+    ctx.font = `700 ${shotBallState ? .95 : flight ? 1.4 : 1.08}px "IBM Plex Mono", monospace`;
+    ctx.fillText(shotBallState ? shotBallState.pps.toFixed(2) : `${Math.round(ballRisk * 100)}%`, f.ball[0], -f.ball[1] - (flight && !shotBallState ? .3 : 0), ballRadius*1.8);
+    if (flight && !shotBallState) {
+      ctx.font = '600 .72px "IBM Plex Mono", monospace';
+      ctx.fillText('TOV', f.ball[0], -f.ball[1]+.58);
+    }
   }
   ctx.restore();
 }
@@ -876,11 +948,12 @@ function renderShot(f) {
     panel.innerHTML = `<div class="audit-eyebrow">DECISION REVIEW · CANDIDATE</div>
       <h3 class="audit-headline ${w || audit.kind === "low-shot" ? "flagged" : ""}">${headline}</h3>
       <div class="audit-meta">${escape(name(review.event.player))} · ${review.clock == null ? "—" : review.clock.toFixed(1) + "s"} on clock · Q${play.period} ${review.event.gameClock == null ? "" : clock(review.event.gameClock)}</div>
-      <div class="audit-release"><small>ACTUAL SHOT · AT RELEASE</small><div>${review.event.shotForecast?.quality?.source === "skillcorner" ? "SkillCorner SQ · score ÷ 100 used as P(make)" : "Pooled model · SkillCorner score unavailable"}</div><b>${points(review.total)} <span>${review.event.fouled ? "FT VALUE PENDING" : "PPS"}</span></b><div>${review.event.fouled ? "Fouled attempt · " + points(review.first) + " expected field-goal points only" : `${points(review.first)} first chance + ${points(review.second)} second chance${Number.isFinite(review.total) && Number.isFinite(review.first) && Number.isFinite(review.second) && Math.abs(Number(review.first.toFixed(2)) + Number(review.second.toFixed(2)) - Number(review.total.toFixed(2))) > 0.005 ? " ≈ " : " = "}${points(review.total)}<br>${pct(review.orb)}% expected ORB on a live miss`}</div></div>
-      ${w ? `<div class="audit-window-label">EARLIER OPTION · ${((review.event.frame - w.frame) / 25).toFixed(2)}s BEFORE RELEASE</div><div class="audit-compare"><div><small>ACTUAL RELEASE PPS</small><b>${points(review.total)}</b></div><div><small>PASS AT WINDOW</small><b>${points(w.pass)}</b></div></div><p class="audit-evidence"><strong>+${(Number(w.pass.toFixed(2)) - Number(review.total.toFixed(2))).toFixed(2)} pass edge over actual shot</strong> · ${((w.end - w.start) / 25).toFixed(2)}s sustained window<br>≤${pct(w.maxTo)}% pass TO · route clear under model timing.<br>Earlier shoot-now estimate: ${points(w.shot)} PPS (context only).</p><button id="reviewWindow" class="primary">↶ Inspect this moment</button>` : `<p class="audit-evidence">${audit.kind === "foul" ? "Free-throw value is not modeled. A fouled miss is not a normal live rebound; this shot is excluded from decision flags." : audit.kind === "low-shot" ? "Below 0.95 PPS with more than 5s left. No passing window met all edge filters (value, duration, turnover risk and route clearance)." : "No sustained open pass exceeded the actual release PPS by 0.15. This does not certify the decision."}</p>`}
+      <div class="audit-release"><small>ACTUAL SHOT · AT RELEASE</small><div>${review.event.shotForecast?.quality?.source === "skillcorner" ? "SkillCorner SQ · score ÷ 100 used as P(make)" : "Pooled model · SkillCorner score unavailable"}</div><b>${points(review.total)} <span>PPS</span></b><div>${points(review.first)} SQ + ${points(review.freeThrows)} FT + ${points(review.second)} second chance<br>${pct(review.foulProbability)}% expected shooting foul · ${pct(review.ftPercentage)}% expected FT accuracy · experimental</div></div>
+      ${w ? `<div class="audit-window-label">EARLIER OPTION · ${((review.event.frame - w.frame) / 25).toFixed(2)}s BEFORE RELEASE</div><div class="audit-compare"><div><small>ACTUAL RELEASE PPS</small><b>${points(review.total)}</b></div><div><small>PASS AT WINDOW</small><b>${points(w.pass)}</b></div></div><p class="audit-evidence"><strong>+${(Number(w.pass.toFixed(2)) - Number(review.total.toFixed(2))).toFixed(2)} pass edge over actual shot</strong> · ${((w.end - w.start) / 25).toFixed(2)}s sustained window<br>≤${pct(w.maxTo)}% pass TO · route clear under model timing.<br>Earlier shoot-now estimate: ${points(w.shot)} PPS (context only).</p><button id="reviewWindow" class="primary">↶ Inspect this moment</button>` : `<p class="audit-evidence">${audit.kind === "foul" ? "Shooting-foul value is experimental. Recorded fouls remain excluded from decision flags; this estimate does not use the observed foul to award guaranteed free throws." : audit.kind === "low-shot" ? "Below 0.95 PPS with more than 5s left. No passing window met all edge filters (value, duration, turnover risk and route clearance)." : "No sustained open pass exceeded the actual release PPS by 0.15. This does not certify the decision."}</p>`}
       <div class="audit-actions"><button id="reviewRelease">Show release</button>${auditFocus != null ? '<button id="reviewLive">Return to live</button>' : ""}</div>
       <details class="audit-details"><summary>Shot breakdown & pass evidence</summary>
         <div class="review-row"><span>First chance</span><strong>${points(review.first)}</strong></div>
+        <div class="review-row"><span>Expected free throws</span><strong>+${points(review.freeThrows)}</strong><small>Player FT% · shooting-foul model</small></div>
         <div class="review-row"><span>Second chance / shot</span><strong>+${points(review.second)}</strong><small>${pct(review.orb)}% expected ORB · ${points(review.perMiss)} pts/live miss</small></div>
         <div class="review-row"><span>Total release PPS</span><strong>${points(review.total)}</strong></div>
         <div class="review-row"><span>Pass just before release</span><strong>${review.pass ? escape(shortName(review.pass.player)) + " · " + points(review.pass.value) : "—"}</strong><small>${review.pass ? pct(review.pass.turnoverProbability) + "% TO · " + review.passAge.toFixed(2) + "s before shot" + (review.pass.route?.reachableDefenders ? " · route within reach" : "") : "No supported estimate within 0.4s"}</small></div>
@@ -951,6 +1024,9 @@ function renderShot(f) {
       : f.shotUnavailableReason || f.reason || "Outside the 32 ft model range";
   if (shot?.source === "skillcorner-surrogate") {
     $("shotEvidence").textContent = surrogateReport ? (surrogateReport.summary.mae*100).toFixed(1) + " pp MAE" : "—";
+  }
+  if (forecast?.foulModel) {
+    $("shotContext").textContent += ` · ${pct(forecast.foulProbability)}% shooting foul · ${pct(forecast.freeThrowMakeProbability)}% FT · +${forecast.freeThrowValue.toFixed(2)} FT points (experimental)`;
   }
   $("shotEvidenceNote").textContent = shot?.source === "skillcorner-surrogate"
     ? `Held-out release error; live uncertainty may be larger${shot.extrapolated ? " · outside training range" : ""}`
@@ -1037,12 +1113,12 @@ function render() {
   if (!play || $("content").hidden) return;
   const f = play.frames[index];
   const completed = index === play.frames.length-1;
-  const recap = playRecap(play, completed ? Math.max(f.frame,...play.events.map(e=>e.frame)) : f.frame);
+  const recap = playRecap(play, completed ? Math.max(f.frame,...play.events.map(e=>e.frame)) : f.frame, game.recordedPasses);
   $('recapStack').hidden = !completed;
   const number = v => Number.isFinite(v) ? v.toFixed(2) : '—';
   $('playEnd').hidden = !completed;
-  $('playEnd').textContent = completed ? playOutcome(play) : '';
-  $('playRecap').innerHTML = `<h3>Play recap</h3><div class="recap-metrics"><span>Cumulative TOV · approx.<b>${recap.risk == null ? '—' : pct(recap.risk)+'%'}</b></span><span>Total PPS<b>${number(recap.total)}</b></span></div><details><summary>How these estimates work</summary><p>Risk accumulated over supported time only (${Math.round(recap.coverage*100)}% coverage), assuming constant hazard within each two-second forecast. Exploratory, not a calibrated play probability. Total PPS is the first shot's quality (${number(recap.first)}) plus expected second-chance points (${number(recap.second)}), including the chance of a miss and offensive rebound. It is expected value, not the observed result.</p></details>`;
+  $('playEnd').textContent = completed ? `ACTUAL · ${playOutcome(play)}` : '';
+  $('playRecap').innerHTML = recapMarkup(recap);
   $("epvValue").textContent =
     f[epvKey()] == null ? "—" : f[epvKey()].toFixed(2);
   renderShot(f);
@@ -1374,7 +1450,12 @@ $("court").onmousemove = (e) => {
         const block = defenderProbability(play.frames[index], "block", p[0]);
         const forecast = defenderForecast(play.frames[index], 'steal', selectedPass);
         const probability = defenderProbability(play.frames[index], 'steal', p[0], selectedPass);
-        return `${name(p[0])} · ${profile.position}${block != null ? ` · ${pct(block)}% block if holder shoots` : ""}${probability != null ? ` · ${pct(probability)}% interception on pass to ${name(forecast.receiver)}` : ""}${prior ? ` · ${prior.priorPer100.toFixed(2)} steals/100 defensive possessions (shrunk prior) · ${prior.steals} credited steals / ${prior.defensivePossessions} possessions in other games${prior.defensivePossessions ? "" : "; pooled fallback"}` : ""}`;
+        const season = profile.acbDefense;
+        // Official box score; the possession denominator is estimated from minutes.
+        const line = season
+          ? ` · ACB ${season.season}: ${season.steals} STL · ${season.blocks} BLK · ${season.personalFouls} PF in ${season.games} G (${season.minutes.toFixed(0)} min) · ${season.stealsPer100.toFixed(2)} STL / ${season.blocksPer100.toFixed(2)} BLK / ${season.foulsPer100.toFixed(2)} PF per 100 estimated defensive possessions`
+          : " · no ACB season line matched; pooled fallback";
+        return `${name(p[0])} · ${profile.position}${block != null ? ` · ${pct(block)}% block if holder shoots` : ""}${probability != null ? ` · ${pct(probability)}% interception on pass to ${name(forecast.receiver)}` : ""}${prior ? ` · ${prior.priorPer100.toFixed(2)} steals/100 shrunk prior (${prior.evidenceWeight.toFixed(2)} weight on the player, displayed game removed)` : ""}${line}`;
       }
       return `#${p[5]} ${name(p[0])} · ${profile.position} · ${profile.heightCm ? profile.heightCm + " cm (ACB listed)" : "height unavailable; generic model"} · 3PA/100: ${profile.threePer100 == null ? "—" : profile.threePer100.toFixed(1)} · ${profile.three} threes / ${profile.possessions} on-court offensive possessions; ${profile.shootingSample || "full available sample"} · 3P: ${profile.made}/${profile.three}${profile.three ? " (" + ((100 * profile.made) / profile.three).toFixed(1) + "%)" : " (no attempts)"} · ${profile.possessions < 100 ? "Sparse sample; faded cue. " : ""}Tab color/bar = observed 3P tendency, not measured gravity${p[3] ? "" : " · extrapolated"}`;
     })();
@@ -1391,6 +1472,23 @@ document.addEventListener("keydown", (e) => {
   if (e.key.toLowerCase() === "v" && !editing && !e.metaKey && !e.ctrlKey && !e.altKey && !e.repeat && !$("methodDialog").open && play) {
     e.preventDefault();
     $("playPause").click();
+    return;
+  }
+  const transport = { a: "rewind", d: "next", s: "stop" }[e.key.toLowerCase()];
+  if (transport && !editing && !e.metaKey && !e.ctrlKey && !e.altKey && !e.repeat && !$("methodDialog").open && play) {
+    e.preventDefault();
+    if (transport === "next") $("nextPlay").click();
+    else if (transport === "stop") {
+      setPlaying(false);
+      render();
+    } else if (index > startIndex) {
+      // Mid-possession: rewind to 0:00 and keep playing/paused as it was.
+      // From the start of the possession the same key steps back a play.
+      const resume = playing;
+      index = 0;
+      setPlaying(resume);
+      render();
+    } else $("prevPlay").click();
     return;
   }
   if (["1", "2", "3", "4", "5", "6", "7"].includes(e.key) && !editing && !e.metaKey && !e.ctrlKey && !e.altKey && !$("methodDialog").open && play) {

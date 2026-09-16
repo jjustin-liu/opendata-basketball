@@ -114,8 +114,24 @@ def main():
                 ["attempts", "three_attempts", "three_mades", "possessions_played"]
             ):
                 counts_row[i] += int(float(row[key] or 0))
+    drive_groups = {}
+    with (ROOT / "data/aggregates/acb_drivesaggregates_20252026.csv").open() as source:
+        for row in csv.DictReader(source):
+            drive_groups.setdefault(row["player_id"], []).append(row)
+    drive_season = {}
+    for raw_id, rows in drive_groups.items():
+        totals = [r for r in rows if r["team_name"].lower() == "total"]
+        pid = str(canonical.get(int(raw_id), int(raw_id)))
+        counts_row = drive_season.setdefault(pid, [0, 0])
+        for row in totals or rows:
+            counts_row[0] += int(float(row["total_drives"] or 0))
+            counts_row[1] += int(float(row["possessions_played"] or 0))
     for game in manifest["games"]:
         for pid, player in game["players"].items():
+            drives, exposure = drive_season.get(pid, [0, 0])
+            player["seasonDrives"] = drives
+            player["drivePossessions"] = exposure
+            player["drivesPer100"] = 100 * drives / exposure if exposure else None
             player["shootingSample"] = "10-game tracking sample"
             if pid in season:
                 (

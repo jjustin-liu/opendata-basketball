@@ -87,7 +87,12 @@ export function drawMovementIdea(ctx,idea,project,unit){
   ctx.fillStyle=idea.confidence==='Clear improvement'?'rgba(194,230,240,.88)':'rgba(240,223,187,.88)';
   ctx.fill();ctx.stroke();
   ctx.fillStyle=ctx.strokeStyle;ctx.font=`700 ${unit*1.4}px sans-serif`;
-  ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('?',b[0],b[1]);ctx.restore();
+  ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('?',b[0],b[1]);
+  if (idea.estimated && Number.isFinite(idea.gain)) {
+    ctx.font=`700 ${unit*.67}px monospace`;
+    ctx.fillText(`~${idea.side==='defense'?'−':'+'}${idea.gain.toFixed(2)} EPV`,b[0],b[1]+unit*1.65);
+  }
+  ctx.restore();
 }
 
 export function smoothMovement(previous, candidate, time, key) {

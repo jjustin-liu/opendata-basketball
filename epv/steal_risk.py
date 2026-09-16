@@ -13,11 +13,11 @@ def threat(ids, weights, profiles, pool):
     return sum(w*(profiles.get(int(pid),{}).get('priorPer100',pool)-pool) for pid,w in zip(ids,weights))
 
 
-def add_feature(table, counts, excluded):
+def add_feature(table, counts, excluded, season=None):
     result=table.copy()
     values={}
     for gid,group in table.groupby('gameId'):
-        profiles,pool=fit_priors(counts,set(excluded)|{int(gid)})
+        profiles,pool=fit_priors(counts,set(excluded)|{int(gid)},season=season)
         for index,row in group.iterrows():
             values[index]=threat(row.defenderIds,row.defenderLaneWeights,profiles,pool)
     result[FEATURE]=[values[i] for i in result.index]
@@ -26,12 +26,12 @@ def add_feature(table, counts, excluded):
 
 def main():
     root=Path(__file__).resolve().parents[1]
-    counts=annotate(root)
+    counts,season=annotate(root)
     table,_=load_passes(root)
     folds=[]; models={}
     for gid in sorted(table.gameId.unique()):
-        train=add_feature(table[table.gameId!=gid],counts,{int(gid)})
-        test=add_feature(table[table.gameId==gid],counts,{int(gid)})
+        train=add_feature(table[table.gameId!=gid],counts,{int(gid)},season)
+        test=add_feature(table[table.gameId==gid],counts,{int(gid)},season)
         base=fit_pass_model(train)
         model=fit_pass_model(train,PASS_FEATURES+[FEATURE])
         old=base.predict_proba(test[PASS_FEATURES])[:,1]
@@ -48,7 +48,7 @@ def main():
         import pandas as pd
         manifest=json.loads((root/'viewer/data/manifest.json').read_text())
         for game in manifest['games']:
-            gid=game['match']['id']; profiles,pool=fit_priors(counts,{gid})
+            gid=game['match']['id']; profiles,pool=fit_priors(counts,{gid},season=season)
             for entry in game['plays']:
                 path=root/f"viewer/data/plays/{entry['id']}.json";play=json.loads(path.read_text())
                 rows=[]; options=[]
